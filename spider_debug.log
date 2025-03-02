@@ -1,0 +1,1245 @@
+2025-03-02 13:48:11,702 [INFO] ==================================================
+2025-03-02 13:48:11,702 [INFO] 开始执行爬虫程序
+2025-03-02 13:48:11,703 [DEBUG] ==================================================
+2025-03-02 13:48:11,703 [DEBUG] 【请求开始】URL: https://note.youdao.com/web/#/file/D24D9664401F42C89C902D8FA8B822D0/note/WEB7e268ee3e16f4428b8eb8e734347eecf/
+2025-03-02 13:48:11,703 [DEBUG] 【请求头】
+{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3', 'Cookie': '你的登录Cookie'}
+2025-03-02 13:48:11,706 [DEBUG] Starting new HTTPS connection (1): note.youdao.com:443
+2025-03-02 13:48:11,888 [ERROR] !!! 未处理的异常 !!!
+2025-03-02 13:48:11,889 [ERROR] 异常类型: UnicodeEncodeError
+2025-03-02 13:48:11,889 [ERROR] 异常信息: 'latin-1' codec can't encode characters in position 0-3: ordinal not in range(256)
+2025-03-02 13:48:11,889 [ERROR] 异常堆栈:
+Traceback (most recent call last):
+  File "D:\code\gitCode\FirstSpider\spideYouDaoYunNote.py", line 31, in get_note_content
+    response = session.get(url, headers=headers)
+  File "D:\code\gitCode\FirstSpider\.venv\Lib\site-packages\requests\sessions.py", line 602, in get
+    return self.request("GET", url, **kwargs)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\gitCode\FirstSpider\.venv\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\code\gitCode\FirstSpider\.venv\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "D:\code\gitCode\FirstSpider\.venv\Lib\site-packages\requests\adapters.py", line 667, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "D:\code\gitCode\FirstSpider\.venv\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "D:\code\gitCode\FirstSpider\.venv\Lib\site-packages\urllib3\connectionpool.py", line 493, in _make_request
+    conn.request(
+    ~~~~~~~~~~~~^
+        method,
+        ^^^^^^^
+    ...<6 lines>...
+        enforce_content_length=enforce_content_length,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\code\gitCode\FirstSpider\.venv\Lib\site-packages\urllib3\connection.py", line 444, in request
+    self.putheader(header, value)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "D:\code\gitCode\FirstSpider\.venv\Lib\site-packages\urllib3\connection.py", line 358, in putheader
+    super().putheader(header, *values)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 1311, in putheader
+    values[i] = one_value.encode('latin-1')
+                ~~~~~~~~~~~~~~~~^^^^^^^^^^^
+UnicodeEncodeError: 'latin-1' codec can't encode characters in position 0-3: ordinal not in range(256)
+2025-03-02 13:48:11,901 [ERROR] !!! 主流程失败 !!!
+2025-03-02 13:48:11,901 [ERROR] 可能原因：
+2025-03-02 13:48:11,902 [ERROR] 1. 网络请求失败 2. 页面解析失败 3. 权限不足
+2025-03-02 13:48:11,902 [ERROR] 请检查 spider_debug.log 和 full_response.html
+2025-03-02 13:49:29,240 [INFO] ==================================================
+2025-03-02 13:49:29,240 [INFO] 开始执行爬虫程序
+2025-03-02 13:49:29,240 [DEBUG] ==================================================
+2025-03-02 13:49:29,241 [DEBUG] 【请求开始】URL: https://note.youdao.com/web/#/file/D24D9664401F42C89C902D8FA8B822D0/note/WEB7e268ee3e16f4428b8eb8e734347eecf/
+2025-03-02 13:49:29,241 [DEBUG] 【请求头】
+{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3', 'Cookie': '你的登录Cookie'}
+2025-03-02 13:49:29,244 [DEBUG] Starting new HTTPS connection (1): note.youdao.com:443
+2025-03-02 13:49:29,320 [ERROR] !!! 未处理的异常 !!!
+2025-03-02 13:49:29,320 [ERROR] 异常类型: UnicodeEncodeError
+2025-03-02 13:49:29,320 [ERROR] 异常信息: 'latin-1' codec can't encode characters in position 0-3: ordinal not in range(256)
+2025-03-02 13:49:29,320 [ERROR] 异常堆栈:
+Traceback (most recent call last):
+  File "D:\code\gitCode\FirstSpider\spideYouDaoYunNote.py", line 31, in get_note_content
+    response = session.get(url, headers=headers)
+  File "D:\code\gitCode\FirstSpider\.venv\Lib\site-packages\requests\sessions.py", line 602, in get
+    return self.request("GET", url, **kwargs)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\gitCode\FirstSpider\.venv\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\code\gitCode\FirstSpider\.venv\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "D:\code\gitCode\FirstSpider\.venv\Lib\site-packages\requests\adapters.py", line 667, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "D:\code\gitCode\FirstSpider\.venv\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "D:\code\gitCode\FirstSpider\.venv\Lib\site-packages\urllib3\connectionpool.py", line 493, in _make_request
+    conn.request(
+    ~~~~~~~~~~~~^
+        method,
+        ^^^^^^^
+    ...<6 lines>...
+        enforce_content_length=enforce_content_length,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\code\gitCode\FirstSpider\.venv\Lib\site-packages\urllib3\connection.py", line 444, in request
+    self.putheader(header, value)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "D:\code\gitCode\FirstSpider\.venv\Lib\site-packages\urllib3\connection.py", line 358, in putheader
+    super().putheader(header, *values)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 1311, in putheader
+    values[i] = one_value.encode('latin-1')
+                ~~~~~~~~~~~~~~~~^^^^^^^^^^^
+UnicodeEncodeError: 'latin-1' codec can't encode characters in position 0-3: ordinal not in range(256)
+2025-03-02 13:49:29,330 [ERROR] !!! 主流程失败 !!!
+2025-03-02 13:49:29,330 [ERROR] 可能原因：
+2025-03-02 13:49:29,330 [ERROR] 1. 网络请求失败 2. 页面解析失败 3. 权限不足
+2025-03-02 13:49:29,330 [ERROR] 请检查 spider_debug.log 和 full_response.html
+2025-03-02 13:50:49,230 [INFO] ==================================================
+2025-03-02 13:50:49,231 [INFO] 开始执行爬虫程序
+2025-03-02 13:50:49,231 [DEBUG] ==================================================
+2025-03-02 13:50:49,232 [DEBUG] 【请求开始】URL: https://note.youdao.com/web/#/file/D24D9664401F42C89C902D8FA8B822D0/note/WEB7e268ee3e16f4428b8eb8e734347eecf/
+2025-03-02 13:50:49,232 [DEBUG] 【请求头】
+{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3', 'Cookie': '你的登录Cookie'}
+2025-03-02 13:50:49,234 [DEBUG] Starting new HTTPS connection (1): note.youdao.com:443
+2025-03-02 13:50:49,305 [ERROR] !!! 未处理的异常 !!!
+2025-03-02 13:50:49,305 [ERROR] 异常类型: UnicodeEncodeError
+2025-03-02 13:50:49,306 [ERROR] 异常信息: 'latin-1' codec can't encode characters in position 0-3: ordinal not in range(256)
+2025-03-02 13:50:49,306 [ERROR] 异常堆栈:
+Traceback (most recent call last):
+  File "D:\code\gitCode\FirstSpider\spideYouDaoYunNote.py", line 37, in get_note_content
+    response = session.get(url, headers=headers)
+  File "D:\code\gitCode\FirstSpider\.venv\Lib\site-packages\requests\sessions.py", line 602, in get
+    return self.request("GET", url, **kwargs)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\gitCode\FirstSpider\.venv\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\code\gitCode\FirstSpider\.venv\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "D:\code\gitCode\FirstSpider\.venv\Lib\site-packages\requests\adapters.py", line 667, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "D:\code\gitCode\FirstSpider\.venv\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "D:\code\gitCode\FirstSpider\.venv\Lib\site-packages\urllib3\connectionpool.py", line 493, in _make_request
+    conn.request(
+    ~~~~~~~~~~~~^
+        method,
+        ^^^^^^^
+    ...<6 lines>...
+        enforce_content_length=enforce_content_length,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\code\gitCode\FirstSpider\.venv\Lib\site-packages\urllib3\connection.py", line 444, in request
+    self.putheader(header, value)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "D:\code\gitCode\FirstSpider\.venv\Lib\site-packages\urllib3\connection.py", line 358, in putheader
+    super().putheader(header, *values)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 1311, in putheader
+    values[i] = one_value.encode('latin-1')
+                ~~~~~~~~~~~~~~~~^^^^^^^^^^^
+UnicodeEncodeError: 'latin-1' codec can't encode characters in position 0-3: ordinal not in range(256)
+2025-03-02 13:50:49,313 [ERROR] !!! 主流程失败 !!!
+2025-03-02 13:50:49,314 [ERROR] 可能原因：
+2025-03-02 13:50:49,314 [ERROR] 1. 网络请求失败 2. 页面解析失败 3. 权限不足
+2025-03-02 13:50:49,314 [ERROR] 请检查 spider_debug.log 和 full_response.html
+2025-03-02 13:51:43,026 [INFO] ==================================================
+2025-03-02 13:51:43,027 [INFO] 开始执行爬虫程序
+2025-03-02 13:51:43,027 [DEBUG] ==================================================
+2025-03-02 13:51:43,028 [DEBUG] 【请求开始】URL: https://note.youdao.com/web/#/file/D24D9664401F42C89C902D8FA8B822D0/note/WEB7e268ee3e16f4428b8eb8e734347eecf/
+2025-03-02 13:51:43,028 [DEBUG] 【请求头】
+{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3', 'Cookie': '你的登录Cookie'}
+2025-03-02 13:51:43,030 [DEBUG] Starting new HTTPS connection (1): note.youdao.com:443
+2025-03-02 13:51:43,119 [ERROR] !!! 未处理的异常 !!!
+2025-03-02 13:51:43,119 [ERROR] 异常类型: UnicodeEncodeError
+2025-03-02 13:51:43,120 [ERROR] 异常信息: 'latin-1' codec can't encode characters in position 0-3: ordinal not in range(256)
+2025-03-02 13:51:43,120 [ERROR] 异常堆栈:
+Traceback (most recent call last):
+  File "D:\code\gitCode\FirstSpider\spideYouDaoYunNote.py", line 44, in get_note_content
+    response = session.get(url, headers=headers)
+  File "D:\code\gitCode\FirstSpider\.venv\Lib\site-packages\requests\sessions.py", line 602, in get
+    return self.request("GET", url, **kwargs)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\gitCode\FirstSpider\.venv\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\code\gitCode\FirstSpider\.venv\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "D:\code\gitCode\FirstSpider\.venv\Lib\site-packages\requests\adapters.py", line 667, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "D:\code\gitCode\FirstSpider\.venv\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "D:\code\gitCode\FirstSpider\.venv\Lib\site-packages\urllib3\connectionpool.py", line 493, in _make_request
+    conn.request(
+    ~~~~~~~~~~~~^
+        method,
+        ^^^^^^^
+    ...<6 lines>...
+        enforce_content_length=enforce_content_length,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\code\gitCode\FirstSpider\.venv\Lib\site-packages\urllib3\connection.py", line 444, in request
+    self.putheader(header, value)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "D:\code\gitCode\FirstSpider\.venv\Lib\site-packages\urllib3\connection.py", line 358, in putheader
+    super().putheader(header, *values)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 1311, in putheader
+    values[i] = one_value.encode('latin-1')
+                ~~~~~~~~~~~~~~~~^^^^^^^^^^^
+UnicodeEncodeError: 'latin-1' codec can't encode characters in position 0-3: ordinal not in range(256)
+2025-03-02 13:51:43,128 [ERROR] !!! 主流程失败 !!!
+2025-03-02 13:51:43,129 [ERROR] 可能原因：
+2025-03-02 13:51:43,129 [ERROR] 1. 网络请求失败 2. 页面解析失败 3. 权限不足
+2025-03-02 13:51:43,129 [ERROR] 请检查 spider_debug.log 和 full_response.html
+2025-03-02 13:53:32,185 [INFO] ==================================================
+2025-03-02 13:53:32,186 [INFO] 开始执行爬虫程序
+2025-03-02 13:53:32,186 [DEBUG] ==================================================
+2025-03-02 13:53:32,187 [DEBUG] 【请求开始】URL: https://note.youdao.com/web/#/file/D24D9664401F42C89C902D8FA8B822D0/note/WEB7e268ee3e16f4428b8eb8e734347eecf/
+2025-03-02 13:53:32,187 [DEBUG] 【请求头】
+{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3', 'Cookie': 'hb_MA-B0D8-94CBE089C042_source=www.baidu.com; Hm_lvt_7fe66a8317b6d6f28c82b62b9f890118=1740893320; Hm_lpvt_7fe66a8317b6d6f28c82b62b9f890118=1740893320; HMACCOUNT=29005595904466B9; __yadk_uid=ZlRyzrbKx1IF9Hz5MMWVhDPQwjReRvFl; OUTFOX_SEARCH_USER_ID_NCOO=105754892.64450204; OUTFOX_SEARCH_USER_ID=-1177979017@163.177.223.166; YNOTE_SESS=v2|Zy5mmIFIhqBhLzf6LTuRJLhLTu0fgBReFkLYMP46uRYMO4TKOMeBRTBk4eyRfYf0Pu6LqFPMTS0q4RLeS6Mwy0QLnLgZ6MlY0; YNOTE_LOGIN=3||1740893431920; YNOTE_CSTK=tnN-LCL1'}
+2025-03-02 13:53:32,190 [DEBUG] Starting new HTTPS connection (1): note.youdao.com:443
+2025-03-02 13:53:32,403 [DEBUG] https://note.youdao.com:443 "GET /web/ HTTP/1.1" 200 None
+2025-03-02 13:53:32,500 [DEBUG] 【响应状态】200
+2025-03-02 13:53:32,500 [DEBUG] 【最终URL】https://note.youdao.com/web/#/file/D24D9664401F42C89C902D8FA8B822D0/note/WEB7e268ee3e16f4428b8eb8e734347eecf/
+2025-03-02 13:53:32,501 [DEBUG] 【响应头】
+{'Server': 'Tengine', 'Content-Type': 'text/html', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Date': 'Sun, 02 Mar 2025 05:54:13 GMT', 'Vary': 'Accept-Encoding', 'last-modified': 'Wed, 12 Feb 2025 08:05:42 GMT', 'x-envoy-upstream-service-time': '1', 'lingxi-traceid': '5b968999299cf91a34e5c466af68fdcb^750873600000^0', 'Content-Encoding': 'gzip', 'Via': 'cache20.l2eu95-2[98,98,200-0,M], cache27.l2eu95-2[99,0], cache2.cn160[107,107,200-0,M], cache18.cn160[109,0]', 'Ali-Swift-Global-Savetime': '1740894853', 'X-Cache': 'MISS TCP_MISS dirn:-2:-2', 'X-Swift-SaveTime': 'Sun, 02 Mar 2025 05:54:13 GMT', 'X-Swift-CacheTime': '0', 'cdn-user-ip': '220.152.187.149', 'cdn-source': 'ali', 'cdn-ip': '124.14.14.70', 'Timing-Allow-Origin': '*', 'EagleId': '7c0e0ea617408948537361083e'}
+2025-03-02 13:53:32,502 [DEBUG] 【响应体大小】223629 字符
+2025-03-02 13:53:32,503 [INFO] 已保存完整响应到 full_response.html
+2025-03-02 13:53:32,556 [DEBUG] 【页面结构分析】
+2025-03-02 13:53:32,557 [DEBUG] Title标签内容: æéäºç¬è®°
+2025-03-02 13:53:32,558 [DEBUG] 找到的div数量: 3
+2025-03-02 13:53:32,559 [WARNING] 未找到标题元素，尝试备用选择器...
+2025-03-02 13:53:32,560 [ERROR] 所有标题选择器均失败
+2025-03-02 13:53:32,562 [ERROR] 内容区域未找到，可能原因：
+2025-03-02 13:53:32,562 [ERROR] 1. 页面结构已变更 2. class名称不同 3. 内容需要登录
+2025-03-02 13:53:32,562 [DEBUG] 前500字符内容预览:
+<!DOCTYPE html><html manifest="/web/manifest.appcache"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><title>æéäºç¬è®°</title><meta name="keywords" content="æé, office, åå¬è½¯ä»¶, æéäºç¬è®°, å°è±¡ç¬è®°, ç¬è®°, tower, äºç¬è®°, æéç¬è®°, å¢éåä½, åä½, äºåä½ etc."><meta name="description" content="TODO"><meta name="description" content=""><meta name="viewport" content="width=device-width"><script>function initTheme() {
+      
+2025-03-02 13:53:32,564 [ERROR] !!! 主流程失败 !!!
+2025-03-02 13:53:32,564 [ERROR] 可能原因：
+2025-03-02 13:53:32,564 [ERROR] 1. 网络请求失败 2. 页面解析失败 3. 权限不足
+2025-03-02 13:53:32,565 [ERROR] 请检查 spider_debug.log 和 full_response.html
+2025-03-02 13:55:37,381 [INFO] ==================================================
+2025-03-02 13:55:37,382 [INFO] 开始执行爬虫程序
+2025-03-02 13:55:37,382 [DEBUG] ==================================================
+2025-03-02 13:55:37,383 [DEBUG] 【请求开始】URL: https://note.youdao.com/web/#/file/D24D9664401F42C89C902D8FA8B822D0/note/WEB7e268ee3e16f4428b8eb8e734347eecf/
+2025-03-02 13:55:37,383 [DEBUG] 【请求头】
+{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3', 'Cookie': 'hb_MA-B0D8-94CBE089C042_source=www.baidu.com; Hm_lvt_7fe66a8317b6d6f28c82b62b9f890118=1740893320; Hm_lpvt_7fe66a8317b6d6f28c82b62b9f890118=1740893320; HMACCOUNT=29005595904466B9; __yadk_uid=ZlRyzrbKx1IF9Hz5MMWVhDPQwjReRvFl; OUTFOX_SEARCH_USER_ID_NCOO=105754892.64450204; OUTFOX_SEARCH_USER_ID=-1177979017@163.177.223.166; YNOTE_SESS=v2|Zy5mmIFIhqBhLzf6LTuRJLhLTu0fgBReFkLYMP46uRYMO4TKOMeBRTBk4eyRfYf0Pu6LqFPMTS0q4RLeS6Mwy0QLnLgZ6MlY0; YNOTE_LOGIN=3||1740893431920; YNOTE_CSTK=tnN-LCL1'}
+2025-03-02 13:55:37,386 [DEBUG] Starting new HTTPS connection (1): note.youdao.com:443
+2025-03-02 13:55:37,583 [DEBUG] https://note.youdao.com:443 "GET /web/ HTTP/1.1" 200 None
+2025-03-02 13:55:37,694 [DEBUG] Encoding detection: utf_8 is most likely the one.
+2025-03-02 13:55:37,695 [INFO] 已设置编码为: utf-8
+2025-03-02 13:55:37,695 [DEBUG] 【响应状态】200
+2025-03-02 13:55:37,695 [DEBUG] 【最终URL】https://note.youdao.com/web/#/file/D24D9664401F42C89C902D8FA8B822D0/note/WEB7e268ee3e16f4428b8eb8e734347eecf/
+2025-03-02 13:55:37,696 [DEBUG] 【响应头】
+{'Server': 'Tengine', 'Content-Type': 'text/html', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Date': 'Sun, 02 Mar 2025 05:56:18 GMT', 'Vary': 'Accept-Encoding', 'last-modified': 'Wed, 12 Feb 2025 08:05:42 GMT', 'x-envoy-upstream-service-time': '1', 'lingxi-traceid': '3757a8d04fd7c8c7cc28ee1781fb9556^750873600000^0', 'Content-Encoding': 'gzip', 'Via': 'cache20.l2eu95-2[88,87,200-0,M], cache7.l2eu95-2[89,0], cache2.cn160[95,95,200-0,M], cache21.cn160[97,0]', 'Ali-Swift-Global-Savetime': '1740894979', 'X-Cache': 'MISS TCP_MISS dirn:-2:-2', 'X-Swift-SaveTime': 'Sun, 02 Mar 2025 05:56:19 GMT', 'X-Swift-CacheTime': '0', 'cdn-user-ip': '220.152.187.149', 'cdn-source': 'ali', 'cdn-ip': '124.14.14.65', 'Timing-Allow-Origin': '*', 'EagleId': '7c0e0ea917408949789262752e'}
+2025-03-02 13:55:37,697 [DEBUG] 【响应体大小】223473 字符
+2025-03-02 13:55:37,700 [INFO] 已保存完整响应到 full_response.html
+2025-03-02 13:55:37,758 [DEBUG] 【页面结构分析】
+2025-03-02 13:55:37,758 [DEBUG] Title标签内容: 有道云笔记
+2025-03-02 13:55:37,759 [DEBUG] 找到的div数量: 3
+2025-03-02 13:55:37,760 [WARNING] 未找到标题元素，尝试备用选择器...
+2025-03-02 13:55:37,761 [ERROR] 所有标题选择器均失败
+2025-03-02 13:55:37,763 [ERROR] 内容区域未找到，可能原因：
+2025-03-02 13:55:37,763 [ERROR] 1. 页面结构已变更 2. class名称不同 3. 内容需要登录
+2025-03-02 13:55:37,763 [DEBUG] 前500字符内容预览:
+<!DOCTYPE html><html manifest="/web/manifest.appcache"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><title>有道云笔记</title><meta name="keywords" content="有道, office, 办公软件, 有道云笔记, 印象笔记, 笔记, tower, 云笔记, 有道笔记, 团队协作, 协作, 云协作 etc."><meta name="description" content="TODO"><meta name="description" content=""><meta name="viewport" content="width=device-width"><script>function initTheme() {
+                const themeMap = {
+                    system: 'system',
+         
+2025-03-02 13:55:37,765 [ERROR] !!! 主流程失败 !!!
+2025-03-02 13:55:37,765 [ERROR] 可能原因：
+2025-03-02 13:55:37,765 [ERROR] 1. 网络请求失败 2. 页面解析失败 3. 权限不足
+2025-03-02 13:55:37,766 [ERROR] 请检查 spider_debug.log 和 full_response.html
+2025-03-02 13:59:05,843 [INFO] ==================================================
+2025-03-02 13:59:05,844 [INFO] 开始执行爬虫程序
+2025-03-02 13:59:05,844 [DEBUG] ==================================================
+2025-03-02 13:59:05,844 [DEBUG] 【请求开始】URL: https://note.youdao.com/web/#/file/D24D9664401F42C89C902D8FA8B822D0/note/WEB7e268ee3e16f4428b8eb8e734347eecf/
+2025-03-02 13:59:05,845 [DEBUG] 【请求头】
+{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3', 'Cookie': 'hb_MA-B0D8-94CBE089C042_source=www.baidu.com; Hm_lvt_7fe66a8317b6d6f28c82b62b9f890118=1740893320; Hm_lpvt_7fe66a8317b6d6f28c82b62b9f890118=1740893320; HMACCOUNT=29005595904466B9; __yadk_uid=ZlRyzrbKx1IF9Hz5MMWVhDPQwjReRvFl; OUTFOX_SEARCH_USER_ID_NCOO=105754892.64450204; OUTFOX_SEARCH_USER_ID=-1177979017@163.177.223.166; YNOTE_SESS=v2|Zy5mmIFIhqBhLzf6LTuRJLhLTu0fgBReFkLYMP46uRYMO4TKOMeBRTBk4eyRfYf0Pu6LqFPMTS0q4RLeS6Mwy0QLnLgZ6MlY0; YNOTE_LOGIN=3||1740893431920; YNOTE_CSTK=tnN-LCL1'}
+2025-03-02 13:59:05,848 [DEBUG] Starting new HTTPS connection (1): note.youdao.com:443
+2025-03-02 13:59:06,037 [DEBUG] https://note.youdao.com:443 "GET /web/ HTTP/1.1" 200 None
+2025-03-02 13:59:06,135 [DEBUG] Encoding detection: utf_8 is most likely the one.
+2025-03-02 13:59:06,136 [INFO] 已设置编码为: utf-8
+2025-03-02 13:59:06,136 [DEBUG] 【响应状态】200
+2025-03-02 13:59:06,136 [DEBUG] 【最终URL】https://note.youdao.com/web/#/file/D24D9664401F42C89C902D8FA8B822D0/note/WEB7e268ee3e16f4428b8eb8e734347eecf/
+2025-03-02 13:59:06,137 [DEBUG] 【响应头】
+{'Server': 'Tengine', 'Content-Type': 'text/html', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Date': 'Sun, 02 Mar 2025 05:59:47 GMT', 'Vary': 'Accept-Encoding', 'last-modified': 'Wed, 12 Feb 2025 08:05:42 GMT', 'x-envoy-upstream-service-time': '1', 'lingxi-traceid': 'c77ec179996ec41947d87c2b8ab69f18^750873600000^0', 'Content-Encoding': 'gzip', 'Via': 'cache20.l2eu95-2[52,51,200-0,M], cache43.l2eu95-2[53,0], cache2.cn160[60,60,200-0,M], cache17.cn160[62,0]', 'Ali-Swift-Global-Savetime': '1740895187', 'X-Cache': 'MISS TCP_MISS dirn:-2:-2', 'X-Swift-SaveTime': 'Sun, 02 Mar 2025 05:59:47 GMT', 'X-Swift-CacheTime': '0', 'cdn-user-ip': '220.152.187.149', 'cdn-source': 'ali', 'cdn-ip': '124.14.14.68', 'Timing-Allow-Origin': '*', 'EagleId': '7c0e0ea517408951874168775e'}
+2025-03-02 13:59:06,138 [DEBUG] 【响应体大小】223473 字符
+2025-03-02 13:59:06,140 [INFO] 已保存完整响应到 full_response.html
+2025-03-02 13:59:06,191 [DEBUG] 【页面结构分析】
+2025-03-02 13:59:06,191 [DEBUG] Title标签内容: 有道云笔记
+2025-03-02 13:59:06,192 [DEBUG] 找到的div数量: 3
+2025-03-02 13:59:06,193 [WARNING] 未找到标题元素，尝试备用选择器...
+2025-03-02 13:59:06,194 [ERROR] 所有标题选择器均失败
+2025-03-02 13:59:06,195 [ERROR] 内容区域未找到，可能原因：
+2025-03-02 13:59:06,195 [ERROR] 1. 页面结构已变更 2. class名称不同 3. 内容需要登录
+2025-03-02 13:59:06,196 [DEBUG] 前500字符内容预览:
+<!DOCTYPE html><html manifest="/web/manifest.appcache"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><title>有道云笔记</title><meta name="keywords" content="有道, office, 办公软件, 有道云笔记, 印象笔记, 笔记, tower, 云笔记, 有道笔记, 团队协作, 协作, 云协作 etc."><meta name="description" content="TODO"><meta name="description" content=""><meta name="viewport" content="width=device-width"><script>function initTheme() {
+                const themeMap = {
+                    system: 'system',
+         
+2025-03-02 13:59:06,198 [ERROR] !!! 主流程失败 !!!
+2025-03-02 13:59:06,198 [ERROR] 可能原因：
+2025-03-02 13:59:06,198 [ERROR] 1. 网络请求失败 2. 页面解析失败 3. 权限不足
+2025-03-02 13:59:06,199 [ERROR] 请检查 spider_debug.log 和 full_response.html
+2025-03-02 13:59:39,204 [INFO] ==================================================
+2025-03-02 13:59:39,205 [INFO] 开始执行爬虫程序
+2025-03-02 13:59:39,205 [DEBUG] ==================================================
+2025-03-02 13:59:39,206 [DEBUG] 【请求开始】URL: https://note.youdao.com/yws/api/personal/sync?method=download&_system=windows&_systemVersion=&_screenWidth=1920&_screenHeight=1080&_appName=ynote&_appuser=766688366d459bceea5f67aaaf2c6124&_vendor=official-website&_launch=113&_firstTime=2025/03/02%2013:28:43&_deviceId=11efb95b965437d2&_platform=web&_cityCode=430000&_cityName=&_product=YNote-Web&_version=&sev=j1&sec=v1&keyfrom=web&cstk=tnN-LCL1
+2025-03-02 13:59:39,206 [DEBUG] 【请求头】
+{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3', 'Cookie': 'hb_MA-B0D8-94CBE089C042_source=www.baidu.com; Hm_lvt_7fe66a8317b6d6f28c82b62b9f890118=1740893320; Hm_lpvt_7fe66a8317b6d6f28c82b62b9f890118=1740893320; HMACCOUNT=29005595904466B9; __yadk_uid=ZlRyzrbKx1IF9Hz5MMWVhDPQwjReRvFl; OUTFOX_SEARCH_USER_ID_NCOO=105754892.64450204; OUTFOX_SEARCH_USER_ID=-1177979017@163.177.223.166; YNOTE_SESS=v2|Zy5mmIFIhqBhLzf6LTuRJLhLTu0fgBReFkLYMP46uRYMO4TKOMeBRTBk4eyRfYf0Pu6LqFPMTS0q4RLeS6Mwy0QLnLgZ6MlY0; YNOTE_LOGIN=3||1740893431920; YNOTE_CSTK=tnN-LCL1'}
+2025-03-02 13:59:39,209 [DEBUG] Starting new HTTPS connection (1): note.youdao.com:443
+2025-03-02 13:59:39,404 [DEBUG] https://note.youdao.com:443 "GET /yws/api/personal/sync?method=download&_system=windows&_systemVersion=&_screenWidth=1920&_screenHeight=1080&_appName=ynote&_appuser=766688366d459bceea5f67aaaf2c6124&_vendor=official-website&_launch=113&_firstTime=2025/03/02%2013:28:43&_deviceId=11efb95b965437d2&_platform=web&_cityCode=430000&_cityName=&_product=YNote-Web&_version=&sev=j1&sec=v1&keyfrom=web&cstk=tnN-LCL1 HTTP/1.1" 400 18
+2025-03-02 13:59:39,405 [DEBUG] 【响应状态】400
+2025-03-02 13:59:39,405 [DEBUG] 【最终URL】https://note.youdao.com/yws/api/personal/sync?method=download&_system=windows&_systemVersion=&_screenWidth=1920&_screenHeight=1080&_appName=ynote&_appuser=766688366d459bceea5f67aaaf2c6124&_vendor=official-website&_launch=113&_firstTime=2025/03/02%2013:28:43&_deviceId=11efb95b965437d2&_platform=web&_cityCode=430000&_cityName=&_product=YNote-Web&_version=&sev=j1&sec=v1&keyfrom=web&cstk=tnN-LCL1
+2025-03-02 13:59:39,406 [DEBUG] 【响应头】
+{'Server': 'Tengine', 'Content-Type': 'text/plain;charset=UTF-8', 'Content-Length': '18', 'Connection': 'keep-alive', 'Date': 'Sun, 02 Mar 2025 06:00:20 GMT', 'pragma': 'no-cache', 'cache-control': 'no-cache, must-revalidate', 'expires': 'Thu, 01 Jan 1970 00:00:00 GMT', 'x-envoy-upstream-service-time': '2', 'lingxi-traceid': 'caf48611289fcb199fa0ee28c785de74^750873600000^0', 'Via': 'cache23.l2nu20-1[53,53,400-1280,M], cache29.l2nu20-1[54,0], cache8.cn160[86,86,400-1280,M], cache17.cn160[88,0]', 'Ali-Swift-Global-Savetime': '1740895220', 'X-Cache': 'MISS TCP_MISS dirn:-2:-2', 'X-Swift-Error': 'orig response 4XX error', 'X-Swift-SaveTime': 'Sun, 02 Mar 2025 06:00:20 GMT', 'X-Swift-CacheTime': '0', 'cdn-user-ip': '220.152.187.149', 'cdn-source': 'ali', 'cdn-ip': '124.14.14.70', 'Timing-Allow-Origin': '*', 'EagleId': '7c0e0ea517408952207623399e'}
+2025-03-02 13:59:39,407 [DEBUG] 【响应体大小】18 字符
+2025-03-02 13:59:39,407 [INFO] 已保存完整响应到 full_response.html
+2025-03-02 13:59:39,408 [ERROR] !!! 网络请求异常 !!!
+2025-03-02 13:59:39,408 [ERROR] 异常类型: HTTPError
+2025-03-02 13:59:39,409 [ERROR] 请求URL: https://note.youdao.com/yws/api/personal/sync?method=download&_system=windows&_systemVersion=&_screenWidth=1920&_screenHeight=1080&_appName=ynote&_appuser=766688366d459bceea5f67aaaf2c6124&_vendor=official-website&_launch=113&_firstTime=2025/03/02%2013:28:43&_deviceId=11efb95b965437d2&_platform=web&_cityCode=430000&_cityName=&_product=YNote-Web&_version=&sev=j1&sec=v1&keyfrom=web&cstk=tnN-LCL1
+2025-03-02 13:59:39,409 [ERROR] 响应状态码: 400
+2025-03-02 13:59:39,410 [ERROR] 错误响应头:
+{'Server': 'Tengine', 'Content-Type': 'text/plain;charset=UTF-8', 'Content-Length': '18', 'Connection': 'keep-alive', 'Date': 'Sun, 02 Mar 2025 06:00:20 GMT', 'pragma': 'no-cache', 'cache-control': 'no-cache, must-revalidate', 'expires': 'Thu, 01 Jan 1970 00:00:00 GMT', 'x-envoy-upstream-service-time': '2', 'lingxi-traceid': 'caf48611289fcb199fa0ee28c785de74^750873600000^0', 'Via': 'cache23.l2nu20-1[53,53,400-1280,M], cache29.l2nu20-1[54,0], cache8.cn160[86,86,400-1280,M], cache17.cn160[88,0]', 'Ali-Swift-Global-Savetime': '1740895220', 'X-Cache': 'MISS TCP_MISS dirn:-2:-2', 'X-Swift-Error': 'orig response 4XX error', 'X-Swift-SaveTime': 'Sun, 02 Mar 2025 06:00:20 GMT', 'X-Swift-CacheTime': '0', 'cdn-user-ip': '220.152.187.149', 'cdn-source': 'ali', 'cdn-ip': '124.14.14.70', 'Timing-Allow-Origin': '*', 'EagleId': '7c0e0ea517408952207623399e'}
+2025-03-02 13:59:39,411 [ERROR] 错误响应体前500字符:
+request not valid
+
+2025-03-02 13:59:39,412 [ERROR] !!! 主流程失败 !!!
+2025-03-02 13:59:39,412 [ERROR] 可能原因：
+2025-03-02 13:59:39,412 [ERROR] 1. 网络请求失败 2. 页面解析失败 3. 权限不足
+2025-03-02 13:59:39,412 [ERROR] 请检查 spider_debug.log 和 full_response.html
+2025-03-02 14:07:36,554 [INFO] ==================================================
+2025-03-02 14:07:36,555 [INFO] 开始执行爬虫程序
+2025-03-02 14:07:36,555 [DEBUG] ==================================================
+2025-03-02 14:07:36,556 [DEBUG] 【请求开始】URL: https://note.youdao.com/yws/api/personal/sync?method=download&_system=windows&_systemVersion=&_screenWidth=1920&_screenHeight=1080&_appName=ynote&_appuser=766688366d459bceea5f67aaaf2c6124&_vendor=official-website&_launch=113&_firstTime=2025/03/02%2013:28:43&_deviceId=11efb95b965437d2&_platform=web&_cityCode=430000&_cityName=&_product=YNote-Web&_version=&sev=j1&sec=v1&keyfrom=web&cstk=tnN-LCL1
+2025-03-02 14:07:36,556 [DEBUG] 【请求头】
+{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3', 'Cookie': 'hb_MA-B0D8-94CBE089C042_source=www.baidu.com; Hm_lvt_7fe66a8317b6d6f28c82b62b9f890118=1740893320; Hm_lpvt_7fe66a8317b6d6f28c82b62b9f890118=1740893320; HMACCOUNT=29005595904466B9; __yadk_uid=ZlRyzrbKx1IF9Hz5MMWVhDPQwjReRvFl; OUTFOX_SEARCH_USER_ID_NCOO=105754892.64450204; OUTFOX_SEARCH_USER_ID=-1177979017@163.177.223.166; YNOTE_SESS=v2|Zy5mmIFIhqBhLzf6LTuRJLhLTu0fgBReFkLYMP46uRYMO4TKOMeBRTBk4eyRfYf0Pu6LqFPMTS0q4RLeS6Mwy0QLnLgZ6MlY0; YNOTE_LOGIN=3||1740893431920; YNOTE_CSTK=tnN-LCL1'}
+2025-03-02 14:07:36,560 [DEBUG] Starting new HTTPS connection (1): note.youdao.com:443
+2025-03-02 14:07:36,778 [DEBUG] https://note.youdao.com:443 "GET /yws/api/personal/sync?method=download&_system=windows&_systemVersion=&_screenWidth=1920&_screenHeight=1080&_appName=ynote&_appuser=766688366d459bceea5f67aaaf2c6124&_vendor=official-website&_launch=113&_firstTime=2025/03/02%2013:28:43&_deviceId=11efb95b965437d2&_platform=web&_cityCode=430000&_cityName=&_product=YNote-Web&_version=&sev=j1&sec=v1&keyfrom=web&cstk=tnN-LCL1 HTTP/1.1" 400 18
+2025-03-02 14:07:36,779 [DEBUG] 【响应状态】400
+2025-03-02 14:07:36,779 [DEBUG] 【最终URL】https://note.youdao.com/yws/api/personal/sync?method=download&_system=windows&_systemVersion=&_screenWidth=1920&_screenHeight=1080&_appName=ynote&_appuser=766688366d459bceea5f67aaaf2c6124&_vendor=official-website&_launch=113&_firstTime=2025/03/02%2013:28:43&_deviceId=11efb95b965437d2&_platform=web&_cityCode=430000&_cityName=&_product=YNote-Web&_version=&sev=j1&sec=v1&keyfrom=web&cstk=tnN-LCL1
+2025-03-02 14:07:36,780 [DEBUG] 【响应头】
+{'Server': 'Tengine', 'Content-Type': 'text/plain;charset=UTF-8', 'Content-Length': '18', 'Connection': 'keep-alive', 'Date': 'Sun, 02 Mar 2025 06:08:18 GMT', 'pragma': 'no-cache', 'cache-control': 'no-cache, must-revalidate', 'expires': 'Thu, 01 Jan 1970 00:00:00 GMT', 'x-envoy-upstream-service-time': '1', 'lingxi-traceid': 'e01674cf7c2864e3424b9b0da4f638cf^750873600000^0', 'Via': 'cache23.l2nu20-1[56,55,400-1280,M], cache13.l2nu20-1[57,0], cache8.cn160[92,92,400-1280,M], cache21.cn160[95,0]', 'Ali-Swift-Global-Savetime': '1740895698', 'X-Cache': 'MISS TCP_MISS dirn:-2:-2', 'X-Swift-Error': 'orig response 4XX error', 'X-Swift-SaveTime': 'Sun, 02 Mar 2025 06:08:18 GMT', 'X-Swift-CacheTime': '0', 'cdn-user-ip': '220.152.187.149', 'cdn-source': 'ali', 'cdn-ip': '124.14.14.71', 'Timing-Allow-Origin': '*', 'EagleId': '7c0e0ea917408956981187844e'}
+2025-03-02 14:07:36,781 [DEBUG] 【响应体大小】18 字符
+2025-03-02 14:07:36,782 [INFO] 已保存完整响应到 full_response.html
+2025-03-02 14:07:36,782 [ERROR] !!! 网络请求异常 !!!
+2025-03-02 14:07:36,782 [ERROR] 异常类型: HTTPError
+2025-03-02 14:07:36,782 [ERROR] 请求URL: https://note.youdao.com/yws/api/personal/sync?method=download&_system=windows&_systemVersion=&_screenWidth=1920&_screenHeight=1080&_appName=ynote&_appuser=766688366d459bceea5f67aaaf2c6124&_vendor=official-website&_launch=113&_firstTime=2025/03/02%2013:28:43&_deviceId=11efb95b965437d2&_platform=web&_cityCode=430000&_cityName=&_product=YNote-Web&_version=&sev=j1&sec=v1&keyfrom=web&cstk=tnN-LCL1
+2025-03-02 14:07:36,783 [ERROR] 响应状态码: 400
+2025-03-02 14:07:36,783 [ERROR] 错误响应头:
+{'Server': 'Tengine', 'Content-Type': 'text/plain;charset=UTF-8', 'Content-Length': '18', 'Connection': 'keep-alive', 'Date': 'Sun, 02 Mar 2025 06:08:18 GMT', 'pragma': 'no-cache', 'cache-control': 'no-cache, must-revalidate', 'expires': 'Thu, 01 Jan 1970 00:00:00 GMT', 'x-envoy-upstream-service-time': '1', 'lingxi-traceid': 'e01674cf7c2864e3424b9b0da4f638cf^750873600000^0', 'Via': 'cache23.l2nu20-1[56,55,400-1280,M], cache13.l2nu20-1[57,0], cache8.cn160[92,92,400-1280,M], cache21.cn160[95,0]', 'Ali-Swift-Global-Savetime': '1740895698', 'X-Cache': 'MISS TCP_MISS dirn:-2:-2', 'X-Swift-Error': 'orig response 4XX error', 'X-Swift-SaveTime': 'Sun, 02 Mar 2025 06:08:18 GMT', 'X-Swift-CacheTime': '0', 'cdn-user-ip': '220.152.187.149', 'cdn-source': 'ali', 'cdn-ip': '124.14.14.71', 'Timing-Allow-Origin': '*', 'EagleId': '7c0e0ea917408956981187844e'}
+2025-03-02 14:07:36,784 [ERROR] 错误响应体前500字符:
+request not valid
+
+2025-03-02 14:07:36,784 [ERROR] !!! 主流程失败 !!!
+2025-03-02 14:07:36,785 [ERROR] 可能原因：
+2025-03-02 14:07:36,785 [ERROR] 1. 网络请求失败 2. 页面解析失败 3. 权限不足
+2025-03-02 14:07:36,785 [ERROR] 请检查 spider_debug.log 和 full_response.html
+2025-03-02 17:06:25,629 [INFO] ==================================================
+2025-03-02 17:06:25,630 [INFO] 开始执行爬虫程序
+2025-03-02 17:06:25,630 [DEBUG] ==================================================
+2025-03-02 17:06:25,631 [DEBUG] 【请求开始】URL: https://note.youdao.com/yws/api/personal/sync?method=download&_system=windows&_systemVersion=&_screenWidth=1920&_screenHeight=1080&_appName=ynote&_appuser=766688366d459bceea5f67aaaf2c6124&_vendor=official-website&_launch=113&_firstTime=2025/03/02%2013:28:43&_deviceId=11efb95b965437d2&_platform=web&_cityCode=430000&_cityName=&_product=YNote-Web&_version=&sev=j1&sec=v1&keyfrom=web&cstk=tnN-LCL1
+2025-03-02 17:06:25,631 [DEBUG] 【请求头】
+{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3', 'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8', 'Cookie': 'hb_MA-B0D8-94CBE089C042_source=www.baidu.com; Hm_lvt_7fe66a8317b6d6f28c82b62b9f890118=1740893320; Hm_lpvt_7fe66a8317b6d6f28c82b62b9f890118=1740893320; HMACCOUNT=29005595904466B9; __yadk_uid=ZlRyzrbKx1IF9Hz5MMWVhDPQwjReRvFl; OUTFOX_SEARCH_USER_ID_NCOO=105754892.64450204; OUTFOX_SEARCH_USER_ID=-1177979017@163.177.223.166; YNOTE_SESS=v2|Zy5mmIFIhqBhLzf6LTuRJLhLTu0fgBReFkLYMP46uRYMO4TKOMeBRTBk4eyRfYf0Pu6LqFPMTS0q4RLeS6Mwy0QLnLgZ6MlY0; YNOTE_LOGIN=3||1740893431920; YNOTE_CSTK=tnN-LCL1'}
+2025-03-02 17:06:25,635 [DEBUG] Starting new HTTPS connection (1): note.youdao.com:443
+2025-03-02 17:06:25,870 [DEBUG] https://note.youdao.com:443 "GET /yws/api/personal/sync?method=download&_system=windows&_systemVersion=&_screenWidth=1920&_screenHeight=1080&_appName=ynote&_appuser=766688366d459bceea5f67aaaf2c6124&_vendor=official-website&_launch=113&_firstTime=2025/03/02%2013:28:43&_deviceId=11efb95b965437d2&_platform=web&_cityCode=430000&_cityName=&_product=YNote-Web&_version=&sev=j1&sec=v1&keyfrom=web&cstk=tnN-LCL1 HTTP/1.1" 400 18
+2025-03-02 17:06:25,871 [DEBUG] 【响应状态】400
+2025-03-02 17:06:25,871 [DEBUG] 【最终URL】https://note.youdao.com/yws/api/personal/sync?method=download&_system=windows&_systemVersion=&_screenWidth=1920&_screenHeight=1080&_appName=ynote&_appuser=766688366d459bceea5f67aaaf2c6124&_vendor=official-website&_launch=113&_firstTime=2025/03/02%2013:28:43&_deviceId=11efb95b965437d2&_platform=web&_cityCode=430000&_cityName=&_product=YNote-Web&_version=&sev=j1&sec=v1&keyfrom=web&cstk=tnN-LCL1
+2025-03-02 17:06:25,872 [DEBUG] 【响应头】
+{'Server': 'Tengine', 'Content-Type': 'text/plain;charset=UTF-8', 'Content-Length': '18', 'Connection': 'keep-alive', 'Date': 'Sun, 02 Mar 2025 09:07:07 GMT', 'pragma': 'no-cache', 'cache-control': 'no-cache, must-revalidate', 'expires': 'Thu, 01 Jan 1970 00:00:00 GMT', 'x-envoy-upstream-service-time': '1', 'lingxi-traceid': '084d1fd3a7c81a332104379ecf0a654f^750873600000^0', 'Via': 'cache23.l2nu20-1[105,105,400-1280,M], cache44.l2nu20-1[106,0], cache8.cn160[140,140,400-1280,M], cache24.cn160[142,0]', 'Ali-Swift-Global-Savetime': '1740906427', 'X-Cache': 'MISS TCP_MISS dirn:-2:-2', 'X-Swift-Error': 'orig response 4XX error', 'X-Swift-SaveTime': 'Sun, 02 Mar 2025 09:07:07 GMT', 'X-Swift-CacheTime': '0', 'cdn-user-ip': '220.152.187.149', 'cdn-source': 'ali', 'cdn-ip': '124.14.14.65', 'Timing-Allow-Origin': '*', 'EagleId': '7c0e0eac17409064271678754e'}
+2025-03-02 17:06:25,873 [DEBUG] 【响应体大小】18 字符
+2025-03-02 17:06:25,874 [INFO] 已保存完整响应到 full_response.html
+2025-03-02 17:06:25,875 [ERROR] !!! 网络请求异常 !!!
+2025-03-02 17:06:25,875 [ERROR] 异常类型: HTTPError
+2025-03-02 17:06:25,875 [ERROR] 请求URL: https://note.youdao.com/yws/api/personal/sync?method=download&_system=windows&_systemVersion=&_screenWidth=1920&_screenHeight=1080&_appName=ynote&_appuser=766688366d459bceea5f67aaaf2c6124&_vendor=official-website&_launch=113&_firstTime=2025/03/02%2013:28:43&_deviceId=11efb95b965437d2&_platform=web&_cityCode=430000&_cityName=&_product=YNote-Web&_version=&sev=j1&sec=v1&keyfrom=web&cstk=tnN-LCL1
+2025-03-02 17:06:25,876 [ERROR] 响应状态码: 400
+2025-03-02 17:06:25,876 [ERROR] 错误响应头:
+{'Server': 'Tengine', 'Content-Type': 'text/plain;charset=UTF-8', 'Content-Length': '18', 'Connection': 'keep-alive', 'Date': 'Sun, 02 Mar 2025 09:07:07 GMT', 'pragma': 'no-cache', 'cache-control': 'no-cache, must-revalidate', 'expires': 'Thu, 01 Jan 1970 00:00:00 GMT', 'x-envoy-upstream-service-time': '1', 'lingxi-traceid': '084d1fd3a7c81a332104379ecf0a654f^750873600000^0', 'Via': 'cache23.l2nu20-1[105,105,400-1280,M], cache44.l2nu20-1[106,0], cache8.cn160[140,140,400-1280,M], cache24.cn160[142,0]', 'Ali-Swift-Global-Savetime': '1740906427', 'X-Cache': 'MISS TCP_MISS dirn:-2:-2', 'X-Swift-Error': 'orig response 4XX error', 'X-Swift-SaveTime': 'Sun, 02 Mar 2025 09:07:07 GMT', 'X-Swift-CacheTime': '0', 'cdn-user-ip': '220.152.187.149', 'cdn-source': 'ali', 'cdn-ip': '124.14.14.65', 'Timing-Allow-Origin': '*', 'EagleId': '7c0e0eac17409064271678754e'}
+2025-03-02 17:06:25,877 [ERROR] 错误响应体前500字符:
+request not valid
+
+2025-03-02 17:06:25,878 [ERROR] !!! 主流程失败 !!!
+2025-03-02 17:06:25,878 [ERROR] 可能原因：
+2025-03-02 17:06:25,878 [ERROR] 1. 网络请求失败 2. 页面解析失败 3. 权限不足
+2025-03-02 17:06:25,878 [ERROR] 请检查 spider_debug.log 和 full_response.html
+2025-03-02 17:17:42,726 [INFO] ==================================================
+2025-03-02 17:17:42,727 [INFO] 开始执行爬虫程序
+2025-03-02 17:17:42,727 [DEBUG] ==================================================
+2025-03-02 17:17:42,727 [DEBUG] 【请求开始】URL: https://note.youdao.com/yws/api/personal/sync?method=download&_system=windows&_systemVersion=&_screenWidth=1920&_screenHeight=1080&_appName=ynote&_appuser=766688366d459bceea5f67aaaf2c6124&_vendor=official-website&_launch=113&_firstTime=2025/03/02%2013:28:43&_deviceId=11efb95b965437d2&_platform=web&_cityCode=430000&_cityName=&_product=YNote-Web&_version=&sev=j1&sec=v1&keyfrom=web&cstk=tnN-LCL1
+2025-03-02 17:17:42,728 [DEBUG] 【请求头】
+{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3', 'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8', 'Cookie': 'hb_MA-B0D8-94CBE089C042_source=www.baidu.com; Hm_lvt_7fe66a8317b6d6f28c82b62b9f890118=1740893320; Hm_lpvt_7fe66a8317b6d6f28c82b62b9f890118=1740893320; HMACCOUNT=29005595904466B9; __yadk_uid=ZlRyzrbKx1IF9Hz5MMWVhDPQwjReRvFl; OUTFOX_SEARCH_USER_ID_NCOO=105754892.64450204; OUTFOX_SEARCH_USER_ID=-1177979017@163.177.223.166; YNOTE_SESS=v2|Zy5mmIFIhqBhLzf6LTuRJLhLTu0fgBReFkLYMP46uRYMO4TKOMeBRTBk4eyRfYf0Pu6LqFPMTS0q4RLeS6Mwy0QLnLgZ6MlY0; YNOTE_LOGIN=3||1740893431920; YNOTE_CSTK=tnN-LCL1'}
+2025-03-02 17:17:42,728 [ERROR] !!! 未处理的异常 !!!
+2025-03-02 17:17:42,729 [ERROR] 异常类型: NameError
+2025-03-02 17:17:42,729 [ERROR] 异常信息: name 'json' is not defined
+2025-03-02 17:17:42,729 [ERROR] 异常堆栈:
+Traceback (most recent call last):
+  File "D:\code\gitCode\FirstSpider\spideYouDaoYunNote.py", line 58, in get_note_content
+    json_data = json.dumps(data)
+                ^^^^
+NameError: name 'json' is not defined. Did you forget to import 'json'?
+2025-03-02 17:17:42,732 [ERROR] !!! 主流程失败 !!!
+2025-03-02 17:17:42,733 [ERROR] 可能原因：
+2025-03-02 17:17:42,733 [ERROR] 1. 网络请求失败 2. 页面解析失败 3. 权限不足
+2025-03-02 17:17:42,733 [ERROR] 请检查 spider_debug.log 和 full_response.html
+2025-03-02 17:18:08,100 [INFO] ==================================================
+2025-03-02 17:18:08,101 [INFO] 开始执行爬虫程序
+2025-03-02 17:18:08,102 [DEBUG] ==================================================
+2025-03-02 17:18:08,102 [DEBUG] 【请求开始】URL: https://note.youdao.com/yws/api/personal/sync?method=download&_system=windows&_systemVersion=&_screenWidth=1920&_screenHeight=1080&_appName=ynote&_appuser=766688366d459bceea5f67aaaf2c6124&_vendor=official-website&_launch=113&_firstTime=2025/03/02%2013:28:43&_deviceId=11efb95b965437d2&_platform=web&_cityCode=430000&_cityName=&_product=YNote-Web&_version=&sev=j1&sec=v1&keyfrom=web&cstk=tnN-LCL1
+2025-03-02 17:18:08,103 [DEBUG] 【请求头】
+{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3', 'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8', 'Cookie': 'hb_MA-B0D8-94CBE089C042_source=www.baidu.com; Hm_lvt_7fe66a8317b6d6f28c82b62b9f890118=1740893320; Hm_lpvt_7fe66a8317b6d6f28c82b62b9f890118=1740893320; HMACCOUNT=29005595904466B9; __yadk_uid=ZlRyzrbKx1IF9Hz5MMWVhDPQwjReRvFl; OUTFOX_SEARCH_USER_ID_NCOO=105754892.64450204; OUTFOX_SEARCH_USER_ID=-1177979017@163.177.223.166; YNOTE_SESS=v2|Zy5mmIFIhqBhLzf6LTuRJLhLTu0fgBReFkLYMP46uRYMO4TKOMeBRTBk4eyRfYf0Pu6LqFPMTS0q4RLeS6Mwy0QLnLgZ6MlY0; YNOTE_LOGIN=3||1740893431920; YNOTE_CSTK=tnN-LCL1'}
+2025-03-02 17:18:08,106 [DEBUG] Starting new HTTPS connection (1): note.youdao.com:443
+2025-03-02 17:18:08,369 [DEBUG] https://note.youdao.com:443 "POST /yws/api/personal/sync?method=download&_system=windows&_systemVersion=&_screenWidth=1920&_screenHeight=1080&_appName=ynote&_appuser=766688366d459bceea5f67aaaf2c6124&_vendor=official-website&_launch=113&_firstTime=2025/03/02%2013:28:43&_deviceId=11efb95b965437d2&_platform=web&_cityCode=430000&_cityName=&_product=YNote-Web&_version=&sev=j1&sec=v1&keyfrom=web&cstk=tnN-LCL1 HTTP/1.1" 400 18
+2025-03-02 17:18:08,370 [DEBUG] 【响应状态】400
+2025-03-02 17:18:08,370 [DEBUG] 【最终URL】https://note.youdao.com/yws/api/personal/sync?method=download&_system=windows&_systemVersion=&_screenWidth=1920&_screenHeight=1080&_appName=ynote&_appuser=766688366d459bceea5f67aaaf2c6124&_vendor=official-website&_launch=113&_firstTime=2025/03/02%2013:28:43&_deviceId=11efb95b965437d2&_platform=web&_cityCode=430000&_cityName=&_product=YNote-Web&_version=&sev=j1&sec=v1&keyfrom=web&cstk=tnN-LCL1
+2025-03-02 17:18:08,371 [DEBUG] 【响应头】
+{'Server': 'Tengine', 'Content-Type': 'text/plain;charset=UTF-8', 'Content-Length': '18', 'Connection': 'keep-alive', 'Date': 'Sun, 02 Mar 2025 09:18:49 GMT', 'pragma': 'no-cache', 'cache-control': 'no-cache, must-revalidate', 'expires': 'Thu, 01 Jan 1970 00:00:00 GMT', 'x-envoy-upstream-service-time': '3', 'lingxi-traceid': 'e38afd0a5c57c33f928dd8a16489dfdf^750873600000^0', 'Via': 'cache27.l2nu20-1[106,106,400-1280,M], cache27.l2nu20-1[107,0], cache11.cn160[141,140,400-1280,M], cache11.cn160[142,0]', 'Ali-Swift-Global-Savetime': '1740907129', 'X-Cache': 'MISS TCP_MISS dirn:-2:-2', 'X-Swift-Error': 'orig response 4XX error', 'X-Swift-SaveTime': 'Sun, 02 Mar 2025 09:18:49 GMT', 'X-Swift-CacheTime': '0', 'cdn-user-ip': '220.152.187.149', 'cdn-source': 'ali', 'cdn-ip': '124.14.14.71', 'Timing-Allow-Origin': '*', 'EagleId': '7c0e0e9f17409071296555824e'}
+2025-03-02 17:18:08,371 [DEBUG] 【响应体大小】18 字符
+2025-03-02 17:18:08,372 [INFO] 已保存完整响应到 full_response.html
+2025-03-02 17:18:08,372 [ERROR] !!! 网络请求异常 !!!
+2025-03-02 17:18:08,373 [ERROR] 异常类型: HTTPError
+2025-03-02 17:18:08,373 [ERROR] 请求URL: https://note.youdao.com/yws/api/personal/sync?method=download&_system=windows&_systemVersion=&_screenWidth=1920&_screenHeight=1080&_appName=ynote&_appuser=766688366d459bceea5f67aaaf2c6124&_vendor=official-website&_launch=113&_firstTime=2025/03/02%2013:28:43&_deviceId=11efb95b965437d2&_platform=web&_cityCode=430000&_cityName=&_product=YNote-Web&_version=&sev=j1&sec=v1&keyfrom=web&cstk=tnN-LCL1
+2025-03-02 17:18:08,373 [ERROR] 响应状态码: 400
+2025-03-02 17:18:08,373 [ERROR] 错误响应头:
+{'Server': 'Tengine', 'Content-Type': 'text/plain;charset=UTF-8', 'Content-Length': '18', 'Connection': 'keep-alive', 'Date': 'Sun, 02 Mar 2025 09:18:49 GMT', 'pragma': 'no-cache', 'cache-control': 'no-cache, must-revalidate', 'expires': 'Thu, 01 Jan 1970 00:00:00 GMT', 'x-envoy-upstream-service-time': '3', 'lingxi-traceid': 'e38afd0a5c57c33f928dd8a16489dfdf^750873600000^0', 'Via': 'cache27.l2nu20-1[106,106,400-1280,M], cache27.l2nu20-1[107,0], cache11.cn160[141,140,400-1280,M], cache11.cn160[142,0]', 'Ali-Swift-Global-Savetime': '1740907129', 'X-Cache': 'MISS TCP_MISS dirn:-2:-2', 'X-Swift-Error': 'orig response 4XX error', 'X-Swift-SaveTime': 'Sun, 02 Mar 2025 09:18:49 GMT', 'X-Swift-CacheTime': '0', 'cdn-user-ip': '220.152.187.149', 'cdn-source': 'ali', 'cdn-ip': '124.14.14.71', 'Timing-Allow-Origin': '*', 'EagleId': '7c0e0e9f17409071296555824e'}
+2025-03-02 17:18:08,374 [ERROR] 错误响应体前500字符:
+request not valid
+
+2025-03-02 17:18:08,375 [ERROR] !!! 主流程失败 !!!
+2025-03-02 17:18:08,375 [ERROR] 可能原因：
+2025-03-02 17:18:08,375 [ERROR] 1. 网络请求失败 2. 页面解析失败 3. 权限不足
+2025-03-02 17:18:08,375 [ERROR] 请检查 spider_debug.log 和 full_response.html
+2025-03-02 17:22:19,099 [INFO] ==================================================
+2025-03-02 17:22:19,100 [INFO] 开始执行爬虫程序
+2025-03-02 17:22:19,100 [DEBUG] ==================================================
+2025-03-02 17:22:19,101 [DEBUG] 【请求开始】URL: https://note.youdao.com/yws/api/personal/sync?method=download&_system=windows&_systemVersion=&_screenWidth=1920&_screenHeight=1080&_appName=ynote&_appuser=766688366d459bceea5f67aaaf2c6124&_vendor=official-website&_launch=113&_firstTime=2025/03/02%2013:28:43&_deviceId=11efb95b965437d2&_platform=web&_cityCode=430000&_cityName=&_product=YNote-Web&_version=&sev=j1&sec=v1&keyfrom=web&cstk=tnN-LCL1
+2025-03-02 17:22:19,101 [DEBUG] 【请求头】
+{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3', 'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8', 'Accept': '*/*', 'Cookie': 'hb_MA-B0D8-94CBE089C042_source=www.baidu.com; Hm_lvt_7fe66a8317b6d6f28c82b62b9f890118=1740893320; Hm_lpvt_7fe66a8317b6d6f28c82b62b9f890118=1740893320; HMACCOUNT=29005595904466B9; __yadk_uid=ZlRyzrbKx1IF9Hz5MMWVhDPQwjReRvFl; OUTFOX_SEARCH_USER_ID_NCOO=105754892.64450204; OUTFOX_SEARCH_USER_ID=-1177979017@163.177.223.166; YNOTE_SESS=v2|Zy5mmIFIhqBhLzf6LTuRJLhLTu0fgBReFkLYMP46uRYMO4TKOMeBRTBk4eyRfYf0Pu6LqFPMTS0q4RLeS6Mwy0QLnLgZ6MlY0; YNOTE_LOGIN=3||1740893431920; YNOTE_CSTK=tnN-LCL1'}
+2025-03-02 17:22:19,105 [DEBUG] Starting new HTTPS connection (1): note.youdao.com:443
+2025-03-02 17:22:19,345 [DEBUG] https://note.youdao.com:443 "POST /yws/api/personal/sync?method=download&_system=windows&_systemVersion=&_screenWidth=1920&_screenHeight=1080&_appName=ynote&_appuser=766688366d459bceea5f67aaaf2c6124&_vendor=official-website&_launch=113&_firstTime=2025/03/02%2013:28:43&_deviceId=11efb95b965437d2&_platform=web&_cityCode=430000&_cityName=&_product=YNote-Web&_version=&sev=j1&sec=v1&keyfrom=web&cstk=tnN-LCL1 HTTP/1.1" 400 18
+2025-03-02 17:22:19,345 [DEBUG] 【响应状态】400
+2025-03-02 17:22:19,345 [DEBUG] 【最终URL】https://note.youdao.com/yws/api/personal/sync?method=download&_system=windows&_systemVersion=&_screenWidth=1920&_screenHeight=1080&_appName=ynote&_appuser=766688366d459bceea5f67aaaf2c6124&_vendor=official-website&_launch=113&_firstTime=2025/03/02%2013:28:43&_deviceId=11efb95b965437d2&_platform=web&_cityCode=430000&_cityName=&_product=YNote-Web&_version=&sev=j1&sec=v1&keyfrom=web&cstk=tnN-LCL1
+2025-03-02 17:22:19,346 [DEBUG] 【响应头】
+{'Server': 'Tengine', 'Content-Type': 'text/plain;charset=UTF-8', 'Content-Length': '18', 'Connection': 'keep-alive', 'Date': 'Sun, 02 Mar 2025 09:23:00 GMT', 'pragma': 'no-cache', 'cache-control': 'no-cache, must-revalidate', 'expires': 'Thu, 01 Jan 1970 00:00:00 GMT', 'x-envoy-upstream-service-time': '1', 'lingxi-traceid': '45842ae2b6c439ccf487395d01190146^750873600000^0', 'Via': 'cache34.l2nu20-1[52,52,400-1280,M], cache34.l2nu20-1[53,0], cache8.cn160[131,130,400-1280,M], cache8.cn160[133,0]', 'Ali-Swift-Global-Savetime': '1740907380', 'X-Cache': 'MISS TCP_MISS dirn:-2:-2', 'X-Swift-Error': 'orig response 4XX error', 'X-Swift-SaveTime': 'Sun, 02 Mar 2025 09:23:00 GMT', 'X-Swift-CacheTime': '0', 'cdn-user-ip': '220.152.187.149', 'cdn-source': 'ali', 'cdn-ip': '124.14.14.65', 'Timing-Allow-Origin': '*', 'EagleId': '7c0e0e9c17409073806474243e'}
+2025-03-02 17:22:19,347 [DEBUG] 【响应体大小】18 字符
+2025-03-02 17:22:19,347 [INFO] 已保存完整响应到 full_response.html
+2025-03-02 17:22:19,348 [ERROR] !!! 网络请求异常 !!!
+2025-03-02 17:22:19,348 [ERROR] 异常类型: HTTPError
+2025-03-02 17:22:19,348 [ERROR] 请求URL: https://note.youdao.com/yws/api/personal/sync?method=download&_system=windows&_systemVersion=&_screenWidth=1920&_screenHeight=1080&_appName=ynote&_appuser=766688366d459bceea5f67aaaf2c6124&_vendor=official-website&_launch=113&_firstTime=2025/03/02%2013:28:43&_deviceId=11efb95b965437d2&_platform=web&_cityCode=430000&_cityName=&_product=YNote-Web&_version=&sev=j1&sec=v1&keyfrom=web&cstk=tnN-LCL1
+2025-03-02 17:22:19,349 [ERROR] 响应状态码: 400
+2025-03-02 17:22:19,349 [ERROR] 错误响应头:
+{'Server': 'Tengine', 'Content-Type': 'text/plain;charset=UTF-8', 'Content-Length': '18', 'Connection': 'keep-alive', 'Date': 'Sun, 02 Mar 2025 09:23:00 GMT', 'pragma': 'no-cache', 'cache-control': 'no-cache, must-revalidate', 'expires': 'Thu, 01 Jan 1970 00:00:00 GMT', 'x-envoy-upstream-service-time': '1', 'lingxi-traceid': '45842ae2b6c439ccf487395d01190146^750873600000^0', 'Via': 'cache34.l2nu20-1[52,52,400-1280,M], cache34.l2nu20-1[53,0], cache8.cn160[131,130,400-1280,M], cache8.cn160[133,0]', 'Ali-Swift-Global-Savetime': '1740907380', 'X-Cache': 'MISS TCP_MISS dirn:-2:-2', 'X-Swift-Error': 'orig response 4XX error', 'X-Swift-SaveTime': 'Sun, 02 Mar 2025 09:23:00 GMT', 'X-Swift-CacheTime': '0', 'cdn-user-ip': '220.152.187.149', 'cdn-source': 'ali', 'cdn-ip': '124.14.14.65', 'Timing-Allow-Origin': '*', 'EagleId': '7c0e0e9c17409073806474243e'}
+2025-03-02 17:22:19,350 [ERROR] 错误响应体前500字符:
+request not valid
+
+2025-03-02 17:22:19,351 [ERROR] !!! 主流程失败 !!!
+2025-03-02 17:22:19,351 [ERROR] 可能原因：
+2025-03-02 17:22:19,351 [ERROR] 1. 网络请求失败 2. 页面解析失败 3. 权限不足
+2025-03-02 17:22:19,352 [ERROR] 请检查 spider_debug.log 和 full_response.html
+2025-03-02 17:22:44,833 [INFO] ==================================================
+2025-03-02 17:22:44,833 [INFO] 开始执行爬虫程序
+2025-03-02 17:22:44,834 [DEBUG] ==================================================
+2025-03-02 17:22:44,834 [DEBUG] 【请求开始】URL: https://note.youdao.com/yws/api/personal/sync?method=download&_system=windows&_systemVersion=&_screenWidth=1920&_screenHeight=1080&_appName=ynote&_appuser=766688366d459bceea5f67aaaf2c6124&_vendor=official-website&_launch=113&_firstTime=2025/03/02%2013:28:43&_deviceId=11efb95b965437d2&_platform=web&_cityCode=430000&_cityName=&_product=YNote-Web&_version=&sev=j1&sec=v1&keyfrom=web&cstk=tnN-LCL1
+2025-03-02 17:22:44,835 [DEBUG] 【请求头】
+{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3', 'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8', 'Accept': '*/*', 'Accept-Encoding': 'gzip,deflate,br', 'Cookie': 'hb_MA-B0D8-94CBE089C042_source=www.baidu.com; Hm_lvt_7fe66a8317b6d6f28c82b62b9f890118=1740893320; Hm_lpvt_7fe66a8317b6d6f28c82b62b9f890118=1740893320; HMACCOUNT=29005595904466B9; __yadk_uid=ZlRyzrbKx1IF9Hz5MMWVhDPQwjReRvFl; OUTFOX_SEARCH_USER_ID_NCOO=105754892.64450204; OUTFOX_SEARCH_USER_ID=-1177979017@163.177.223.166; YNOTE_SESS=v2|Zy5mmIFIhqBhLzf6LTuRJLhLTu0fgBReFkLYMP46uRYMO4TKOMeBRTBk4eyRfYf0Pu6LqFPMTS0q4RLeS6Mwy0QLnLgZ6MlY0; YNOTE_LOGIN=3||1740893431920; YNOTE_CSTK=tnN-LCL1'}
+2025-03-02 17:22:44,838 [DEBUG] Starting new HTTPS connection (1): note.youdao.com:443
+2025-03-02 17:22:45,050 [DEBUG] https://note.youdao.com:443 "POST /yws/api/personal/sync?method=download&_system=windows&_systemVersion=&_screenWidth=1920&_screenHeight=1080&_appName=ynote&_appuser=766688366d459bceea5f67aaaf2c6124&_vendor=official-website&_launch=113&_firstTime=2025/03/02%2013:28:43&_deviceId=11efb95b965437d2&_platform=web&_cityCode=430000&_cityName=&_product=YNote-Web&_version=&sev=j1&sec=v1&keyfrom=web&cstk=tnN-LCL1 HTTP/1.1" 400 18
+2025-03-02 17:22:45,051 [DEBUG] 【响应状态】400
+2025-03-02 17:22:45,051 [DEBUG] 【最终URL】https://note.youdao.com/yws/api/personal/sync?method=download&_system=windows&_systemVersion=&_screenWidth=1920&_screenHeight=1080&_appName=ynote&_appuser=766688366d459bceea5f67aaaf2c6124&_vendor=official-website&_launch=113&_firstTime=2025/03/02%2013:28:43&_deviceId=11efb95b965437d2&_platform=web&_cityCode=430000&_cityName=&_product=YNote-Web&_version=&sev=j1&sec=v1&keyfrom=web&cstk=tnN-LCL1
+2025-03-02 17:22:45,052 [DEBUG] 【响应头】
+{'Server': 'Tengine', 'Content-Type': 'text/plain;charset=UTF-8', 'Content-Length': '18', 'Connection': 'keep-alive', 'Date': 'Sun, 02 Mar 2025 09:23:26 GMT', 'pragma': 'no-cache', 'cache-control': 'no-cache, must-revalidate', 'expires': 'Thu, 01 Jan 1970 00:00:00 GMT', 'x-envoy-upstream-service-time': '1', 'lingxi-traceid': '537cfeebc48a1950c577ebf4cb7cbe7a^750873600000^0', 'Via': 'cache2.l2nu20-1[53,52,400-1280,M], cache2.l2nu20-1[54,0], cache2.cn160[90,89,400-1280,M], cache2.cn160[91,0]', 'Ali-Swift-Global-Savetime': '1740907406', 'X-Cache': 'MISS TCP_MISS dirn:-2:-2', 'X-Swift-Error': 'orig response 4XX error', 'X-Swift-SaveTime': 'Sun, 02 Mar 2025 09:23:26 GMT', 'X-Swift-CacheTime': '0', 'cdn-user-ip': '220.152.187.149', 'cdn-source': 'ali', 'cdn-ip': '124.14.14.66', 'Timing-Allow-Origin': '*', 'EagleId': '7c0e0e9617409074063891705e'}
+2025-03-02 17:22:45,053 [DEBUG] 【响应体大小】18 字符
+2025-03-02 17:22:45,054 [INFO] 已保存完整响应到 full_response.html
+2025-03-02 17:22:45,054 [ERROR] !!! 网络请求异常 !!!
+2025-03-02 17:22:45,054 [ERROR] 异常类型: HTTPError
+2025-03-02 17:22:45,055 [ERROR] 请求URL: https://note.youdao.com/yws/api/personal/sync?method=download&_system=windows&_systemVersion=&_screenWidth=1920&_screenHeight=1080&_appName=ynote&_appuser=766688366d459bceea5f67aaaf2c6124&_vendor=official-website&_launch=113&_firstTime=2025/03/02%2013:28:43&_deviceId=11efb95b965437d2&_platform=web&_cityCode=430000&_cityName=&_product=YNote-Web&_version=&sev=j1&sec=v1&keyfrom=web&cstk=tnN-LCL1
+2025-03-02 17:22:45,055 [ERROR] 响应状态码: 400
+2025-03-02 17:22:45,055 [ERROR] 错误响应头:
+{'Server': 'Tengine', 'Content-Type': 'text/plain;charset=UTF-8', 'Content-Length': '18', 'Connection': 'keep-alive', 'Date': 'Sun, 02 Mar 2025 09:23:26 GMT', 'pragma': 'no-cache', 'cache-control': 'no-cache, must-revalidate', 'expires': 'Thu, 01 Jan 1970 00:00:00 GMT', 'x-envoy-upstream-service-time': '1', 'lingxi-traceid': '537cfeebc48a1950c577ebf4cb7cbe7a^750873600000^0', 'Via': 'cache2.l2nu20-1[53,52,400-1280,M], cache2.l2nu20-1[54,0], cache2.cn160[90,89,400-1280,M], cache2.cn160[91,0]', 'Ali-Swift-Global-Savetime': '1740907406', 'X-Cache': 'MISS TCP_MISS dirn:-2:-2', 'X-Swift-Error': 'orig response 4XX error', 'X-Swift-SaveTime': 'Sun, 02 Mar 2025 09:23:26 GMT', 'X-Swift-CacheTime': '0', 'cdn-user-ip': '220.152.187.149', 'cdn-source': 'ali', 'cdn-ip': '124.14.14.66', 'Timing-Allow-Origin': '*', 'EagleId': '7c0e0e9617409074063891705e'}
+2025-03-02 17:22:45,056 [ERROR] 错误响应体前500字符:
+request not valid
+
+2025-03-02 17:22:45,057 [ERROR] !!! 主流程失败 !!!
+2025-03-02 17:22:45,057 [ERROR] 可能原因：
+2025-03-02 17:22:45,057 [ERROR] 1. 网络请求失败 2. 页面解析失败 3. 权限不足
+2025-03-02 17:22:45,058 [ERROR] 请检查 spider_debug.log 和 full_response.html
+2025-03-02 17:23:05,255 [INFO] ==================================================
+2025-03-02 17:23:05,256 [INFO] 开始执行爬虫程序
+2025-03-02 17:23:05,256 [DEBUG] ==================================================
+2025-03-02 17:23:05,257 [DEBUG] 【请求开始】URL: https://note.youdao.com/yws/api/personal/sync?method=download&_system=windows&_systemVersion=&_screenWidth=1920&_screenHeight=1080&_appName=ynote&_appuser=766688366d459bceea5f67aaaf2c6124&_vendor=official-website&_launch=113&_firstTime=2025/03/02%2013:28:43&_deviceId=11efb95b965437d2&_platform=web&_cityCode=430000&_cityName=&_product=YNote-Web&_version=&sev=j1&sec=v1&keyfrom=web&cstk=tnN-LCL1
+2025-03-02 17:23:05,257 [DEBUG] 【请求头】
+{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3', 'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8', 'Accept': '*/*', 'Accept-Encoding': 'gzip,deflate,br', 'Connection': 'keep-alive', 'Cookie': 'hb_MA-B0D8-94CBE089C042_source=www.baidu.com; Hm_lvt_7fe66a8317b6d6f28c82b62b9f890118=1740893320; Hm_lpvt_7fe66a8317b6d6f28c82b62b9f890118=1740893320; HMACCOUNT=29005595904466B9; __yadk_uid=ZlRyzrbKx1IF9Hz5MMWVhDPQwjReRvFl; OUTFOX_SEARCH_USER_ID_NCOO=105754892.64450204; OUTFOX_SEARCH_USER_ID=-1177979017@163.177.223.166; YNOTE_SESS=v2|Zy5mmIFIhqBhLzf6LTuRJLhLTu0fgBReFkLYMP46uRYMO4TKOMeBRTBk4eyRfYf0Pu6LqFPMTS0q4RLeS6Mwy0QLnLgZ6MlY0; YNOTE_LOGIN=3||1740893431920; YNOTE_CSTK=tnN-LCL1'}
+2025-03-02 17:23:05,261 [DEBUG] Starting new HTTPS connection (1): note.youdao.com:443
+2025-03-02 17:23:05,447 [DEBUG] https://note.youdao.com:443 "POST /yws/api/personal/sync?method=download&_system=windows&_systemVersion=&_screenWidth=1920&_screenHeight=1080&_appName=ynote&_appuser=766688366d459bceea5f67aaaf2c6124&_vendor=official-website&_launch=113&_firstTime=2025/03/02%2013:28:43&_deviceId=11efb95b965437d2&_platform=web&_cityCode=430000&_cityName=&_product=YNote-Web&_version=&sev=j1&sec=v1&keyfrom=web&cstk=tnN-LCL1 HTTP/1.1" 400 18
+2025-03-02 17:23:05,449 [DEBUG] 【响应状态】400
+2025-03-02 17:23:05,449 [DEBUG] 【最终URL】https://note.youdao.com/yws/api/personal/sync?method=download&_system=windows&_systemVersion=&_screenWidth=1920&_screenHeight=1080&_appName=ynote&_appuser=766688366d459bceea5f67aaaf2c6124&_vendor=official-website&_launch=113&_firstTime=2025/03/02%2013:28:43&_deviceId=11efb95b965437d2&_platform=web&_cityCode=430000&_cityName=&_product=YNote-Web&_version=&sev=j1&sec=v1&keyfrom=web&cstk=tnN-LCL1
+2025-03-02 17:23:05,450 [DEBUG] 【响应头】
+{'Server': 'Tengine', 'Content-Type': 'text/plain;charset=UTF-8', 'Content-Length': '18', 'Connection': 'keep-alive', 'Date': 'Sun, 02 Mar 2025 09:23:46 GMT', 'pragma': 'no-cache', 'cache-control': 'no-cache, must-revalidate', 'expires': 'Thu, 01 Jan 1970 00:00:00 GMT', 'x-envoy-upstream-service-time': '1', 'lingxi-traceid': 'a92e42f42dcbcece5aa80ad1ea074687^750873600000^0', 'Via': 'cache22.l2nu20-1[51,51,400-1280,M], cache22.l2nu20-1[52,0], cache2.cn160[84,84,400-1280,M], cache2.cn160[86,0]', 'Ali-Swift-Global-Savetime': '1740907426', 'X-Cache': 'MISS TCP_MISS dirn:-2:-2', 'X-Swift-Error': 'orig response 4XX error', 'X-Swift-SaveTime': 'Sun, 02 Mar 2025 09:23:46 GMT', 'X-Swift-CacheTime': '0', 'cdn-user-ip': '220.152.187.149', 'cdn-source': 'ali', 'cdn-ip': '124.14.14.66', 'Timing-Allow-Origin': '*', 'EagleId': '7c0e0e9617409074267984219e'}
+2025-03-02 17:23:05,451 [DEBUG] 【响应体大小】18 字符
+2025-03-02 17:23:05,452 [INFO] 已保存完整响应到 full_response.html
+2025-03-02 17:23:05,452 [ERROR] !!! 网络请求异常 !!!
+2025-03-02 17:23:05,452 [ERROR] 异常类型: HTTPError
+2025-03-02 17:23:05,452 [ERROR] 请求URL: https://note.youdao.com/yws/api/personal/sync?method=download&_system=windows&_systemVersion=&_screenWidth=1920&_screenHeight=1080&_appName=ynote&_appuser=766688366d459bceea5f67aaaf2c6124&_vendor=official-website&_launch=113&_firstTime=2025/03/02%2013:28:43&_deviceId=11efb95b965437d2&_platform=web&_cityCode=430000&_cityName=&_product=YNote-Web&_version=&sev=j1&sec=v1&keyfrom=web&cstk=tnN-LCL1
+2025-03-02 17:23:05,453 [ERROR] 响应状态码: 400
+2025-03-02 17:23:05,453 [ERROR] 错误响应头:
+{'Server': 'Tengine', 'Content-Type': 'text/plain;charset=UTF-8', 'Content-Length': '18', 'Connection': 'keep-alive', 'Date': 'Sun, 02 Mar 2025 09:23:46 GMT', 'pragma': 'no-cache', 'cache-control': 'no-cache, must-revalidate', 'expires': 'Thu, 01 Jan 1970 00:00:00 GMT', 'x-envoy-upstream-service-time': '1', 'lingxi-traceid': 'a92e42f42dcbcece5aa80ad1ea074687^750873600000^0', 'Via': 'cache22.l2nu20-1[51,51,400-1280,M], cache22.l2nu20-1[52,0], cache2.cn160[84,84,400-1280,M], cache2.cn160[86,0]', 'Ali-Swift-Global-Savetime': '1740907426', 'X-Cache': 'MISS TCP_MISS dirn:-2:-2', 'X-Swift-Error': 'orig response 4XX error', 'X-Swift-SaveTime': 'Sun, 02 Mar 2025 09:23:46 GMT', 'X-Swift-CacheTime': '0', 'cdn-user-ip': '220.152.187.149', 'cdn-source': 'ali', 'cdn-ip': '124.14.14.66', 'Timing-Allow-Origin': '*', 'EagleId': '7c0e0e9617409074267984219e'}
+2025-03-02 17:23:05,454 [ERROR] 错误响应体前500字符:
+request not valid
+
+2025-03-02 17:23:05,455 [ERROR] !!! 主流程失败 !!!
+2025-03-02 17:23:05,455 [ERROR] 可能原因：
+2025-03-02 17:23:05,455 [ERROR] 1. 网络请求失败 2. 页面解析失败 3. 权限不足
+2025-03-02 17:23:05,455 [ERROR] 请检查 spider_debug.log 和 full_response.html
+2025-03-02 17:23:45,303 [INFO] ==================================================
+2025-03-02 17:23:45,304 [INFO] 开始执行爬虫程序
+2025-03-02 17:23:45,305 [DEBUG] ==================================================
+2025-03-02 17:23:45,305 [DEBUG] 【请求开始】URL: https://note.youdao.com/yws/api/personal/sync?method=download&_system=windows&_systemVersion=&_screenWidth=1920&_screenHeight=1080&_appName=ynote&_appuser=766688366d459bceea5f67aaaf2c6124&_vendor=official-website&_launch=113&_firstTime=2025/03/02%2013:28:43&_deviceId=11efb95b965437d2&_platform=web&_cityCode=430000&_cityName=&_product=YNote-Web&_version=&sev=j1&sec=v1&keyfrom=web&cstk=tnN-LCL1
+2025-03-02 17:23:45,306 [DEBUG] 【请求头】
+{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3', 'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8', 'Accept': '*/*', 'Accept-Encoding': 'gzip,deflate,br', 'Connection': 'keep-alive', 'Cache-Control': 'no-cache', 'Cookie': 'hb_MA-B0D8-94CBE089C042_source=www.baidu.com; Hm_lvt_7fe66a8317b6d6f28c82b62b9f890118=1740893320; Hm_lpvt_7fe66a8317b6d6f28c82b62b9f890118=1740893320; HMACCOUNT=29005595904466B9; __yadk_uid=ZlRyzrbKx1IF9Hz5MMWVhDPQwjReRvFl; OUTFOX_SEARCH_USER_ID_NCOO=105754892.64450204; OUTFOX_SEARCH_USER_ID=-1177979017@163.177.223.166; YNOTE_SESS=v2|Zy5mmIFIhqBhLzf6LTuRJLhLTu0fgBReFkLYMP46uRYMO4TKOMeBRTBk4eyRfYf0Pu6LqFPMTS0q4RLeS6Mwy0QLnLgZ6MlY0; YNOTE_LOGIN=3||1740893431920; YNOTE_CSTK=tnN-LCL1'}
+2025-03-02 17:23:45,309 [DEBUG] Starting new HTTPS connection (1): note.youdao.com:443
+2025-03-02 17:23:45,563 [DEBUG] https://note.youdao.com:443 "POST /yws/api/personal/sync?method=download&_system=windows&_systemVersion=&_screenWidth=1920&_screenHeight=1080&_appName=ynote&_appuser=766688366d459bceea5f67aaaf2c6124&_vendor=official-website&_launch=113&_firstTime=2025/03/02%2013:28:43&_deviceId=11efb95b965437d2&_platform=web&_cityCode=430000&_cityName=&_product=YNote-Web&_version=&sev=j1&sec=v1&keyfrom=web&cstk=tnN-LCL1 HTTP/1.1" 400 18
+2025-03-02 17:23:45,564 [DEBUG] 【响应状态】400
+2025-03-02 17:23:45,564 [DEBUG] 【最终URL】https://note.youdao.com/yws/api/personal/sync?method=download&_system=windows&_systemVersion=&_screenWidth=1920&_screenHeight=1080&_appName=ynote&_appuser=766688366d459bceea5f67aaaf2c6124&_vendor=official-website&_launch=113&_firstTime=2025/03/02%2013:28:43&_deviceId=11efb95b965437d2&_platform=web&_cityCode=430000&_cityName=&_product=YNote-Web&_version=&sev=j1&sec=v1&keyfrom=web&cstk=tnN-LCL1
+2025-03-02 17:23:45,565 [DEBUG] 【响应头】
+{'Server': 'Tengine', 'Content-Type': 'text/plain;charset=UTF-8', 'Content-Length': '18', 'Connection': 'keep-alive', 'Date': 'Sun, 02 Mar 2025 09:24:26 GMT', 'pragma': 'no-cache', 'cache-control': 'no-cache, must-revalidate', 'expires': 'Thu, 01 Jan 1970 00:00:00 GMT', 'x-envoy-upstream-service-time': '1', 'lingxi-traceid': '724267cfbf4c9f10af9949a8023e771d^750873600000^0', 'Via': 'cache25.l2nu20-1[104,104,400-1280,M], cache25.l2nu20-1[105,0], cache5.cn160[133,133,400-1280,M], cache5.cn160[135,0]', 'Ali-Swift-Global-Savetime': '1740907466', 'X-Cache': 'MISS TCP_MISS dirn:-2:-2', 'X-Swift-Error': 'orig response 4XX error', 'X-Swift-SaveTime': 'Sun, 02 Mar 2025 09:24:26 GMT', 'X-Swift-CacheTime': '0', 'cdn-user-ip': '220.152.187.149', 'cdn-source': 'ali', 'cdn-ip': '124.14.14.66', 'Timing-Allow-Origin': '*', 'EagleId': '7c0e0e9917409074668587317e'}
+2025-03-02 17:23:45,566 [DEBUG] 【响应体大小】18 字符
+2025-03-02 17:23:45,567 [INFO] 已保存完整响应到 full_response.html
+2025-03-02 17:23:45,567 [ERROR] !!! 网络请求异常 !!!
+2025-03-02 17:23:45,567 [ERROR] 异常类型: HTTPError
+2025-03-02 17:23:45,568 [ERROR] 请求URL: https://note.youdao.com/yws/api/personal/sync?method=download&_system=windows&_systemVersion=&_screenWidth=1920&_screenHeight=1080&_appName=ynote&_appuser=766688366d459bceea5f67aaaf2c6124&_vendor=official-website&_launch=113&_firstTime=2025/03/02%2013:28:43&_deviceId=11efb95b965437d2&_platform=web&_cityCode=430000&_cityName=&_product=YNote-Web&_version=&sev=j1&sec=v1&keyfrom=web&cstk=tnN-LCL1
+2025-03-02 17:23:45,568 [ERROR] 响应状态码: 400
+2025-03-02 17:23:45,568 [ERROR] 错误响应头:
+{'Server': 'Tengine', 'Content-Type': 'text/plain;charset=UTF-8', 'Content-Length': '18', 'Connection': 'keep-alive', 'Date': 'Sun, 02 Mar 2025 09:24:26 GMT', 'pragma': 'no-cache', 'cache-control': 'no-cache, must-revalidate', 'expires': 'Thu, 01 Jan 1970 00:00:00 GMT', 'x-envoy-upstream-service-time': '1', 'lingxi-traceid': '724267cfbf4c9f10af9949a8023e771d^750873600000^0', 'Via': 'cache25.l2nu20-1[104,104,400-1280,M], cache25.l2nu20-1[105,0], cache5.cn160[133,133,400-1280,M], cache5.cn160[135,0]', 'Ali-Swift-Global-Savetime': '1740907466', 'X-Cache': 'MISS TCP_MISS dirn:-2:-2', 'X-Swift-Error': 'orig response 4XX error', 'X-Swift-SaveTime': 'Sun, 02 Mar 2025 09:24:26 GMT', 'X-Swift-CacheTime': '0', 'cdn-user-ip': '220.152.187.149', 'cdn-source': 'ali', 'cdn-ip': '124.14.14.66', 'Timing-Allow-Origin': '*', 'EagleId': '7c0e0e9917409074668587317e'}
+2025-03-02 17:23:45,569 [ERROR] 错误响应体前500字符:
+request not valid
+
+2025-03-02 17:23:45,570 [ERROR] !!! 主流程失败 !!!
+2025-03-02 17:23:45,570 [ERROR] 可能原因：
+2025-03-02 17:23:45,570 [ERROR] 1. 网络请求失败 2. 页面解析失败 3. 权限不足
+2025-03-02 17:23:45,571 [ERROR] 请检查 spider_debug.log 和 full_response.html
+2025-03-02 17:27:22,239 [INFO] ==================================================
+2025-03-02 17:27:22,240 [INFO] 开始执行爬虫程序
+2025-03-02 17:27:22,241 [DEBUG] ==================================================
+2025-03-02 17:27:22,241 [DEBUG] 【请求开始】URL: https://note.youdao.com/yws/api/personal/sync?method=download&_system=windows&_systemVersion=&_screenWidth=1920&_screenHeight=1080&_appName=ynote&_appuser=766688366d459bceea5f67aaaf2c6124&_vendor=official-website&_launch=113&_firstTime=2025/03/02%2013:28:43&_deviceId=11efb95b965437d2&_platform=web&_cityCode=430000&_cityName=&_product=YNote-Web&_version=&sev=j1&sec=v1&keyfrom=web&cstk=tnN-LCL1
+2025-03-02 17:27:22,241 [DEBUG] 【请求头】
+{'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8', 'Accept': '*/*', 'Accept-Encoding': 'gzip,deflate,br', 'Connection': 'keep-alive', 'Cache-Control': 'no-cache', 'Cookie': 'hb_MA-B0D8-94CBE089C042_source=www.baidu.com; Hm_lvt_7fe66a8317b6d6f28c82b62b9f890118=1740893320; Hm_lpvt_7fe66a8317b6d6f28c82b62b9f890118=1740893320; HMACCOUNT=29005595904466B9; __yadk_uid=ZlRyzrbKx1IF9Hz5MMWVhDPQwjReRvFl; OUTFOX_SEARCH_USER_ID_NCOO=105754892.64450204; OUTFOX_SEARCH_USER_ID=-1177979017@163.177.223.166; YNOTE_SESS=v2|Zy5mmIFIhqBhLzf6LTuRJLhLTu0fgBReFkLYMP46uRYMO4TKOMeBRTBk4eyRfYf0Pu6LqFPMTS0q4RLeS6Mwy0QLnLgZ6MlY0; YNOTE_LOGIN=3||1740893431920; YNOTE_CSTK=tnN-LCL1'}
+2025-03-02 17:27:22,244 [DEBUG] Starting new HTTPS connection (1): note.youdao.com:443
+2025-03-02 17:27:22,444 [DEBUG] https://note.youdao.com:443 "POST /yws/api/personal/sync?method=download&_system=windows&_systemVersion=&_screenWidth=1920&_screenHeight=1080&_appName=ynote&_appuser=766688366d459bceea5f67aaaf2c6124&_vendor=official-website&_launch=113&_firstTime=2025/03/02%2013:28:43&_deviceId=11efb95b965437d2&_platform=web&_cityCode=430000&_cityName=&_product=YNote-Web&_version=&sev=j1&sec=v1&keyfrom=web&cstk=tnN-LCL1 HTTP/1.1" 400 18
+2025-03-02 17:27:22,445 [DEBUG] 【响应状态】400
+2025-03-02 17:27:22,445 [DEBUG] 【最终URL】https://note.youdao.com/yws/api/personal/sync?method=download&_system=windows&_systemVersion=&_screenWidth=1920&_screenHeight=1080&_appName=ynote&_appuser=766688366d459bceea5f67aaaf2c6124&_vendor=official-website&_launch=113&_firstTime=2025/03/02%2013:28:43&_deviceId=11efb95b965437d2&_platform=web&_cityCode=430000&_cityName=&_product=YNote-Web&_version=&sev=j1&sec=v1&keyfrom=web&cstk=tnN-LCL1
+2025-03-02 17:27:22,446 [DEBUG] 【响应头】
+{'Server': 'Tengine', 'Content-Type': 'text/plain;charset=UTF-8', 'Content-Length': '18', 'Connection': 'keep-alive', 'Date': 'Sun, 02 Mar 2025 09:28:03 GMT', 'pragma': 'no-cache', 'cache-control': 'no-cache, must-revalidate', 'expires': 'Thu, 01 Jan 1970 00:00:00 GMT', 'x-envoy-upstream-service-time': '1', 'lingxi-traceid': 'e7e2ba6128c56c3096a1d469534a79fa^750873600000^0', 'Via': 'cache14.l2nu20-1[50,50,400-1280,M], cache14.l2nu20-1[52,0], cache23.cn160[89,88,400-1280,M], cache23.cn160[92,0]', 'Ali-Swift-Global-Savetime': '1740907683', 'X-Cache': 'MISS TCP_MISS dirn:-2:-2', 'X-Swift-Error': 'orig response 4XX error', 'X-Swift-SaveTime': 'Sun, 02 Mar 2025 09:28:03 GMT', 'X-Swift-CacheTime': '0', 'cdn-user-ip': '220.152.187.149', 'cdn-source': 'ali', 'cdn-ip': '124.14.14.65', 'Timing-Allow-Origin': '*', 'EagleId': '7c0e0eab17409076837876616e'}
+2025-03-02 17:27:22,447 [DEBUG] 【响应体大小】18 字符
+2025-03-02 17:27:22,448 [INFO] 已保存完整响应到 full_response.html
+2025-03-02 17:27:22,448 [ERROR] !!! 网络请求异常 !!!
+2025-03-02 17:27:22,448 [ERROR] 异常类型: HTTPError
+2025-03-02 17:27:22,449 [ERROR] 请求URL: https://note.youdao.com/yws/api/personal/sync?method=download&_system=windows&_systemVersion=&_screenWidth=1920&_screenHeight=1080&_appName=ynote&_appuser=766688366d459bceea5f67aaaf2c6124&_vendor=official-website&_launch=113&_firstTime=2025/03/02%2013:28:43&_deviceId=11efb95b965437d2&_platform=web&_cityCode=430000&_cityName=&_product=YNote-Web&_version=&sev=j1&sec=v1&keyfrom=web&cstk=tnN-LCL1
+2025-03-02 17:27:22,449 [ERROR] 响应状态码: 400
+2025-03-02 17:27:22,449 [ERROR] 错误响应头:
+{'Server': 'Tengine', 'Content-Type': 'text/plain;charset=UTF-8', 'Content-Length': '18', 'Connection': 'keep-alive', 'Date': 'Sun, 02 Mar 2025 09:28:03 GMT', 'pragma': 'no-cache', 'cache-control': 'no-cache, must-revalidate', 'expires': 'Thu, 01 Jan 1970 00:00:00 GMT', 'x-envoy-upstream-service-time': '1', 'lingxi-traceid': 'e7e2ba6128c56c3096a1d469534a79fa^750873600000^0', 'Via': 'cache14.l2nu20-1[50,50,400-1280,M], cache14.l2nu20-1[52,0], cache23.cn160[89,88,400-1280,M], cache23.cn160[92,0]', 'Ali-Swift-Global-Savetime': '1740907683', 'X-Cache': 'MISS TCP_MISS dirn:-2:-2', 'X-Swift-Error': 'orig response 4XX error', 'X-Swift-SaveTime': 'Sun, 02 Mar 2025 09:28:03 GMT', 'X-Swift-CacheTime': '0', 'cdn-user-ip': '220.152.187.149', 'cdn-source': 'ali', 'cdn-ip': '124.14.14.65', 'Timing-Allow-Origin': '*', 'EagleId': '7c0e0eab17409076837876616e'}
+2025-03-02 17:27:22,450 [ERROR] 错误响应体前500字符:
+request not valid
+
+2025-03-02 17:27:22,451 [ERROR] !!! 主流程失败 !!!
+2025-03-02 17:27:22,451 [ERROR] 可能原因：
+2025-03-02 17:27:22,451 [ERROR] 1. 网络请求失败 2. 页面解析失败 3. 权限不足
+2025-03-02 17:27:22,451 [ERROR] 请检查 spider_debug.log 和 full_response.html
+2025-03-02 17:27:49,540 [INFO] ==================================================
+2025-03-02 17:27:49,541 [INFO] 开始执行爬虫程序
+2025-03-02 17:27:49,542 [DEBUG] ==================================================
+2025-03-02 17:27:49,542 [DEBUG] 【请求开始】URL: https://note.youdao.com/yws/api/personal/sync?method=download&_system=windows&_systemVersion=&_screenWidth=1920&_screenHeight=1080&_appName=ynote&_appuser=766688366d459bceea5f67aaaf2c6124&_vendor=official-website&_launch=113&_firstTime=2025/03/02%2013:28:43&_deviceId=11efb95b965437d2&_platform=web&_cityCode=430000&_cityName=&_product=YNote-Web&_version=&sev=j1&sec=v1&keyfrom=web&cstk=tnN-LCL1
+2025-03-02 17:27:49,543 [DEBUG] 【请求头】
+{'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8', 'Cookie': 'hb_MA-B0D8-94CBE089C042_source=www.baidu.com; Hm_lvt_7fe66a8317b6d6f28c82b62b9f890118=1740893320; Hm_lpvt_7fe66a8317b6d6f28c82b62b9f890118=1740893320; HMACCOUNT=29005595904466B9; __yadk_uid=ZlRyzrbKx1IF9Hz5MMWVhDPQwjReRvFl; OUTFOX_SEARCH_USER_ID_NCOO=105754892.64450204; OUTFOX_SEARCH_USER_ID=-1177979017@163.177.223.166; YNOTE_SESS=v2|Zy5mmIFIhqBhLzf6LTuRJLhLTu0fgBReFkLYMP46uRYMO4TKOMeBRTBk4eyRfYf0Pu6LqFPMTS0q4RLeS6Mwy0QLnLgZ6MlY0; YNOTE_LOGIN=3||1740893431920; YNOTE_CSTK=tnN-LCL1'}
+2025-03-02 17:27:49,546 [DEBUG] Starting new HTTPS connection (1): note.youdao.com:443
+2025-03-02 17:27:49,756 [DEBUG] https://note.youdao.com:443 "POST /yws/api/personal/sync?method=download&_system=windows&_systemVersion=&_screenWidth=1920&_screenHeight=1080&_appName=ynote&_appuser=766688366d459bceea5f67aaaf2c6124&_vendor=official-website&_launch=113&_firstTime=2025/03/02%2013:28:43&_deviceId=11efb95b965437d2&_platform=web&_cityCode=430000&_cityName=&_product=YNote-Web&_version=&sev=j1&sec=v1&keyfrom=web&cstk=tnN-LCL1 HTTP/1.1" 400 18
+2025-03-02 17:27:49,757 [DEBUG] 【响应状态】400
+2025-03-02 17:27:49,757 [DEBUG] 【最终URL】https://note.youdao.com/yws/api/personal/sync?method=download&_system=windows&_systemVersion=&_screenWidth=1920&_screenHeight=1080&_appName=ynote&_appuser=766688366d459bceea5f67aaaf2c6124&_vendor=official-website&_launch=113&_firstTime=2025/03/02%2013:28:43&_deviceId=11efb95b965437d2&_platform=web&_cityCode=430000&_cityName=&_product=YNote-Web&_version=&sev=j1&sec=v1&keyfrom=web&cstk=tnN-LCL1
+2025-03-02 17:27:49,758 [DEBUG] 【响应头】
+{'Server': 'Tengine', 'Content-Type': 'text/plain;charset=UTF-8', 'Content-Length': '18', 'Connection': 'keep-alive', 'Date': 'Sun, 02 Mar 2025 09:28:31 GMT', 'pragma': 'no-cache', 'cache-control': 'no-cache, must-revalidate', 'expires': 'Thu, 01 Jan 1970 00:00:00 GMT', 'x-envoy-upstream-service-time': '1', 'lingxi-traceid': 'a3315452cfca28bcdeda765d4a202785^750873600000^0', 'Via': 'cache44.l2nu20-1[51,51,400-1280,M], cache44.l2nu20-1[52,0], cache2.cn160[84,84,400-1280,M], cache2.cn160[87,0]', 'Ali-Swift-Global-Savetime': '1740907711', 'X-Cache': 'MISS TCP_MISS dirn:-2:-2', 'X-Swift-Error': 'orig response 4XX error', 'X-Swift-SaveTime': 'Sun, 02 Mar 2025 09:28:31 GMT', 'X-Swift-CacheTime': '0', 'cdn-user-ip': '220.152.187.149', 'cdn-source': 'ali', 'cdn-ip': '124.14.14.70', 'Timing-Allow-Origin': '*', 'EagleId': '7c0e0e9617409077110985766e'}
+2025-03-02 17:27:49,759 [DEBUG] 【响应体大小】18 字符
+2025-03-02 17:27:49,759 [INFO] 已保存完整响应到 full_response.html
+2025-03-02 17:27:49,760 [ERROR] !!! 网络请求异常 !!!
+2025-03-02 17:27:49,760 [ERROR] 异常类型: HTTPError
+2025-03-02 17:27:49,760 [ERROR] 请求URL: https://note.youdao.com/yws/api/personal/sync?method=download&_system=windows&_systemVersion=&_screenWidth=1920&_screenHeight=1080&_appName=ynote&_appuser=766688366d459bceea5f67aaaf2c6124&_vendor=official-website&_launch=113&_firstTime=2025/03/02%2013:28:43&_deviceId=11efb95b965437d2&_platform=web&_cityCode=430000&_cityName=&_product=YNote-Web&_version=&sev=j1&sec=v1&keyfrom=web&cstk=tnN-LCL1
+2025-03-02 17:27:49,761 [ERROR] 响应状态码: 400
+2025-03-02 17:27:49,761 [ERROR] 错误响应头:
+{'Server': 'Tengine', 'Content-Type': 'text/plain;charset=UTF-8', 'Content-Length': '18', 'Connection': 'keep-alive', 'Date': 'Sun, 02 Mar 2025 09:28:31 GMT', 'pragma': 'no-cache', 'cache-control': 'no-cache, must-revalidate', 'expires': 'Thu, 01 Jan 1970 00:00:00 GMT', 'x-envoy-upstream-service-time': '1', 'lingxi-traceid': 'a3315452cfca28bcdeda765d4a202785^750873600000^0', 'Via': 'cache44.l2nu20-1[51,51,400-1280,M], cache44.l2nu20-1[52,0], cache2.cn160[84,84,400-1280,M], cache2.cn160[87,0]', 'Ali-Swift-Global-Savetime': '1740907711', 'X-Cache': 'MISS TCP_MISS dirn:-2:-2', 'X-Swift-Error': 'orig response 4XX error', 'X-Swift-SaveTime': 'Sun, 02 Mar 2025 09:28:31 GMT', 'X-Swift-CacheTime': '0', 'cdn-user-ip': '220.152.187.149', 'cdn-source': 'ali', 'cdn-ip': '124.14.14.70', 'Timing-Allow-Origin': '*', 'EagleId': '7c0e0e9617409077110985766e'}
+2025-03-02 17:27:49,761 [ERROR] 错误响应体前500字符:
+request not valid
+
+2025-03-02 17:27:49,762 [ERROR] !!! 主流程失败 !!!
+2025-03-02 17:27:49,763 [ERROR] 可能原因：
+2025-03-02 17:27:49,763 [ERROR] 1. 网络请求失败 2. 页面解析失败 3. 权限不足
+2025-03-02 17:27:49,763 [ERROR] 请检查 spider_debug.log 和 full_response.html
+2025-03-02 17:28:16,731 [INFO] ==================================================
+2025-03-02 17:28:16,732 [INFO] 开始执行爬虫程序
+2025-03-02 17:28:16,732 [DEBUG] ==================================================
+2025-03-02 17:28:16,733 [DEBUG] 【请求开始】URL: https://note.youdao.com/yws/api/personal/sync?method=download&_system=windows&_systemVersion=&_screenWidth=1920&_screenHeight=1080&_appName=ynote&_appuser=766688366d459bceea5f67aaaf2c6124&_vendor=official-website&_launch=113&_firstTime=2025/03/02%2013:28:43&_deviceId=11efb95b965437d2&_platform=web&_cityCode=430000&_cityName=&_product=YNote-Web&_version=&sev=j1&sec=v1&keyfrom=web&cstk=tnN-LCL1
+2025-03-02 17:28:16,733 [DEBUG] 【请求头】
+{'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8', 'Cookie': 'hb_MA-B0D8-94CBE089C042_source=www.baidu.com; Hm_lvt_7fe66a8317b6d6f28c82b62b9f890118=1740893320; Hm_lpvt_7fe66a8317b6d6f28c82b62b9f890118=1740893320; HMACCOUNT=29005595904466B9; __yadk_uid=ZlRyzrbKx1IF9Hz5MMWVhDPQwjReRvFl; OUTFOX_SEARCH_USER_ID_NCOO=105754892.64450204; OUTFOX_SEARCH_USER_ID=-1177979017@163.177.223.166; YNOTE_SESS=v2|Zy5mmIFIhqBhLzf6LTuRJLhLTu0fgBReFkLYMP46uRYMO4TKOMeBRTBk4eyRfYf0Pu6LqFPMTS0q4RLeS6Mwy0QLnLgZ6MlY0; YNOTE_LOGIN=3||1740893431920; YNOTE_CSTK=tnN-LCL1'}
+2025-03-02 17:28:16,736 [DEBUG] Starting new HTTPS connection (1): note.youdao.com:443
+2025-03-02 17:28:16,973 [DEBUG] https://note.youdao.com:443 "POST /yws/api/personal/sync?method=download&_system=windows&_systemVersion=&_screenWidth=1920&_screenHeight=1080&_appName=ynote&_appuser=766688366d459bceea5f67aaaf2c6124&_vendor=official-website&_launch=113&_firstTime=2025/03/02%2013:28:43&_deviceId=11efb95b965437d2&_platform=web&_cityCode=430000&_cityName=&_product=YNote-Web&_version=&sev=j1&sec=v1&keyfrom=web&cstk=tnN-LCL1 HTTP/1.1" 400 18
+2025-03-02 17:28:16,974 [DEBUG] 【响应状态】400
+2025-03-02 17:28:16,974 [DEBUG] 【最终URL】https://note.youdao.com/yws/api/personal/sync?method=download&_system=windows&_systemVersion=&_screenWidth=1920&_screenHeight=1080&_appName=ynote&_appuser=766688366d459bceea5f67aaaf2c6124&_vendor=official-website&_launch=113&_firstTime=2025/03/02%2013:28:43&_deviceId=11efb95b965437d2&_platform=web&_cityCode=430000&_cityName=&_product=YNote-Web&_version=&sev=j1&sec=v1&keyfrom=web&cstk=tnN-LCL1
+2025-03-02 17:28:16,974 [DEBUG] 【响应头】
+{'Server': 'Tengine', 'Content-Type': 'text/plain;charset=UTF-8', 'Content-Length': '18', 'Connection': 'keep-alive', 'Date': 'Sun, 02 Mar 2025 09:28:58 GMT', 'pragma': 'no-cache', 'cache-control': 'no-cache, must-revalidate', 'expires': 'Thu, 01 Jan 1970 00:00:00 GMT', 'x-envoy-upstream-service-time': '1', 'lingxi-traceid': 'a7df5e2d7e0b37526f1df645bf36ab6c^750873600000^0', 'Via': 'cache21.l2nu20-1[102,102,400-1280,M], cache21.l2nu20-1[103,0], cache15.cn160[137,137,400-1280,M], cache15.cn160[139,0]', 'Ali-Swift-Global-Savetime': '1740907738', 'X-Cache': 'MISS TCP_MISS dirn:-2:-2', 'X-Swift-Error': 'orig response 4XX error', 'X-Swift-SaveTime': 'Sun, 02 Mar 2025 09:28:58 GMT', 'X-Swift-CacheTime': '0', 'cdn-user-ip': '220.152.187.149', 'cdn-source': 'ali', 'cdn-ip': '124.14.14.70', 'Timing-Allow-Origin': '*', 'EagleId': '7c0e0ea317409077382695076e'}
+2025-03-02 17:28:16,975 [DEBUG] 【响应体大小】18 字符
+2025-03-02 17:28:16,976 [INFO] 已保存完整响应到 full_response.html
+2025-03-02 17:28:16,976 [ERROR] !!! 网络请求异常 !!!
+2025-03-02 17:28:16,976 [ERROR] 异常类型: HTTPError
+2025-03-02 17:28:16,976 [ERROR] 请求URL: https://note.youdao.com/yws/api/personal/sync?method=download&_system=windows&_systemVersion=&_screenWidth=1920&_screenHeight=1080&_appName=ynote&_appuser=766688366d459bceea5f67aaaf2c6124&_vendor=official-website&_launch=113&_firstTime=2025/03/02%2013:28:43&_deviceId=11efb95b965437d2&_platform=web&_cityCode=430000&_cityName=&_product=YNote-Web&_version=&sev=j1&sec=v1&keyfrom=web&cstk=tnN-LCL1
+2025-03-02 17:28:16,977 [ERROR] 响应状态码: 400
+2025-03-02 17:28:16,977 [ERROR] 错误响应头:
+{'Server': 'Tengine', 'Content-Type': 'text/plain;charset=UTF-8', 'Content-Length': '18', 'Connection': 'keep-alive', 'Date': 'Sun, 02 Mar 2025 09:28:58 GMT', 'pragma': 'no-cache', 'cache-control': 'no-cache, must-revalidate', 'expires': 'Thu, 01 Jan 1970 00:00:00 GMT', 'x-envoy-upstream-service-time': '1', 'lingxi-traceid': 'a7df5e2d7e0b37526f1df645bf36ab6c^750873600000^0', 'Via': 'cache21.l2nu20-1[102,102,400-1280,M], cache21.l2nu20-1[103,0], cache15.cn160[137,137,400-1280,M], cache15.cn160[139,0]', 'Ali-Swift-Global-Savetime': '1740907738', 'X-Cache': 'MISS TCP_MISS dirn:-2:-2', 'X-Swift-Error': 'orig response 4XX error', 'X-Swift-SaveTime': 'Sun, 02 Mar 2025 09:28:58 GMT', 'X-Swift-CacheTime': '0', 'cdn-user-ip': '220.152.187.149', 'cdn-source': 'ali', 'cdn-ip': '124.14.14.70', 'Timing-Allow-Origin': '*', 'EagleId': '7c0e0ea317409077382695076e'}
+2025-03-02 17:28:16,978 [ERROR] 错误响应体前500字符:
+request not valid
+
+2025-03-02 17:28:16,978 [ERROR] !!! 主流程失败 !!!
+2025-03-02 17:28:16,979 [ERROR] 可能原因：
+2025-03-02 17:28:16,979 [ERROR] 1. 网络请求失败 2. 页面解析失败 3. 权限不足
+2025-03-02 17:28:16,979 [ERROR] 请检查 spider_debug.log 和 full_response.html
+2025-03-02 17:56:44,474 [INFO] ==================================================
+2025-03-02 17:56:44,474 [INFO] 开始执行爬虫程序
+2025-03-02 17:56:44,475 [DEBUG] ==================================================
+2025-03-02 17:56:44,475 [DEBUG] 【请求开始】URL: https://note.youdao.com/yws/api/personal/sync?method=download&_system=windows&_systemVersion=&_screenWidth=1920&_screenHeight=1080&_appName=ynote&_appuser=766688366d459bceea5f67aaaf2c6124&_vendor=official-website&_launch=113&_firstTime=2025/03/02%2013:28:43&_deviceId=11efb95b965437d2&_platform=web&_cityCode=430000&_cityName=&_product=YNote-Web&_version=&sev=j1&sec=v1&keyfrom=web&cstk=tnN-LCL1
+2025-03-02 17:56:44,475 [DEBUG] 【请求头】
+{'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8', 'Host': 'note.youdao.com', 'Cookie': 'hb_MA-B0D8-94CBE089C042_source=www.baidu.com; Hm_lvt_7fe66a8317b6d6f28c82b62b9f890118=1740893320; Hm_lpvt_7fe66a8317b6d6f28c82b62b9f890118=1740893320; HMACCOUNT=29005595904466B9; __yadk_uid=ZlRyzrbKx1IF9Hz5MMWVhDPQwjReRvFl; OUTFOX_SEARCH_USER_ID_NCOO=105754892.64450204; OUTFOX_SEARCH_USER_ID=-1177979017@163.177.223.166; YNOTE_SESS=v2|Zy5mmIFIhqBhLzf6LTuRJLhLTu0fgBReFkLYMP46uRYMO4TKOMeBRTBk4eyRfYf0Pu6LqFPMTS0q4RLeS6Mwy0QLnLgZ6MlY0; YNOTE_LOGIN=3||1740893431920; YNOTE_CSTK=tnN-LCL1'}
+2025-03-02 17:56:44,479 [DEBUG] Starting new HTTPS connection (1): note.youdao.com:443
+2025-03-02 17:56:45,681 [DEBUG] https://note.youdao.com:443 "POST /yws/api/personal/sync?method=download&_system=windows&_systemVersion=&_screenWidth=1920&_screenHeight=1080&_appName=ynote&_appuser=766688366d459bceea5f67aaaf2c6124&_vendor=official-website&_launch=113&_firstTime=2025/03/02%2013:28:43&_deviceId=11efb95b965437d2&_platform=web&_cityCode=430000&_cityName=&_product=YNote-Web&_version=&sev=j1&sec=v1&keyfrom=web&cstk=tnN-LCL1 HTTP/1.1" 400 18
+2025-03-02 17:56:45,682 [DEBUG] 【响应状态】400
+2025-03-02 17:56:45,682 [DEBUG] 【最终URL】https://note.youdao.com/yws/api/personal/sync?method=download&_system=windows&_systemVersion=&_screenWidth=1920&_screenHeight=1080&_appName=ynote&_appuser=766688366d459bceea5f67aaaf2c6124&_vendor=official-website&_launch=113&_firstTime=2025/03/02%2013:28:43&_deviceId=11efb95b965437d2&_platform=web&_cityCode=430000&_cityName=&_product=YNote-Web&_version=&sev=j1&sec=v1&keyfrom=web&cstk=tnN-LCL1
+2025-03-02 17:56:45,682 [DEBUG] 【响应头】
+{'Server': 'Tengine', 'Content-Type': 'text/plain;charset=UTF-8', 'Content-Length': '18', 'Connection': 'keep-alive', 'Date': 'Sun, 02 Mar 2025 09:57:27 GMT', 'pragma': 'no-cache', 'cache-control': 'no-cache, must-revalidate', 'expires': 'Thu, 01 Jan 1970 00:00:00 GMT', 'x-envoy-upstream-service-time': '1', 'lingxi-traceid': 'bd5101ae2712585525aacd027664eb96^750873600000^0', 'Via': 'ens-cache31.l2nu20-20[52,52,400-1280,M], ens-cache31.l2nu20-20[54,0], ens-cache24.l2hk7[86,85,400-1280,M], ens-cache24.l2hk7[86,0], cache21.jp6[133,133,400-1280,M], cache21.jp6[136,0]', 'Ali-Swift-Global-Savetime': '1740909447', 'X-Cache': 'MISS TCP_MISS dirn:-2:-2', 'X-Swift-Error': 'orig response 4XX error', 'X-Swift-SaveTime': 'Sun, 02 Mar 2025 09:57:27 GMT', 'X-Swift-CacheTime': '0', 'cdn-user-ip': '38.207.137.250', 'cdn-source': 'ali', 'cdn-ip': '128.1.157.225', 'Timing-Allow-Origin': '*', 'EagleId': '80019da917409094469696568e'}
+2025-03-02 17:56:45,683 [DEBUG] 【响应体大小】18 字符
+2025-03-02 17:56:45,684 [INFO] 已保存完整响应到 full_response.html
+2025-03-02 17:56:45,684 [ERROR] !!! 网络请求异常 !!!
+2025-03-02 17:56:45,684 [ERROR] 异常类型: HTTPError
+2025-03-02 17:56:45,685 [ERROR] 请求URL: https://note.youdao.com/yws/api/personal/sync?method=download&_system=windows&_systemVersion=&_screenWidth=1920&_screenHeight=1080&_appName=ynote&_appuser=766688366d459bceea5f67aaaf2c6124&_vendor=official-website&_launch=113&_firstTime=2025/03/02%2013:28:43&_deviceId=11efb95b965437d2&_platform=web&_cityCode=430000&_cityName=&_product=YNote-Web&_version=&sev=j1&sec=v1&keyfrom=web&cstk=tnN-LCL1
+2025-03-02 17:56:45,685 [ERROR] 响应状态码: 400
+2025-03-02 17:56:45,685 [ERROR] 错误响应头:
+{'Server': 'Tengine', 'Content-Type': 'text/plain;charset=UTF-8', 'Content-Length': '18', 'Connection': 'keep-alive', 'Date': 'Sun, 02 Mar 2025 09:57:27 GMT', 'pragma': 'no-cache', 'cache-control': 'no-cache, must-revalidate', 'expires': 'Thu, 01 Jan 1970 00:00:00 GMT', 'x-envoy-upstream-service-time': '1', 'lingxi-traceid': 'bd5101ae2712585525aacd027664eb96^750873600000^0', 'Via': 'ens-cache31.l2nu20-20[52,52,400-1280,M], ens-cache31.l2nu20-20[54,0], ens-cache24.l2hk7[86,85,400-1280,M], ens-cache24.l2hk7[86,0], cache21.jp6[133,133,400-1280,M], cache21.jp6[136,0]', 'Ali-Swift-Global-Savetime': '1740909447', 'X-Cache': 'MISS TCP_MISS dirn:-2:-2', 'X-Swift-Error': 'orig response 4XX error', 'X-Swift-SaveTime': 'Sun, 02 Mar 2025 09:57:27 GMT', 'X-Swift-CacheTime': '0', 'cdn-user-ip': '38.207.137.250', 'cdn-source': 'ali', 'cdn-ip': '128.1.157.225', 'Timing-Allow-Origin': '*', 'EagleId': '80019da917409094469696568e'}
+2025-03-02 17:56:45,686 [ERROR] 错误响应体前500字符:
+request not valid
+
+2025-03-02 17:56:45,686 [ERROR] !!! 主流程失败 !!!
+2025-03-02 17:56:45,687 [ERROR] 可能原因：
+2025-03-02 17:56:45,687 [ERROR] 1. 网络请求失败 2. 页面解析失败 3. 权限不足
+2025-03-02 17:56:45,687 [ERROR] 请检查 spider_debug.log 和 full_response.html
+2025-03-02 17:57:07,902 [INFO] ==================================================
+2025-03-02 17:57:07,903 [INFO] 开始执行爬虫程序
+2025-03-02 17:57:07,903 [DEBUG] ==================================================
+2025-03-02 17:57:07,903 [DEBUG] 【请求开始】URL: https://note.youdao.com/yws/api/personal/sync?method=download&_system=windows&_systemVersion=&_screenWidth=1920&_screenHeight=1080&_appName=ynote&_appuser=766688366d459bceea5f67aaaf2c6124&_vendor=official-website&_launch=113&_firstTime=2025/03/02%2013:28:43&_deviceId=11efb95b965437d2&_platform=web&_cityCode=430000&_cityName=&_product=YNote-Web&_version=&sev=j1&sec=v1&keyfrom=web&cstk=tnN-LCL1
+2025-03-02 17:57:07,904 [DEBUG] 【请求头】
+{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3', 'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8', 'Host': 'note.youdao.com', 'Cookie': 'hb_MA-B0D8-94CBE089C042_source=www.baidu.com; Hm_lvt_7fe66a8317b6d6f28c82b62b9f890118=1740893320; Hm_lpvt_7fe66a8317b6d6f28c82b62b9f890118=1740893320; HMACCOUNT=29005595904466B9; __yadk_uid=ZlRyzrbKx1IF9Hz5MMWVhDPQwjReRvFl; OUTFOX_SEARCH_USER_ID_NCOO=105754892.64450204; OUTFOX_SEARCH_USER_ID=-1177979017@163.177.223.166; YNOTE_SESS=v2|Zy5mmIFIhqBhLzf6LTuRJLhLTu0fgBReFkLYMP46uRYMO4TKOMeBRTBk4eyRfYf0Pu6LqFPMTS0q4RLeS6Mwy0QLnLgZ6MlY0; YNOTE_LOGIN=3||1740893431920; YNOTE_CSTK=tnN-LCL1'}
+2025-03-02 17:57:07,909 [DEBUG] Starting new HTTPS connection (1): note.youdao.com:443
+2025-03-02 17:57:08,607 [DEBUG] https://note.youdao.com:443 "POST /yws/api/personal/sync?method=download&_system=windows&_systemVersion=&_screenWidth=1920&_screenHeight=1080&_appName=ynote&_appuser=766688366d459bceea5f67aaaf2c6124&_vendor=official-website&_launch=113&_firstTime=2025/03/02%2013:28:43&_deviceId=11efb95b965437d2&_platform=web&_cityCode=430000&_cityName=&_product=YNote-Web&_version=&sev=j1&sec=v1&keyfrom=web&cstk=tnN-LCL1 HTTP/1.1" 400 18
+2025-03-02 17:57:08,609 [DEBUG] 【响应状态】400
+2025-03-02 17:57:08,609 [DEBUG] 【最终URL】https://note.youdao.com/yws/api/personal/sync?method=download&_system=windows&_systemVersion=&_screenWidth=1920&_screenHeight=1080&_appName=ynote&_appuser=766688366d459bceea5f67aaaf2c6124&_vendor=official-website&_launch=113&_firstTime=2025/03/02%2013:28:43&_deviceId=11efb95b965437d2&_platform=web&_cityCode=430000&_cityName=&_product=YNote-Web&_version=&sev=j1&sec=v1&keyfrom=web&cstk=tnN-LCL1
+2025-03-02 17:57:08,610 [DEBUG] 【响应头】
+{'Server': 'Tengine', 'Content-Type': 'text/plain;charset=UTF-8', 'Content-Length': '18', 'Connection': 'keep-alive', 'Date': 'Sun, 02 Mar 2025 09:57:49 GMT', 'pragma': 'no-cache', 'cache-control': 'no-cache, must-revalidate', 'expires': 'Thu, 01 Jan 1970 00:00:00 GMT', 'x-envoy-upstream-service-time': '1', 'lingxi-traceid': 'fc81722734f63f42a3da72e9810c2134^750873600000^0', 'Via': 'ens-cache50.l2nu20-20[54,53,400-1280,M], ens-cache50.l2nu20-20[55,0], ens-cache5.l2hk7[84,83,400-1280,M], ens-cache5.l2hk7[86,0], cache6.jp6[146,145,400-1280,M], cache6.jp6[147,0]', 'Ali-Swift-Global-Savetime': '1740909469', 'X-Cache': 'MISS TCP_MISS dirn:-2:-2', 'X-Swift-Error': 'orig response 4XX error', 'X-Swift-SaveTime': 'Sun, 02 Mar 2025 09:57:50 GMT', 'X-Swift-CacheTime': '0', 'cdn-user-ip': '38.207.137.250', 'cdn-source': 'ali', 'cdn-ip': '128.1.157.225', 'Timing-Allow-Origin': '*', 'EagleId': '80019d9a17409094698785086e'}
+2025-03-02 17:57:08,611 [DEBUG] 【响应体大小】18 字符
+2025-03-02 17:57:08,611 [INFO] 已保存完整响应到 full_response.html
+2025-03-02 17:57:08,612 [ERROR] !!! 网络请求异常 !!!
+2025-03-02 17:57:08,612 [ERROR] 异常类型: HTTPError
+2025-03-02 17:57:08,612 [ERROR] 请求URL: https://note.youdao.com/yws/api/personal/sync?method=download&_system=windows&_systemVersion=&_screenWidth=1920&_screenHeight=1080&_appName=ynote&_appuser=766688366d459bceea5f67aaaf2c6124&_vendor=official-website&_launch=113&_firstTime=2025/03/02%2013:28:43&_deviceId=11efb95b965437d2&_platform=web&_cityCode=430000&_cityName=&_product=YNote-Web&_version=&sev=j1&sec=v1&keyfrom=web&cstk=tnN-LCL1
+2025-03-02 17:57:08,613 [ERROR] 响应状态码: 400
+2025-03-02 17:57:08,613 [ERROR] 错误响应头:
+{'Server': 'Tengine', 'Content-Type': 'text/plain;charset=UTF-8', 'Content-Length': '18', 'Connection': 'keep-alive', 'Date': 'Sun, 02 Mar 2025 09:57:49 GMT', 'pragma': 'no-cache', 'cache-control': 'no-cache, must-revalidate', 'expires': 'Thu, 01 Jan 1970 00:00:00 GMT', 'x-envoy-upstream-service-time': '1', 'lingxi-traceid': 'fc81722734f63f42a3da72e9810c2134^750873600000^0', 'Via': 'ens-cache50.l2nu20-20[54,53,400-1280,M], ens-cache50.l2nu20-20[55,0], ens-cache5.l2hk7[84,83,400-1280,M], ens-cache5.l2hk7[86,0], cache6.jp6[146,145,400-1280,M], cache6.jp6[147,0]', 'Ali-Swift-Global-Savetime': '1740909469', 'X-Cache': 'MISS TCP_MISS dirn:-2:-2', 'X-Swift-Error': 'orig response 4XX error', 'X-Swift-SaveTime': 'Sun, 02 Mar 2025 09:57:50 GMT', 'X-Swift-CacheTime': '0', 'cdn-user-ip': '38.207.137.250', 'cdn-source': 'ali', 'cdn-ip': '128.1.157.225', 'Timing-Allow-Origin': '*', 'EagleId': '80019d9a17409094698785086e'}
+2025-03-02 17:57:08,614 [ERROR] 错误响应体前500字符:
+request not valid
+
+2025-03-02 17:57:08,615 [ERROR] !!! 主流程失败 !!!
+2025-03-02 17:57:08,616 [ERROR] 可能原因：
+2025-03-02 17:57:08,616 [ERROR] 1. 网络请求失败 2. 页面解析失败 3. 权限不足
+2025-03-02 17:57:08,616 [ERROR] 请检查 spider_debug.log 和 full_response.html
+2025-03-02 17:57:20,230 [INFO] ==================================================
+2025-03-02 17:57:20,230 [INFO] 开始执行爬虫程序
+2025-03-02 17:57:20,231 [DEBUG] ==================================================
+2025-03-02 17:57:20,231 [DEBUG] 【请求开始】URL: https://note.youdao.com/yws/api/personal/sync?method=download&_system=windows&_systemVersion=&_screenWidth=1920&_screenHeight=1080&_appName=ynote&_appuser=766688366d459bceea5f67aaaf2c6124&_vendor=official-website&_launch=113&_firstTime=2025/03/02%2013:28:43&_deviceId=11efb95b965437d2&_platform=web&_cityCode=430000&_cityName=&_product=YNote-Web&_version=&sev=j1&sec=v1&keyfrom=web&cstk=tnN-LCL1
+2025-03-02 17:57:20,232 [DEBUG] 【请求头】
+{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3', 'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8', 'Accept': '*/*', 'Host': 'note.youdao.com', 'Cookie': 'hb_MA-B0D8-94CBE089C042_source=www.baidu.com; Hm_lvt_7fe66a8317b6d6f28c82b62b9f890118=1740893320; Hm_lpvt_7fe66a8317b6d6f28c82b62b9f890118=1740893320; HMACCOUNT=29005595904466B9; __yadk_uid=ZlRyzrbKx1IF9Hz5MMWVhDPQwjReRvFl; OUTFOX_SEARCH_USER_ID_NCOO=105754892.64450204; OUTFOX_SEARCH_USER_ID=-1177979017@163.177.223.166; YNOTE_SESS=v2|Zy5mmIFIhqBhLzf6LTuRJLhLTu0fgBReFkLYMP46uRYMO4TKOMeBRTBk4eyRfYf0Pu6LqFPMTS0q4RLeS6Mwy0QLnLgZ6MlY0; YNOTE_LOGIN=3||1740893431920; YNOTE_CSTK=tnN-LCL1'}
+2025-03-02 17:57:20,237 [DEBUG] Starting new HTTPS connection (1): note.youdao.com:443
+2025-03-02 17:57:23,910 [DEBUG] https://note.youdao.com:443 "POST /yws/api/personal/sync?method=download&_system=windows&_systemVersion=&_screenWidth=1920&_screenHeight=1080&_appName=ynote&_appuser=766688366d459bceea5f67aaaf2c6124&_vendor=official-website&_launch=113&_firstTime=2025/03/02%2013:28:43&_deviceId=11efb95b965437d2&_platform=web&_cityCode=430000&_cityName=&_product=YNote-Web&_version=&sev=j1&sec=v1&keyfrom=web&cstk=tnN-LCL1 HTTP/1.1" 400 18
+2025-03-02 17:57:23,911 [DEBUG] 【响应状态】400
+2025-03-02 17:57:23,911 [DEBUG] 【最终URL】https://note.youdao.com/yws/api/personal/sync?method=download&_system=windows&_systemVersion=&_screenWidth=1920&_screenHeight=1080&_appName=ynote&_appuser=766688366d459bceea5f67aaaf2c6124&_vendor=official-website&_launch=113&_firstTime=2025/03/02%2013:28:43&_deviceId=11efb95b965437d2&_platform=web&_cityCode=430000&_cityName=&_product=YNote-Web&_version=&sev=j1&sec=v1&keyfrom=web&cstk=tnN-LCL1
+2025-03-02 17:57:23,912 [DEBUG] 【响应头】
+{'Server': 'Tengine', 'Content-Type': 'text/plain;charset=UTF-8', 'Content-Length': '18', 'Connection': 'keep-alive', 'Date': 'Sun, 02 Mar 2025 09:58:05 GMT', 'pragma': 'no-cache', 'cache-control': 'no-cache, must-revalidate', 'expires': 'Thu, 01 Jan 1970 00:00:00 GMT', 'x-envoy-upstream-service-time': '1', 'lingxi-traceid': '1f67e4a6405523d3219a03a1ace986fb^750873600000^0', 'Via': 'ens-cache49.l2nu20-20[53,52,400-1280,M], ens-cache49.l2nu20-20[54,0], ens-cache6.l2hk7[91,91,400-1280,M], ens-cache6.l2hk7[93,0], cache5.jp6[148,148,400-1280,M], cache5.jp6[150,0]', 'Ali-Swift-Global-Savetime': '1740909485', 'X-Cache': 'MISS TCP_MISS dirn:-2:-2', 'X-Swift-Error': 'orig response 4XX error', 'X-Swift-SaveTime': 'Sun, 02 Mar 2025 09:58:05 GMT', 'X-Swift-CacheTime': '0', 'cdn-user-ip': '38.207.137.250', 'cdn-source': 'ali', 'cdn-ip': '128.1.157.230', 'Timing-Allow-Origin': '*', 'EagleId': '80019d9917409094851624914e'}
+2025-03-02 17:57:23,912 [DEBUG] 【响应体大小】18 字符
+2025-03-02 17:57:23,913 [INFO] 已保存完整响应到 full_response.html
+2025-03-02 17:57:23,914 [ERROR] !!! 网络请求异常 !!!
+2025-03-02 17:57:23,914 [ERROR] 异常类型: HTTPError
+2025-03-02 17:57:23,914 [ERROR] 请求URL: https://note.youdao.com/yws/api/personal/sync?method=download&_system=windows&_systemVersion=&_screenWidth=1920&_screenHeight=1080&_appName=ynote&_appuser=766688366d459bceea5f67aaaf2c6124&_vendor=official-website&_launch=113&_firstTime=2025/03/02%2013:28:43&_deviceId=11efb95b965437d2&_platform=web&_cityCode=430000&_cityName=&_product=YNote-Web&_version=&sev=j1&sec=v1&keyfrom=web&cstk=tnN-LCL1
+2025-03-02 17:57:23,915 [ERROR] 响应状态码: 400
+2025-03-02 17:57:23,915 [ERROR] 错误响应头:
+{'Server': 'Tengine', 'Content-Type': 'text/plain;charset=UTF-8', 'Content-Length': '18', 'Connection': 'keep-alive', 'Date': 'Sun, 02 Mar 2025 09:58:05 GMT', 'pragma': 'no-cache', 'cache-control': 'no-cache, must-revalidate', 'expires': 'Thu, 01 Jan 1970 00:00:00 GMT', 'x-envoy-upstream-service-time': '1', 'lingxi-traceid': '1f67e4a6405523d3219a03a1ace986fb^750873600000^0', 'Via': 'ens-cache49.l2nu20-20[53,52,400-1280,M], ens-cache49.l2nu20-20[54,0], ens-cache6.l2hk7[91,91,400-1280,M], ens-cache6.l2hk7[93,0], cache5.jp6[148,148,400-1280,M], cache5.jp6[150,0]', 'Ali-Swift-Global-Savetime': '1740909485', 'X-Cache': 'MISS TCP_MISS dirn:-2:-2', 'X-Swift-Error': 'orig response 4XX error', 'X-Swift-SaveTime': 'Sun, 02 Mar 2025 09:58:05 GMT', 'X-Swift-CacheTime': '0', 'cdn-user-ip': '38.207.137.250', 'cdn-source': 'ali', 'cdn-ip': '128.1.157.230', 'Timing-Allow-Origin': '*', 'EagleId': '80019d9917409094851624914e'}
+2025-03-02 17:57:23,916 [ERROR] 错误响应体前500字符:
+request not valid
+
+2025-03-02 17:57:23,916 [ERROR] !!! 主流程失败 !!!
+2025-03-02 17:57:23,917 [ERROR] 可能原因：
+2025-03-02 17:57:23,917 [ERROR] 1. 网络请求失败 2. 页面解析失败 3. 权限不足
+2025-03-02 17:57:23,917 [ERROR] 请检查 spider_debug.log 和 full_response.html
+2025-03-02 17:57:34,662 [INFO] ==================================================
+2025-03-02 17:57:34,663 [INFO] 开始执行爬虫程序
+2025-03-02 17:57:34,664 [DEBUG] ==================================================
+2025-03-02 17:57:34,664 [DEBUG] 【请求开始】URL: https://note.youdao.com/yws/api/personal/sync?method=download&_system=windows&_systemVersion=&_screenWidth=1920&_screenHeight=1080&_appName=ynote&_appuser=766688366d459bceea5f67aaaf2c6124&_vendor=official-website&_launch=113&_firstTime=2025/03/02%2013:28:43&_deviceId=11efb95b965437d2&_platform=web&_cityCode=430000&_cityName=&_product=YNote-Web&_version=&sev=j1&sec=v1&keyfrom=web&cstk=tnN-LCL1
+2025-03-02 17:57:34,665 [DEBUG] 【请求头】
+{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3', 'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8', 'Accept': '*/*', 'Accept-Encoding': 'gzip,deflate,br', 'Host': 'note.youdao.com', 'Cookie': 'hb_MA-B0D8-94CBE089C042_source=www.baidu.com; Hm_lvt_7fe66a8317b6d6f28c82b62b9f890118=1740893320; Hm_lpvt_7fe66a8317b6d6f28c82b62b9f890118=1740893320; HMACCOUNT=29005595904466B9; __yadk_uid=ZlRyzrbKx1IF9Hz5MMWVhDPQwjReRvFl; OUTFOX_SEARCH_USER_ID_NCOO=105754892.64450204; OUTFOX_SEARCH_USER_ID=-1177979017@163.177.223.166; YNOTE_SESS=v2|Zy5mmIFIhqBhLzf6LTuRJLhLTu0fgBReFkLYMP46uRYMO4TKOMeBRTBk4eyRfYf0Pu6LqFPMTS0q4RLeS6Mwy0QLnLgZ6MlY0; YNOTE_LOGIN=3||1740893431920; YNOTE_CSTK=tnN-LCL1'}
+2025-03-02 17:57:34,671 [DEBUG] Starting new HTTPS connection (1): note.youdao.com:443
+2025-03-02 17:57:35,539 [DEBUG] https://note.youdao.com:443 "POST /yws/api/personal/sync?method=download&_system=windows&_systemVersion=&_screenWidth=1920&_screenHeight=1080&_appName=ynote&_appuser=766688366d459bceea5f67aaaf2c6124&_vendor=official-website&_launch=113&_firstTime=2025/03/02%2013:28:43&_deviceId=11efb95b965437d2&_platform=web&_cityCode=430000&_cityName=&_product=YNote-Web&_version=&sev=j1&sec=v1&keyfrom=web&cstk=tnN-LCL1 HTTP/1.1" 400 18
+2025-03-02 17:57:35,540 [DEBUG] 【响应状态】400
+2025-03-02 17:57:35,540 [DEBUG] 【最终URL】https://note.youdao.com/yws/api/personal/sync?method=download&_system=windows&_systemVersion=&_screenWidth=1920&_screenHeight=1080&_appName=ynote&_appuser=766688366d459bceea5f67aaaf2c6124&_vendor=official-website&_launch=113&_firstTime=2025/03/02%2013:28:43&_deviceId=11efb95b965437d2&_platform=web&_cityCode=430000&_cityName=&_product=YNote-Web&_version=&sev=j1&sec=v1&keyfrom=web&cstk=tnN-LCL1
+2025-03-02 17:57:35,540 [DEBUG] 【响应头】
+{'Server': 'Tengine', 'Content-Type': 'text/plain;charset=UTF-8', 'Content-Length': '18', 'Connection': 'keep-alive', 'Date': 'Sun, 02 Mar 2025 09:58:16 GMT', 'pragma': 'no-cache', 'cache-control': 'no-cache, must-revalidate', 'expires': 'Thu, 01 Jan 1970 00:00:00 GMT', 'x-envoy-upstream-service-time': '1', 'lingxi-traceid': '5c98ce1cd89f25e44cf52d0df1a4c6bc^750873600000^0', 'Via': 'ens-cache47.l2nu20-20[58,58,400-1280,M], ens-cache47.l2nu20-20[59,0], ens-cache22.l2hk7[94,94,400-1280,M], ens-cache22.l2hk7[95,0], cache21.jp6[152,151,400-1280,M], cache21.jp6[154,0]', 'Ali-Swift-Global-Savetime': '1740909496', 'X-Cache': 'MISS TCP_MISS dirn:-2:-2', 'X-Swift-Error': 'orig response 4XX error', 'X-Swift-SaveTime': 'Sun, 02 Mar 2025 09:58:16 GMT', 'X-Swift-CacheTime': '0', 'cdn-user-ip': '38.207.137.250', 'cdn-source': 'ali', 'cdn-ip': '128.1.157.227', 'Timing-Allow-Origin': '*', 'EagleId': '80019da917409094967841488e'}
+2025-03-02 17:57:35,541 [DEBUG] 【响应体大小】18 字符
+2025-03-02 17:57:35,542 [INFO] 已保存完整响应到 full_response.html
+2025-03-02 17:57:35,542 [ERROR] !!! 网络请求异常 !!!
+2025-03-02 17:57:35,542 [ERROR] 异常类型: HTTPError
+2025-03-02 17:57:35,542 [ERROR] 请求URL: https://note.youdao.com/yws/api/personal/sync?method=download&_system=windows&_systemVersion=&_screenWidth=1920&_screenHeight=1080&_appName=ynote&_appuser=766688366d459bceea5f67aaaf2c6124&_vendor=official-website&_launch=113&_firstTime=2025/03/02%2013:28:43&_deviceId=11efb95b965437d2&_platform=web&_cityCode=430000&_cityName=&_product=YNote-Web&_version=&sev=j1&sec=v1&keyfrom=web&cstk=tnN-LCL1
+2025-03-02 17:57:35,543 [ERROR] 响应状态码: 400
+2025-03-02 17:57:35,543 [ERROR] 错误响应头:
+{'Server': 'Tengine', 'Content-Type': 'text/plain;charset=UTF-8', 'Content-Length': '18', 'Connection': 'keep-alive', 'Date': 'Sun, 02 Mar 2025 09:58:16 GMT', 'pragma': 'no-cache', 'cache-control': 'no-cache, must-revalidate', 'expires': 'Thu, 01 Jan 1970 00:00:00 GMT', 'x-envoy-upstream-service-time': '1', 'lingxi-traceid': '5c98ce1cd89f25e44cf52d0df1a4c6bc^750873600000^0', 'Via': 'ens-cache47.l2nu20-20[58,58,400-1280,M], ens-cache47.l2nu20-20[59,0], ens-cache22.l2hk7[94,94,400-1280,M], ens-cache22.l2hk7[95,0], cache21.jp6[152,151,400-1280,M], cache21.jp6[154,0]', 'Ali-Swift-Global-Savetime': '1740909496', 'X-Cache': 'MISS TCP_MISS dirn:-2:-2', 'X-Swift-Error': 'orig response 4XX error', 'X-Swift-SaveTime': 'Sun, 02 Mar 2025 09:58:16 GMT', 'X-Swift-CacheTime': '0', 'cdn-user-ip': '38.207.137.250', 'cdn-source': 'ali', 'cdn-ip': '128.1.157.227', 'Timing-Allow-Origin': '*', 'EagleId': '80019da917409094967841488e'}
+2025-03-02 17:57:35,544 [ERROR] 错误响应体前500字符:
+request not valid
+
+2025-03-02 17:57:35,545 [ERROR] !!! 主流程失败 !!!
+2025-03-02 17:57:35,545 [ERROR] 可能原因：
+2025-03-02 17:57:35,546 [ERROR] 1. 网络请求失败 2. 页面解析失败 3. 权限不足
+2025-03-02 17:57:35,546 [ERROR] 请检查 spider_debug.log 和 full_response.html
+2025-03-02 17:57:48,843 [INFO] ==================================================
+2025-03-02 17:57:48,844 [INFO] 开始执行爬虫程序
+2025-03-02 17:57:48,845 [DEBUG] ==================================================
+2025-03-02 17:57:48,845 [DEBUG] 【请求开始】URL: https://note.youdao.com/yws/api/personal/sync?method=download&_system=windows&_systemVersion=&_screenWidth=1920&_screenHeight=1080&_appName=ynote&_appuser=766688366d459bceea5f67aaaf2c6124&_vendor=official-website&_launch=113&_firstTime=2025/03/02%2013:28:43&_deviceId=11efb95b965437d2&_platform=web&_cityCode=430000&_cityName=&_product=YNote-Web&_version=&sev=j1&sec=v1&keyfrom=web&cstk=tnN-LCL1
+2025-03-02 17:57:48,847 [DEBUG] 【请求头】
+{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3', 'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8', 'Accept': '*/*', 'Accept-Encoding': 'gzip,deflate,br', 'Connection': 'keep-alive', 'Host': 'note.youdao.com', 'Cookie': 'hb_MA-B0D8-94CBE089C042_source=www.baidu.com; Hm_lvt_7fe66a8317b6d6f28c82b62b9f890118=1740893320; Hm_lpvt_7fe66a8317b6d6f28c82b62b9f890118=1740893320; HMACCOUNT=29005595904466B9; __yadk_uid=ZlRyzrbKx1IF9Hz5MMWVhDPQwjReRvFl; OUTFOX_SEARCH_USER_ID_NCOO=105754892.64450204; OUTFOX_SEARCH_USER_ID=-1177979017@163.177.223.166; YNOTE_SESS=v2|Zy5mmIFIhqBhLzf6LTuRJLhLTu0fgBReFkLYMP46uRYMO4TKOMeBRTBk4eyRfYf0Pu6LqFPMTS0q4RLeS6Mwy0QLnLgZ6MlY0; YNOTE_LOGIN=3||1740893431920; YNOTE_CSTK=tnN-LCL1'}
+2025-03-02 17:57:48,856 [DEBUG] Starting new HTTPS connection (1): note.youdao.com:443
+2025-03-02 17:57:49,519 [DEBUG] https://note.youdao.com:443 "POST /yws/api/personal/sync?method=download&_system=windows&_systemVersion=&_screenWidth=1920&_screenHeight=1080&_appName=ynote&_appuser=766688366d459bceea5f67aaaf2c6124&_vendor=official-website&_launch=113&_firstTime=2025/03/02%2013:28:43&_deviceId=11efb95b965437d2&_platform=web&_cityCode=430000&_cityName=&_product=YNote-Web&_version=&sev=j1&sec=v1&keyfrom=web&cstk=tnN-LCL1 HTTP/1.1" 400 18
+2025-03-02 17:57:49,520 [DEBUG] 【响应状态】400
+2025-03-02 17:57:49,520 [DEBUG] 【最终URL】https://note.youdao.com/yws/api/personal/sync?method=download&_system=windows&_systemVersion=&_screenWidth=1920&_screenHeight=1080&_appName=ynote&_appuser=766688366d459bceea5f67aaaf2c6124&_vendor=official-website&_launch=113&_firstTime=2025/03/02%2013:28:43&_deviceId=11efb95b965437d2&_platform=web&_cityCode=430000&_cityName=&_product=YNote-Web&_version=&sev=j1&sec=v1&keyfrom=web&cstk=tnN-LCL1
+2025-03-02 17:57:49,521 [DEBUG] 【响应头】
+{'Server': 'Tengine', 'Content-Type': 'text/plain;charset=UTF-8', 'Content-Length': '18', 'Connection': 'keep-alive', 'Date': 'Sun, 02 Mar 2025 09:58:30 GMT', 'pragma': 'no-cache', 'cache-control': 'no-cache, must-revalidate', 'expires': 'Thu, 01 Jan 1970 00:00:00 GMT', 'x-envoy-upstream-service-time': '1', 'lingxi-traceid': '9795244e500747218c73decca5b6b185^750873600000^0', 'Via': 'ens-cache5.l2nu20-20[53,53,400-1280,M], ens-cache5.l2nu20-20[54,0], ens-cache17.l2hk7[83,82,400-1280,M], ens-cache17.l2hk7[85,0], cache13.jp6[148,148,400-1280,M], cache13.jp6[150,0]', 'Ali-Swift-Global-Savetime': '1740909510', 'X-Cache': 'MISS TCP_MISS dirn:-2:-2', 'X-Swift-Error': 'orig response 4XX error', 'X-Swift-SaveTime': 'Sun, 02 Mar 2025 09:58:30 GMT', 'X-Swift-CacheTime': '0', 'cdn-user-ip': '38.207.137.250', 'cdn-source': 'ali', 'cdn-ip': '128.1.157.225', 'Timing-Allow-Origin': '*', 'EagleId': '80019da117409095107748056e'}
+2025-03-02 17:57:49,522 [DEBUG] 【响应体大小】18 字符
+2025-03-02 17:57:49,523 [INFO] 已保存完整响应到 full_response.html
+2025-03-02 17:57:49,524 [ERROR] !!! 网络请求异常 !!!
+2025-03-02 17:57:49,524 [ERROR] 异常类型: HTTPError
+2025-03-02 17:57:49,524 [ERROR] 请求URL: https://note.youdao.com/yws/api/personal/sync?method=download&_system=windows&_systemVersion=&_screenWidth=1920&_screenHeight=1080&_appName=ynote&_appuser=766688366d459bceea5f67aaaf2c6124&_vendor=official-website&_launch=113&_firstTime=2025/03/02%2013:28:43&_deviceId=11efb95b965437d2&_platform=web&_cityCode=430000&_cityName=&_product=YNote-Web&_version=&sev=j1&sec=v1&keyfrom=web&cstk=tnN-LCL1
+2025-03-02 17:57:49,525 [ERROR] 响应状态码: 400
+2025-03-02 17:57:49,525 [ERROR] 错误响应头:
+{'Server': 'Tengine', 'Content-Type': 'text/plain;charset=UTF-8', 'Content-Length': '18', 'Connection': 'keep-alive', 'Date': 'Sun, 02 Mar 2025 09:58:30 GMT', 'pragma': 'no-cache', 'cache-control': 'no-cache, must-revalidate', 'expires': 'Thu, 01 Jan 1970 00:00:00 GMT', 'x-envoy-upstream-service-time': '1', 'lingxi-traceid': '9795244e500747218c73decca5b6b185^750873600000^0', 'Via': 'ens-cache5.l2nu20-20[53,53,400-1280,M], ens-cache5.l2nu20-20[54,0], ens-cache17.l2hk7[83,82,400-1280,M], ens-cache17.l2hk7[85,0], cache13.jp6[148,148,400-1280,M], cache13.jp6[150,0]', 'Ali-Swift-Global-Savetime': '1740909510', 'X-Cache': 'MISS TCP_MISS dirn:-2:-2', 'X-Swift-Error': 'orig response 4XX error', 'X-Swift-SaveTime': 'Sun, 02 Mar 2025 09:58:30 GMT', 'X-Swift-CacheTime': '0', 'cdn-user-ip': '38.207.137.250', 'cdn-source': 'ali', 'cdn-ip': '128.1.157.225', 'Timing-Allow-Origin': '*', 'EagleId': '80019da117409095107748056e'}
+2025-03-02 17:57:49,526 [ERROR] 错误响应体前500字符:
+request not valid
+
+2025-03-02 17:57:49,527 [ERROR] !!! 主流程失败 !!!
+2025-03-02 17:57:49,527 [ERROR] 可能原因：
+2025-03-02 17:57:49,527 [ERROR] 1. 网络请求失败 2. 页面解析失败 3. 权限不足
+2025-03-02 17:57:49,528 [ERROR] 请检查 spider_debug.log 和 full_response.html
+2025-03-02 17:58:13,433 [INFO] ==================================================
+2025-03-02 17:58:13,434 [INFO] 开始执行爬虫程序
+2025-03-02 17:58:13,434 [DEBUG] ==================================================
+2025-03-02 17:58:13,434 [DEBUG] 【请求开始】URL: https://note.youdao.com/yws/api/personal/sync?method=download&_system=windows&_systemVersion=&_screenWidth=1920&_screenHeight=1080&_appName=ynote&_appuser=766688366d459bceea5f67aaaf2c6124&_vendor=official-website&_launch=113&_firstTime=2025/03/02%2013:28:43&_deviceId=11efb95b965437d2&_platform=web&_cityCode=430000&_cityName=&_product=YNote-Web&_version=&sev=j1&sec=v1&keyfrom=web&cstk=tnN-LCL1
+2025-03-02 17:58:13,435 [DEBUG] 【请求头】
+{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3', 'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8', 'Accept': '*/*', 'Accept-Encoding': 'gzip,deflate,br', 'Connection': 'keep-alive', 'Cache-Control': 'no-cache', 'Host': 'note.youdao.com', 'Cookie': 'hb_MA-B0D8-94CBE089C042_source=www.baidu.com; Hm_lvt_7fe66a8317b6d6f28c82b62b9f890118=1740893320; Hm_lpvt_7fe66a8317b6d6f28c82b62b9f890118=1740893320; HMACCOUNT=29005595904466B9; __yadk_uid=ZlRyzrbKx1IF9Hz5MMWVhDPQwjReRvFl; OUTFOX_SEARCH_USER_ID_NCOO=105754892.64450204; OUTFOX_SEARCH_USER_ID=-1177979017@163.177.223.166; YNOTE_SESS=v2|Zy5mmIFIhqBhLzf6LTuRJLhLTu0fgBReFkLYMP46uRYMO4TKOMeBRTBk4eyRfYf0Pu6LqFPMTS0q4RLeS6Mwy0QLnLgZ6MlY0; YNOTE_LOGIN=3||1740893431920; YNOTE_CSTK=tnN-LCL1'}
+2025-03-02 17:58:13,439 [DEBUG] Starting new HTTPS connection (1): note.youdao.com:443
+2025-03-02 17:58:15,173 [DEBUG] https://note.youdao.com:443 "POST /yws/api/personal/sync?method=download&_system=windows&_systemVersion=&_screenWidth=1920&_screenHeight=1080&_appName=ynote&_appuser=766688366d459bceea5f67aaaf2c6124&_vendor=official-website&_launch=113&_firstTime=2025/03/02%2013:28:43&_deviceId=11efb95b965437d2&_platform=web&_cityCode=430000&_cityName=&_product=YNote-Web&_version=&sev=j1&sec=v1&keyfrom=web&cstk=tnN-LCL1 HTTP/1.1" 400 18
+2025-03-02 17:58:15,174 [DEBUG] 【响应状态】400
+2025-03-02 17:58:15,174 [DEBUG] 【最终URL】https://note.youdao.com/yws/api/personal/sync?method=download&_system=windows&_systemVersion=&_screenWidth=1920&_screenHeight=1080&_appName=ynote&_appuser=766688366d459bceea5f67aaaf2c6124&_vendor=official-website&_launch=113&_firstTime=2025/03/02%2013:28:43&_deviceId=11efb95b965437d2&_platform=web&_cityCode=430000&_cityName=&_product=YNote-Web&_version=&sev=j1&sec=v1&keyfrom=web&cstk=tnN-LCL1
+2025-03-02 17:58:15,175 [DEBUG] 【响应头】
+{'Server': 'Tengine', 'Content-Type': 'text/plain;charset=UTF-8', 'Content-Length': '18', 'Connection': 'keep-alive', 'Date': 'Sun, 02 Mar 2025 09:58:56 GMT', 'pragma': 'no-cache', 'cache-control': 'no-cache, must-revalidate', 'expires': 'Thu, 01 Jan 1970 00:00:00 GMT', 'x-envoy-upstream-service-time': '1', 'lingxi-traceid': '0029273745d3252475580059e87b95f9^750873600000^0', 'Via': 'ens-cache24.l2nu20-20[51,51,400-1280,M], ens-cache24.l2nu20-20[52,0], ens-cache7.l2hk7[87,87,400-1280,M], ens-cache7.l2hk7[89,0], cache21.jp6[146,146,400-1280,M], cache21.jp6[149,0]', 'Ali-Swift-Global-Savetime': '1740909536', 'X-Cache': 'MISS TCP_MISS dirn:-2:-2', 'X-Swift-Error': 'orig response 4XX error', 'X-Swift-SaveTime': 'Sun, 02 Mar 2025 09:58:56 GMT', 'X-Swift-CacheTime': '0', 'cdn-user-ip': '38.207.137.250', 'cdn-source': 'ali', 'cdn-ip': '128.1.157.227', 'Timing-Allow-Origin': '*', 'EagleId': '80019da917409095364008555e'}
+2025-03-02 17:58:15,176 [DEBUG] 【响应体大小】18 字符
+2025-03-02 17:58:15,176 [INFO] 已保存完整响应到 full_response.html
+2025-03-02 17:58:15,177 [ERROR] !!! 网络请求异常 !!!
+2025-03-02 17:58:15,177 [ERROR] 异常类型: HTTPError
+2025-03-02 17:58:15,177 [ERROR] 请求URL: https://note.youdao.com/yws/api/personal/sync?method=download&_system=windows&_systemVersion=&_screenWidth=1920&_screenHeight=1080&_appName=ynote&_appuser=766688366d459bceea5f67aaaf2c6124&_vendor=official-website&_launch=113&_firstTime=2025/03/02%2013:28:43&_deviceId=11efb95b965437d2&_platform=web&_cityCode=430000&_cityName=&_product=YNote-Web&_version=&sev=j1&sec=v1&keyfrom=web&cstk=tnN-LCL1
+2025-03-02 17:58:15,178 [ERROR] 响应状态码: 400
+2025-03-02 17:58:15,178 [ERROR] 错误响应头:
+{'Server': 'Tengine', 'Content-Type': 'text/plain;charset=UTF-8', 'Content-Length': '18', 'Connection': 'keep-alive', 'Date': 'Sun, 02 Mar 2025 09:58:56 GMT', 'pragma': 'no-cache', 'cache-control': 'no-cache, must-revalidate', 'expires': 'Thu, 01 Jan 1970 00:00:00 GMT', 'x-envoy-upstream-service-time': '1', 'lingxi-traceid': '0029273745d3252475580059e87b95f9^750873600000^0', 'Via': 'ens-cache24.l2nu20-20[51,51,400-1280,M], ens-cache24.l2nu20-20[52,0], ens-cache7.l2hk7[87,87,400-1280,M], ens-cache7.l2hk7[89,0], cache21.jp6[146,146,400-1280,M], cache21.jp6[149,0]', 'Ali-Swift-Global-Savetime': '1740909536', 'X-Cache': 'MISS TCP_MISS dirn:-2:-2', 'X-Swift-Error': 'orig response 4XX error', 'X-Swift-SaveTime': 'Sun, 02 Mar 2025 09:58:56 GMT', 'X-Swift-CacheTime': '0', 'cdn-user-ip': '38.207.137.250', 'cdn-source': 'ali', 'cdn-ip': '128.1.157.227', 'Timing-Allow-Origin': '*', 'EagleId': '80019da917409095364008555e'}
+2025-03-02 17:58:15,179 [ERROR] 错误响应体前500字符:
+request not valid
+
+2025-03-02 17:58:15,180 [ERROR] !!! 主流程失败 !!!
+2025-03-02 17:58:15,180 [ERROR] 可能原因：
+2025-03-02 17:58:15,180 [ERROR] 1. 网络请求失败 2. 页面解析失败 3. 权限不足
+2025-03-02 17:58:15,180 [ERROR] 请检查 spider_debug.log 和 full_response.html
+2025-03-02 17:58:43,174 [INFO] ==================================================
+2025-03-02 17:58:43,175 [INFO] 开始执行爬虫程序
+2025-03-02 17:58:43,175 [DEBUG] ==================================================
+2025-03-02 17:58:43,175 [DEBUG] 【请求开始】URL: https://note.youdao.com/yws/api/personal/sync?method=download&_system=windows&_systemVersion=&_screenWidth=1920&_screenHeight=1080&_appName=ynote&_appuser=766688366d459bceea5f67aaaf2c6124&_vendor=official-website&_launch=113&_firstTime=2025/03/02%2013:28:43&_deviceId=11efb95b965437d2&_platform=web&_cityCode=430000&_cityName=&_product=YNote-Web&_version=&sev=j1&sec=v1&keyfrom=web&cstk=tnN-LCL1
+2025-03-02 17:58:43,176 [DEBUG] 【请求头】
+{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3', 'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8', 'Accept': '*/*', 'Accept-Encoding': 'gzip,deflate,br', 'Connection': 'keep-alive', 'Cache-Control': 'no-cache', 'Content-Length': '121', 'Host': 'note.youdao.com', 'Cookie': 'hb_MA-B0D8-94CBE089C042_source=www.baidu.com; Hm_lvt_7fe66a8317b6d6f28c82b62b9f890118=1740893320; Hm_lpvt_7fe66a8317b6d6f28c82b62b9f890118=1740893320; HMACCOUNT=29005595904466B9; __yadk_uid=ZlRyzrbKx1IF9Hz5MMWVhDPQwjReRvFl; OUTFOX_SEARCH_USER_ID_NCOO=105754892.64450204; OUTFOX_SEARCH_USER_ID=-1177979017@163.177.223.166; YNOTE_SESS=v2|Zy5mmIFIhqBhLzf6LTuRJLhLTu0fgBReFkLYMP46uRYMO4TKOMeBRTBk4eyRfYf0Pu6LqFPMTS0q4RLeS6Mwy0QLnLgZ6MlY0; YNOTE_LOGIN=3||1740893431920; YNOTE_CSTK=tnN-LCL1'}
+2025-03-02 17:58:43,181 [DEBUG] Starting new HTTPS connection (1): note.youdao.com:443
+2025-03-02 17:58:44,763 [DEBUG] https://note.youdao.com:443 "POST /yws/api/personal/sync?method=download&_system=windows&_systemVersion=&_screenWidth=1920&_screenHeight=1080&_appName=ynote&_appuser=766688366d459bceea5f67aaaf2c6124&_vendor=official-website&_launch=113&_firstTime=2025/03/02%2013:28:43&_deviceId=11efb95b965437d2&_platform=web&_cityCode=430000&_cityName=&_product=YNote-Web&_version=&sev=j1&sec=v1&keyfrom=web&cstk=tnN-LCL1 HTTP/1.1" 400 18
+2025-03-02 17:58:44,764 [DEBUG] 【响应状态】400
+2025-03-02 17:58:44,764 [DEBUG] 【最终URL】https://note.youdao.com/yws/api/personal/sync?method=download&_system=windows&_systemVersion=&_screenWidth=1920&_screenHeight=1080&_appName=ynote&_appuser=766688366d459bceea5f67aaaf2c6124&_vendor=official-website&_launch=113&_firstTime=2025/03/02%2013:28:43&_deviceId=11efb95b965437d2&_platform=web&_cityCode=430000&_cityName=&_product=YNote-Web&_version=&sev=j1&sec=v1&keyfrom=web&cstk=tnN-LCL1
+2025-03-02 17:58:44,765 [DEBUG] 【响应头】
+{'Server': 'Tengine', 'Content-Type': 'text/plain;charset=UTF-8', 'Content-Length': '18', 'Connection': 'keep-alive', 'Date': 'Sun, 02 Mar 2025 09:59:26 GMT', 'pragma': 'no-cache', 'cache-control': 'no-cache, must-revalidate', 'expires': 'Thu, 01 Jan 1970 00:00:00 GMT', 'x-envoy-upstream-service-time': '2', 'lingxi-traceid': 'be13cfdb6923db24fbf33505d279d8f9^750873600000^0', 'Via': 'ens-cache24.l2nu20-20[55,54,400-1280,M], ens-cache24.l2nu20-20[56,0], ens-cache6.l2hk7[85,84,400-1280,M], ens-cache6.l2hk7[87,0], cache15.jp6[144,143,400-1280,M], cache15.jp6[147,0]', 'Ali-Swift-Global-Savetime': '1740909566', 'X-Cache': 'MISS TCP_MISS dirn:-2:-2', 'X-Swift-Error': 'orig response 4XX error', 'X-Swift-SaveTime': 'Sun, 02 Mar 2025 09:59:26 GMT', 'X-Swift-CacheTime': '0', 'cdn-user-ip': '38.207.137.250', 'cdn-source': 'ali', 'cdn-ip': '128.1.157.226', 'Timing-Allow-Origin': '*', 'EagleId': '80019da317409095660178492e'}
+2025-03-02 17:58:44,767 [DEBUG] 【响应体大小】18 字符
+2025-03-02 17:58:44,767 [INFO] 已保存完整响应到 full_response.html
+2025-03-02 17:58:44,768 [ERROR] !!! 网络请求异常 !!!
+2025-03-02 17:58:44,769 [ERROR] 异常类型: HTTPError
+2025-03-02 17:58:44,769 [ERROR] 请求URL: https://note.youdao.com/yws/api/personal/sync?method=download&_system=windows&_systemVersion=&_screenWidth=1920&_screenHeight=1080&_appName=ynote&_appuser=766688366d459bceea5f67aaaf2c6124&_vendor=official-website&_launch=113&_firstTime=2025/03/02%2013:28:43&_deviceId=11efb95b965437d2&_platform=web&_cityCode=430000&_cityName=&_product=YNote-Web&_version=&sev=j1&sec=v1&keyfrom=web&cstk=tnN-LCL1
+2025-03-02 17:58:44,771 [ERROR] 响应状态码: 400
+2025-03-02 17:58:44,771 [ERROR] 错误响应头:
+{'Server': 'Tengine', 'Content-Type': 'text/plain;charset=UTF-8', 'Content-Length': '18', 'Connection': 'keep-alive', 'Date': 'Sun, 02 Mar 2025 09:59:26 GMT', 'pragma': 'no-cache', 'cache-control': 'no-cache, must-revalidate', 'expires': 'Thu, 01 Jan 1970 00:00:00 GMT', 'x-envoy-upstream-service-time': '2', 'lingxi-traceid': 'be13cfdb6923db24fbf33505d279d8f9^750873600000^0', 'Via': 'ens-cache24.l2nu20-20[55,54,400-1280,M], ens-cache24.l2nu20-20[56,0], ens-cache6.l2hk7[85,84,400-1280,M], ens-cache6.l2hk7[87,0], cache15.jp6[144,143,400-1280,M], cache15.jp6[147,0]', 'Ali-Swift-Global-Savetime': '1740909566', 'X-Cache': 'MISS TCP_MISS dirn:-2:-2', 'X-Swift-Error': 'orig response 4XX error', 'X-Swift-SaveTime': 'Sun, 02 Mar 2025 09:59:26 GMT', 'X-Swift-CacheTime': '0', 'cdn-user-ip': '38.207.137.250', 'cdn-source': 'ali', 'cdn-ip': '128.1.157.226', 'Timing-Allow-Origin': '*', 'EagleId': '80019da317409095660178492e'}
+2025-03-02 17:58:44,773 [ERROR] 错误响应体前500字符:
+request not valid
+
+2025-03-02 17:58:44,774 [ERROR] !!! 主流程失败 !!!
+2025-03-02 17:58:44,774 [ERROR] 可能原因：
+2025-03-02 17:58:44,774 [ERROR] 1. 网络请求失败 2. 页面解析失败 3. 权限不足
+2025-03-02 17:58:44,775 [ERROR] 请检查 spider_debug.log 和 full_response.html
+2025-03-02 18:00:39,664 [INFO] ==================================================
+2025-03-02 18:00:39,665 [INFO] 开始执行爬虫程序
+2025-03-02 18:00:39,665 [DEBUG] ==================================================
+2025-03-02 18:00:39,666 [DEBUG] 【请求开始】URL: https://note.youdao.com/yws/api/personal/sync?method=download&_system=windows&_systemVersion=&_screenWidth=1920&_screenHeight=1080&_appName=ynote&_appuser=766688366d459bceea5f67aaaf2c6124&_vendor=official-website&_launch=113&_firstTime=2025/03/02%2013:28:43&_deviceId=11efb95b965437d2&_platform=web&_cityCode=430000&_cityName=&_product=YNote-Web&_version=&sev=j1&sec=v1&keyfrom=web&cstk=tnN-LCL1
+2025-03-02 18:00:39,666 [DEBUG] 【请求头】
+{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3', 'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8', 'Accept': '*/*', 'Accept-Encoding': 'gzip,deflate,br', 'Connection': 'keep-alive', 'Cache-Control': 'no-cache', 'Content-Length': '121', 'Host': 'note.youdao.com', 'Cookie': 'hb_MA-B0D8-94CBE089C042_source=www.baidu.com; Hm_lvt_7fe66a8317b6d6f28c82b62b9f890118=1740893320; Hm_lpvt_7fe66a8317b6d6f28c82b62b9f890118=1740893320; HMACCOUNT=29005595904466B9; __yadk_uid=ZlRyzrbKx1IF9Hz5MMWVhDPQwjReRvFl; OUTFOX_SEARCH_USER_ID_NCOO=105754892.64450204; OUTFOX_SEARCH_USER_ID=-1177979017@163.177.223.166; YNOTE_SESS=v2|Zy5mmIFIhqBhLzf6LTuRJLhLTu0fgBReFkLYMP46uRYMO4TKOMeBRTBk4eyRfYf0Pu6LqFPMTS0q4RLeS6Mwy0QLnLgZ6MlY0; YNOTE_LOGIN=3||1740893431920; YNOTE_CSTK=tnN-LCL1'}
+2025-03-02 18:00:39,670 [DEBUG] Starting new HTTPS connection (1): note.youdao.com:443
+2025-03-02 18:00:40,346 [DEBUG] https://note.youdao.com:443 "POST /yws/api/personal/sync?method=download&_system=windows&_systemVersion=&_screenWidth=1920&_screenHeight=1080&_appName=ynote&_appuser=766688366d459bceea5f67aaaf2c6124&_vendor=official-website&_launch=113&_firstTime=2025/03/02%2013:28:43&_deviceId=11efb95b965437d2&_platform=web&_cityCode=430000&_cityName=&_product=YNote-Web&_version=&sev=j1&sec=v1&keyfrom=web&cstk=tnN-LCL1 HTTP/1.1" 200 None
+2025-03-02 18:00:40,348 [DEBUG] 【响应状态】200
+2025-03-02 18:00:40,348 [DEBUG] 【最终URL】https://note.youdao.com/yws/api/personal/sync?method=download&_system=windows&_systemVersion=&_screenWidth=1920&_screenHeight=1080&_appName=ynote&_appuser=766688366d459bceea5f67aaaf2c6124&_vendor=official-website&_launch=113&_firstTime=2025/03/02%2013:28:43&_deviceId=11efb95b965437d2&_platform=web&_cityCode=430000&_cityName=&_product=YNote-Web&_version=&sev=j1&sec=v1&keyfrom=web&cstk=tnN-LCL1
+2025-03-02 18:00:40,348 [DEBUG] 【响应头】
+{'Server': 'Tengine', 'Content-Type': 'text/html;charset=UTF-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Date': 'Sun, 02 Mar 2025 10:01:21 GMT', 'Vary': 'Accept-Encoding', 'pragma': 'no-cache', 'cache-control': 'no-cache, no-store, must-revalidate', 'expires': 'Thu, 01 Jan 1970 00:00:00 GMT', 'x-envoy-upstream-service-time': '45', 'lingxi-traceid': '792320982f0f5c469c843f621e7c28fc^750873600000^0', 'Content-Encoding': 'br', 'Via': 'ens-cache29.l2nu20-20[101,101,200-0,M], ens-cache29.l2nu20-20[102,0], ens-cache3.l2hk7[133,132,200-0,M], ens-cache3.l2hk7[134,0], cache9.jp6[196,196,200-0,M], cache9.jp6[200,0]', 'Ali-Swift-Global-Savetime': '1740909681', 'X-Cache': 'MISS TCP_MISS dirn:-2:-2', 'X-Swift-SaveTime': 'Sun, 02 Mar 2025 10:01:21 GMT', 'X-Swift-CacheTime': '0', 'cdn-user-ip': '38.207.137.250', 'cdn-source': 'ali', 'cdn-ip': '128.1.157.226', 'Timing-Allow-Origin': '*', 'EagleId': '80019d9d17409096815421071e'}
+2025-03-02 18:00:40,349 [DEBUG] 【响应体大小】6090 字符
+2025-03-02 18:00:40,350 [INFO] 已保存完整响应到 full_response.html
+2025-03-02 18:00:40,353 [DEBUG] 【页面结构分析】
+2025-03-02 18:00:40,353 [DEBUG] Title标签内容: 无标题
+2025-03-02 18:00:40,353 [DEBUG] 找到的div数量: 0
+2025-03-02 18:00:40,354 [WARNING] 未找到标题元素，尝试备用选择器...
+2025-03-02 18:00:40,354 [ERROR] 所有标题选择器均失败
+2025-03-02 18:00:40,354 [ERROR] 内容区域未找到，可能原因：
+2025-03-02 18:00:40,354 [ERROR] 1. 页面结构已变更 2. class名称不同 3. 内容需要登录
+2025-03-02 18:00:40,355 [DEBUG] 前500字符内容预览:
+qq `�Fj����:�����B��ԙR+�B~u����}a�C6L�l�����ns�������}�F(�QH�YUǝ9�, ܙ�r�?�ҟ��\~�x�-~O=*$~޷oDP�"��h>��{ �$�s��������g�.6Q0	Z�>RL��"#)���B}�?���Y7
+���_��G�?��B}��(C}����&���a��!�Q�N��R 	�1��PFf�R	�+�B?�t]��_A�	X�K���D�\��1�䱈D%4Z'���J�߼X��H�u��,�K�O)׊s�����$�X�3�ۄⲭ�r�XO�n���_��s�]_0�����P>�]�gK��g�S!|���Yxh-�/�BE6��0U�Mf��=����^Gw=�	RJ�،<x~�,O(p,:^m��E��r$�`p7�����P�0�B����� �0]��I��E��Ќ�>��(���
+��" "W���_yJ3*}� e��စ`���'��X� J���DV� 
+2025-03-02 18:00:40,356 [ERROR] !!! 主流程失败 !!!
+2025-03-02 18:00:40,356 [ERROR] 可能原因：
+2025-03-02 18:00:40,357 [ERROR] 1. 网络请求失败 2. 页面解析失败 3. 权限不足
+2025-03-02 18:00:40,357 [ERROR] 请检查 spider_debug.log 和 full_response.html
+2025-03-02 18:09:56,602 [INFO] ==================================================
+2025-03-02 18:09:56,604 [INFO] 开始执行爬虫程序
+2025-03-02 18:09:56,605 [DEBUG] ==================================================
+2025-03-02 18:09:56,606 [DEBUG] 【请求开始】URL: https://note.youdao.com/yws/api/personal/sync?method=download&_system=windows&_systemVersion=&_screenWidth=1920&_screenHeight=1080&_appName=ynote&_appuser=766688366d459bceea5f67aaaf2c6124&_vendor=official-website&_launch=113&_firstTime=2025/03/02%2013:28:43&_deviceId=11efb95b965437d2&_platform=web&_cityCode=430000&_cityName=&_product=YNote-Web&_version=&sev=j1&sec=v1&keyfrom=web&cstk=tnN-LCL1
+2025-03-02 18:09:56,606 [DEBUG] 【请求头】
+{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3', 'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8', 'Accept': '*/*', 'Accept-Encoding': 'gzip,deflate,br', 'Connection': 'keep-alive', 'Cache-Control': 'no-cache', 'Content-Length': '121', 'Host': 'note.youdao.com', 'Cookie': 'hb_MA-B0D8-94CBE089C042_source=www.baidu.com; Hm_lvt_7fe66a8317b6d6f28c82b62b9f890118=1740893320; Hm_lpvt_7fe66a8317b6d6f28c82b62b9f890118=1740893320; HMACCOUNT=29005595904466B9; __yadk_uid=ZlRyzrbKx1IF9Hz5MMWVhDPQwjReRvFl; OUTFOX_SEARCH_USER_ID_NCOO=105754892.64450204; OUTFOX_SEARCH_USER_ID=-1177979017@163.177.223.166; YNOTE_SESS=v2|Zy5mmIFIhqBhLzf6LTuRJLhLTu0fgBReFkLYMP46uRYMO4TKOMeBRTBk4eyRfYf0Pu6LqFPMTS0q4RLeS6Mwy0QLnLgZ6MlY0; YNOTE_LOGIN=3||1740893431920; YNOTE_CSTK=tnN-LCL1'}
+2025-03-02 18:09:56,615 [DEBUG] Starting new HTTPS connection (1): note.youdao.com:443
+2025-03-02 18:09:58,263 [DEBUG] https://note.youdao.com:443 "POST /yws/api/personal/sync?method=download&_system=windows&_systemVersion=&_screenWidth=1920&_screenHeight=1080&_appName=ynote&_appuser=766688366d459bceea5f67aaaf2c6124&_vendor=official-website&_launch=113&_firstTime=2025/03/02%2013:28:43&_deviceId=11efb95b965437d2&_platform=web&_cityCode=430000&_cityName=&_product=YNote-Web&_version=&sev=j1&sec=v1&keyfrom=web&cstk=tnN-LCL1 HTTP/1.1" 200 6565
+2025-03-02 18:09:58,263 [DEBUG] 【响应状态】200
+2025-03-02 18:09:58,264 [DEBUG] 【最终URL】https://note.youdao.com/yws/api/personal/sync?method=download&_system=windows&_systemVersion=&_screenWidth=1920&_screenHeight=1080&_appName=ynote&_appuser=766688366d459bceea5f67aaaf2c6124&_vendor=official-website&_launch=113&_firstTime=2025/03/02%2013:28:43&_deviceId=11efb95b965437d2&_platform=web&_cityCode=430000&_cityName=&_product=YNote-Web&_version=&sev=j1&sec=v1&keyfrom=web&cstk=tnN-LCL1
+2025-03-02 18:09:58,264 [DEBUG] 【最终请求体】fileId=WEB7e268ee3e16f4428b8eb8e734347eecf&version=-1&convert=true&editorVersion=1714445486000&editorType=1&cstk=tnN-LCL1
+2025-03-02 18:09:58,264 [DEBUG] 【响应编码】UTF-8
+2025-03-02 18:09:58,264 [DEBUG] 【响应头】
+{'Server': 'Tengine', 'Content-Type': 'text/html;charset=UTF-8', 'Content-Length': '6565', 'Connection': 'keep-alive', 'Date': 'Sun, 02 Mar 2025 10:10:39 GMT', 'Vary': 'Accept-Encoding', 'pragma': 'no-cache', 'cache-control': 'no-cache, no-store, must-revalidate', 'expires': 'Thu, 01 Jan 1970 00:00:00 GMT', 'x-envoy-upstream-service-time': '48', 'lingxi-traceid': '7243d23fce1811c7f70b9b99b3951f3f^750873600000^0', 'Content-Encoding': 'br', 'Via': 'ens-cache40.l2nu20-20[106,106,200-0,M], ens-cache40.l2nu20-20[108,0], ens-cache9.l2hk7[140,139,200-0,M], ens-cache9.l2hk7[141,0], cache8.jp6[200,199,200-0,M], cache8.jp6[203,0]', 'Ali-Swift-Global-Savetime': '1740910239', 'X-Cache': 'MISS TCP_MISS dirn:-2:-2', 'X-Swift-SaveTime': 'Sun, 02 Mar 2025 10:10:39 GMT', 'X-Swift-CacheTime': '0', 'cdn-user-ip': '38.207.137.250', 'cdn-source': 'ali', 'cdn-ip': '128.1.157.229', 'Timing-Allow-Origin': '*', 'EagleId': '80019d9c17409102394617871e'}
+2025-03-02 18:09:58,266 [DEBUG] 【响应体大小】6243 字符
+2025-03-02 18:09:58,267 [INFO] 已保存完整响应到 full_response.html
+2025-03-02 18:09:58,268 [DEBUG] 【页面结构分析】
+2025-03-02 18:09:58,269 [DEBUG] Title标签内容: 无标题
+2025-03-02 18:09:58,269 [DEBUG] 找到的div数量: 0
+2025-03-02 18:09:58,270 [WARNING] 未找到标题元素，尝试备用选择器...
+2025-03-02 18:09:58,270 [ERROR] 所有标题选择器均失败
+2025-03-02 18:09:58,271 [ERROR] 内容区域未找到，可能原因：
+2025-03-02 18:09:58,271 [ERROR] 1. 页面结构已变更 2. class名称不同 3. 内容需要登录
+2025-03-02 18:09:58,272 [DEBUG] 前500字符内容预览:
+q�(  W:�j=�V��� ��d�����T����'��.���$ʪ�HM�hJ��< y�<&��4j�g; l�`�S��v��fFJ��h�@�} ~��������8�IR�;��, �Z�GS�׃���� �>���@�,ȁM-[�;�n9t������؛Y�S�H5#J�p��e䨶�'!Z>d]D��n|/Ք ��HM�2?iv?Y4Q��?|�U���-F�J$�rf3b���i�� Qڰ9��Ԧ3��(�(B���}q�?�H��������Fg��BIC�Q�
+V	�b���K�	H
+�WjK�u�-9.%����$��R������Q㏴S-�Tk-��Lv&��13s�� ҪWl�e?Y��L�P59��/!7�3.�P�L���u��(���L<�Z�
+˙����ȲJ#VeNՀ��=���1����?'&���c�H�����F�b\�1��Y�eDr��7V؏�h;*WSf�}b��VXv��d1�Y��hQ�Df
+2025-03-02 18:09:58,273 [ERROR] !!! 主流程失败 !!!
+2025-03-02 18:09:58,273 [ERROR] 可能原因：
+2025-03-02 18:09:58,274 [ERROR] 1. 网络请求失败 2. 页面解析失败 3. 权限不足
+2025-03-02 18:09:58,274 [ERROR] 请检查 spider_debug.log 和 full_response.html
+2025-03-02 18:19:24,199 [INFO] ==================================================
+2025-03-02 18:19:24,200 [INFO] 开始执行爬虫程序
+2025-03-02 18:19:24,200 [DEBUG] ==================================================
+2025-03-02 18:19:24,200 [DEBUG] 【请求开始】URL: https://note.youdao.com/yws/api/personal/sync?method=download&_system=windows&_systemVersion=&_screenWidth=1920&_screenHeight=1080&_appName=ynote&_appuser=766688366d459bceea5f67aaaf2c6124&_vendor=official-website&_launch=113&_firstTime=2025/03/02%2013:28:43&_deviceId=11efb95b965437d2&_platform=web&_cityCode=430000&_cityName=&_product=YNote-Web&_version=&sev=j1&sec=v1&keyfrom=web&cstk=tnN-LCL1
+2025-03-02 18:19:24,200 [DEBUG] 【请求头】
+{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3', 'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8', 'Cookie': 'hb_MA-B0D8-94CBE089C042_source=www.baidu.com; Hm_lvt_7fe66a8317b6d6f28c82b62b9f890118=1740893320; Hm_lpvt_7fe66a8317b6d6f28c82b62b9f890118=1740893320; HMACCOUNT=29005595904466B9; __yadk_uid=ZlRyzrbKx1IF9Hz5MMWVhDPQwjReRvFl; OUTFOX_SEARCH_USER_ID_NCOO=105754892.64450204; OUTFOX_SEARCH_USER_ID=-1177979017@163.177.223.166; YNOTE_SESS=v2|Zy5mmIFIhqBhLzf6LTuRJLhLTu0fgBReFkLYMP46uRYMO4TKOMeBRTBk4eyRfYf0Pu6LqFPMTS0q4RLeS6Mwy0QLnLgZ6MlY0; YNOTE_LOGIN=3||1740893431920; YNOTE_CSTK=tnN-LCL1'}
+2025-03-02 18:19:24,203 [DEBUG] Starting new HTTPS connection (1): note.youdao.com:443
+2025-03-02 18:19:24,534 [DEBUG] https://note.youdao.com:443 "POST /yws/api/personal/sync?method=download&_system=windows&_systemVersion=&_screenWidth=1920&_screenHeight=1080&_appName=ynote&_appuser=766688366d459bceea5f67aaaf2c6124&_vendor=official-website&_launch=113&_firstTime=2025/03/02%2013:28:43&_deviceId=11efb95b965437d2&_platform=web&_cityCode=430000&_cityName=&_product=YNote-Web&_version=&sev=j1&sec=v1&keyfrom=web&cstk=tnN-LCL1 HTTP/1.1" 200 None
+2025-03-02 18:19:24,541 [DEBUG] 【响应状态】200
+2025-03-02 18:19:24,541 [DEBUG] 【最终URL】https://note.youdao.com/yws/api/personal/sync?method=download&_system=windows&_systemVersion=&_screenWidth=1920&_screenHeight=1080&_appName=ynote&_appuser=766688366d459bceea5f67aaaf2c6124&_vendor=official-website&_launch=113&_firstTime=2025/03/02%2013:28:43&_deviceId=11efb95b965437d2&_platform=web&_cityCode=430000&_cityName=&_product=YNote-Web&_version=&sev=j1&sec=v1&keyfrom=web&cstk=tnN-LCL1
+2025-03-02 18:19:24,542 [DEBUG] 【最终请求体】fileId=WEB7e268ee3e16f4428b8eb8e734347eecf&version=-1&convert=true&editorVersion=1714445486000&editorType=1&cstk=tnN-LCL1
+2025-03-02 18:19:24,542 [DEBUG] 【响应编码】UTF-8
+2025-03-02 18:19:24,542 [DEBUG] 【响应头】
+{'Server': 'Tengine', 'Content-Type': 'text/html;charset=UTF-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Date': 'Sun, 02 Mar 2025 10:20:05 GMT', 'Vary': 'Accept-Encoding', 'pragma': 'no-cache', 'cache-control': 'no-cache, no-store, must-revalidate', 'expires': 'Thu, 01 Jan 1970 00:00:00 GMT', 'x-envoy-upstream-service-time': '118', 'lingxi-traceid': '22db1557c6df27c4cde2d541d59a7d25^750873600000^0', 'Content-Encoding': 'gzip', 'Via': 'cache48.l2nu20-1[167,167,200-0,M], cache48.l2nu20-1[168,0], cache6.cn160[203,202,200-0,M], cache6.cn160[207,0]', 'Ali-Swift-Global-Savetime': '1740910805', 'X-Cache': 'MISS TCP_MISS dirn:-2:-2', 'X-Swift-SaveTime': 'Sun, 02 Mar 2025 10:20:05 GMT', 'X-Swift-CacheTime': '0', 'cdn-user-ip': '220.152.187.149', 'cdn-source': 'ali', 'cdn-ip': '124.14.14.70', 'Timing-Allow-Origin': '*', 'EagleId': '7c0e0e9a17409108057576666e'}
+2025-03-02 18:19:24,543 [DEBUG] 【响应体大小】20249 字符
+2025-03-02 18:19:24,544 [INFO] 已保存完整响应到 full_response.html
+2025-03-02 18:19:24,545 [DEBUG] 【页面结构分析】
+2025-03-02 18:19:24,545 [DEBUG] Title标签内容: 无标题
+2025-03-02 18:19:24,545 [DEBUG] 找到的div数量: 0
+2025-03-02 18:19:24,546 [WARNING] 未找到标题元素，尝试备用选择器...
+2025-03-02 18:19:24,546 [ERROR] 所有标题选择器均失败
+2025-03-02 18:19:24,546 [ERROR] 内容区域未找到，可能原因：
+2025-03-02 18:19:24,546 [ERROR] 1. 页面结构已变更 2. class名称不同 3. 内容需要登录
+2025-03-02 18:19:24,547 [DEBUG] 前500字符内容预览:
+{"2":"1","3":"kjFq-1737295568397","4":{"headerStyle":{"t":"center"},"footerStyle":{"t":"center"},"version":1,"incompatibleVersion":0,"hd":[{"8":"","p":1}],"ft":[{"8":"","p":1}],"fv":"0"},"5":[{"3":"34xnag1588172067448","5":[{"2":"2","3":"86dz-1737295568398"}]},{"3":"67zegx1710815505710","4":{"li":"list7","ll":1,"lt":"ordered"},"5":[{"2":"2","3":"75Vc-1737295568399","7":[{"8":"github:335985579@qq.com "}]},{"2":"3","3":"yg6F-1737295595797","4":{"hf":"http://Srcb@202501"},"5":[{"2":"2","3":"0eLF-17
+2025-03-02 18:19:24,548 [ERROR] !!! 主流程失败 !!!
+2025-03-02 18:19:24,548 [ERROR] 可能原因：
+2025-03-02 18:19:24,548 [ERROR] 1. 网络请求失败 2. 页面解析失败 3. 权限不足
+2025-03-02 18:19:24,549 [ERROR] 请检查 spider_debug.log 和 full_response.html
+2025-03-02 18:21:19,505 [INFO] ==================================================
+2025-03-02 18:21:19,506 [INFO] 开始执行爬虫程序
+2025-03-02 18:21:19,507 [DEBUG] ==================================================
+2025-03-02 18:21:19,507 [DEBUG] 【请求开始】URL: https://note.youdao.com/yws/api/personal/sync?method=download&_system=windows&_systemVersion=&_screenWidth=1920&_screenHeight=1080&_appName=ynote&_appuser=766688366d459bceea5f67aaaf2c6124&_vendor=official-website&_launch=113&_firstTime=2025/03/02%2013:28:43&_deviceId=11efb95b965437d2&_platform=web&_cityCode=430000&_cityName=&_product=YNote-Web&_version=&sev=j1&sec=v1&keyfrom=web&cstk=tnN-LCL1
+2025-03-02 18:21:19,508 [DEBUG] 【请求头】
+{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3', 'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8', 'Content-Length': '121', 'Cookie': 'hb_MA-B0D8-94CBE089C042_source=www.baidu.com; Hm_lvt_7fe66a8317b6d6f28c82b62b9f890118=1740893320; Hm_lpvt_7fe66a8317b6d6f28c82b62b9f890118=1740893320; HMACCOUNT=29005595904466B9; __yadk_uid=ZlRyzrbKx1IF9Hz5MMWVhDPQwjReRvFl; OUTFOX_SEARCH_USER_ID_NCOO=105754892.64450204; OUTFOX_SEARCH_USER_ID=-1177979017@163.177.223.166; YNOTE_SESS=v2|Zy5mmIFIhqBhLzf6LTuRJLhLTu0fgBReFkLYMP46uRYMO4TKOMeBRTBk4eyRfYf0Pu6LqFPMTS0q4RLeS6Mwy0QLnLgZ6MlY0; YNOTE_LOGIN=3||1740893431920; YNOTE_CSTK=tnN-LCL1'}
+2025-03-02 18:21:19,511 [DEBUG] Starting new HTTPS connection (1): note.youdao.com:443
+2025-03-02 18:21:19,860 [DEBUG] https://note.youdao.com:443 "POST /yws/api/personal/sync?method=download&_system=windows&_systemVersion=&_screenWidth=1920&_screenHeight=1080&_appName=ynote&_appuser=766688366d459bceea5f67aaaf2c6124&_vendor=official-website&_launch=113&_firstTime=2025/03/02%2013:28:43&_deviceId=11efb95b965437d2&_platform=web&_cityCode=430000&_cityName=&_product=YNote-Web&_version=&sev=j1&sec=v1&keyfrom=web&cstk=tnN-LCL1 HTTP/1.1" 200 None
+2025-03-02 18:21:19,865 [DEBUG] 【响应状态】200
+2025-03-02 18:21:19,865 [DEBUG] 【最终URL】https://note.youdao.com/yws/api/personal/sync?method=download&_system=windows&_systemVersion=&_screenWidth=1920&_screenHeight=1080&_appName=ynote&_appuser=766688366d459bceea5f67aaaf2c6124&_vendor=official-website&_launch=113&_firstTime=2025/03/02%2013:28:43&_deviceId=11efb95b965437d2&_platform=web&_cityCode=430000&_cityName=&_product=YNote-Web&_version=&sev=j1&sec=v1&keyfrom=web&cstk=tnN-LCL1
+2025-03-02 18:21:19,866 [DEBUG] 【最终请求体】fileId=WEB7e268ee3e16f4428b8eb8e734347eecf&version=-1&convert=true&editorVersion=1714445486000&editorType=1&cstk=tnN-LCL1
+2025-03-02 18:21:19,866 [DEBUG] 【响应编码】UTF-8
+2025-03-02 18:21:19,866 [DEBUG] 【响应头】
+{'Server': 'Tengine', 'Content-Type': 'text/html;charset=UTF-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Date': 'Sun, 02 Mar 2025 10:22:01 GMT', 'Vary': 'Accept-Encoding', 'pragma': 'no-cache', 'cache-control': 'no-cache, no-store, must-revalidate', 'expires': 'Thu, 01 Jan 1970 00:00:00 GMT', 'x-envoy-upstream-service-time': '78', 'lingxi-traceid': '84f253b3ff445f19f89b18278ae11206^750873600000^0', 'Content-Encoding': 'gzip', 'Via': 'cache46.l2nu20-1[131,130,200-0,M], cache46.l2nu20-1[132,0], cache4.cn160[231,230,200-0,M], cache4.cn160[233,0]', 'Ali-Swift-Global-Savetime': '1740910921', 'X-Cache': 'MISS TCP_MISS dirn:-2:-2', 'X-Swift-SaveTime': 'Sun, 02 Mar 2025 10:22:01 GMT', 'X-Swift-CacheTime': '0', 'cdn-user-ip': '220.152.187.149', 'cdn-source': 'ali', 'cdn-ip': '124.14.14.65', 'Timing-Allow-Origin': '*', 'EagleId': '7c0e0e9817409109210613943e'}
+2025-03-02 18:21:19,867 [DEBUG] 【响应体大小】20249 字符
+2025-03-02 18:21:19,868 [INFO] 已保存完整响应到 full_response.html
+2025-03-02 18:21:19,869 [DEBUG] 【页面结构分析】
+2025-03-02 18:21:19,870 [DEBUG] Title标签内容: 无标题
+2025-03-02 18:21:19,870 [DEBUG] 找到的div数量: 0
+2025-03-02 18:21:19,871 [WARNING] 未找到标题元素，尝试备用选择器...
+2025-03-02 18:21:19,872 [ERROR] 所有标题选择器均失败
+2025-03-02 18:21:19,872 [ERROR] 内容区域未找到，可能原因：
+2025-03-02 18:21:19,873 [ERROR] 1. 页面结构已变更 2. class名称不同 3. 内容需要登录
+2025-03-02 18:21:19,873 [DEBUG] 前500字符内容预览:
+{"2":"1","3":"kjFq-1737295568397","4":{"headerStyle":{"t":"center"},"footerStyle":{"t":"center"},"version":1,"incompatibleVersion":0,"hd":[{"8":"","p":1}],"ft":[{"8":"","p":1}],"fv":"0"},"5":[{"3":"34xnag1588172067448","5":[{"2":"2","3":"86dz-1737295568398"}]},{"3":"67zegx1710815505710","4":{"li":"list7","ll":1,"lt":"ordered"},"5":[{"2":"2","3":"75Vc-1737295568399","7":[{"8":"github:335985579@qq.com "}]},{"2":"3","3":"yg6F-1737295595797","4":{"hf":"http://Srcb@202501"},"5":[{"2":"2","3":"0eLF-17
+2025-03-02 18:21:19,874 [ERROR] !!! 主流程失败 !!!
+2025-03-02 18:21:19,875 [ERROR] 可能原因：
+2025-03-02 18:21:19,875 [ERROR] 1. 网络请求失败 2. 页面解析失败 3. 权限不足
+2025-03-02 18:21:19,875 [ERROR] 请检查 spider_debug.log 和 full_response.html
+2025-03-02 18:21:30,226 [INFO] ==================================================
+2025-03-02 18:21:30,227 [INFO] 开始执行爬虫程序
+2025-03-02 18:21:30,227 [DEBUG] ==================================================
+2025-03-02 18:21:30,227 [DEBUG] 【请求开始】URL: https://note.youdao.com/yws/api/personal/sync?method=download&_system=windows&_systemVersion=&_screenWidth=1920&_screenHeight=1080&_appName=ynote&_appuser=766688366d459bceea5f67aaaf2c6124&_vendor=official-website&_launch=113&_firstTime=2025/03/02%2013:28:43&_deviceId=11efb95b965437d2&_platform=web&_cityCode=430000&_cityName=&_product=YNote-Web&_version=&sev=j1&sec=v1&keyfrom=web&cstk=tnN-LCL1
+2025-03-02 18:21:30,228 [DEBUG] 【请求头】
+{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3', 'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8', 'Accept-Encoding': 'gzip,deflate,br', 'Cookie': 'hb_MA-B0D8-94CBE089C042_source=www.baidu.com; Hm_lvt_7fe66a8317b6d6f28c82b62b9f890118=1740893320; Hm_lpvt_7fe66a8317b6d6f28c82b62b9f890118=1740893320; HMACCOUNT=29005595904466B9; __yadk_uid=ZlRyzrbKx1IF9Hz5MMWVhDPQwjReRvFl; OUTFOX_SEARCH_USER_ID_NCOO=105754892.64450204; OUTFOX_SEARCH_USER_ID=-1177979017@163.177.223.166; YNOTE_SESS=v2|Zy5mmIFIhqBhLzf6LTuRJLhLTu0fgBReFkLYMP46uRYMO4TKOMeBRTBk4eyRfYf0Pu6LqFPMTS0q4RLeS6Mwy0QLnLgZ6MlY0; YNOTE_LOGIN=3||1740893431920; YNOTE_CSTK=tnN-LCL1'}
+2025-03-02 18:21:30,231 [DEBUG] Starting new HTTPS connection (1): note.youdao.com:443
+2025-03-02 18:21:30,517 [DEBUG] https://note.youdao.com:443 "POST /yws/api/personal/sync?method=download&_system=windows&_systemVersion=&_screenWidth=1920&_screenHeight=1080&_appName=ynote&_appuser=766688366d459bceea5f67aaaf2c6124&_vendor=official-website&_launch=113&_firstTime=2025/03/02%2013:28:43&_deviceId=11efb95b965437d2&_platform=web&_cityCode=430000&_cityName=&_product=YNote-Web&_version=&sev=j1&sec=v1&keyfrom=web&cstk=tnN-LCL1 HTTP/1.1" 200 None
+2025-03-02 18:21:30,522 [DEBUG] 【响应状态】200
+2025-03-02 18:21:30,522 [DEBUG] 【最终URL】https://note.youdao.com/yws/api/personal/sync?method=download&_system=windows&_systemVersion=&_screenWidth=1920&_screenHeight=1080&_appName=ynote&_appuser=766688366d459bceea5f67aaaf2c6124&_vendor=official-website&_launch=113&_firstTime=2025/03/02%2013:28:43&_deviceId=11efb95b965437d2&_platform=web&_cityCode=430000&_cityName=&_product=YNote-Web&_version=&sev=j1&sec=v1&keyfrom=web&cstk=tnN-LCL1
+2025-03-02 18:21:30,523 [DEBUG] 【最终请求体】fileId=WEB7e268ee3e16f4428b8eb8e734347eecf&version=-1&convert=true&editorVersion=1714445486000&editorType=1&cstk=tnN-LCL1
+2025-03-02 18:21:30,524 [DEBUG] 【响应编码】UTF-8
+2025-03-02 18:21:30,524 [DEBUG] 【响应头】
+{'Server': 'Tengine', 'Content-Type': 'text/html;charset=UTF-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Date': 'Sun, 02 Mar 2025 10:22:11 GMT', 'Vary': 'Accept-Encoding', 'pragma': 'no-cache', 'cache-control': 'no-cache, no-store, must-revalidate', 'expires': 'Thu, 01 Jan 1970 00:00:00 GMT', 'x-envoy-upstream-service-time': '44', 'lingxi-traceid': 'ca308553ffa647946d9544c0e492993a^750873600000^0', 'Content-Encoding': 'br', 'Via': 'cache44.l2nu20-1[153,152,200-0,M], cache44.l2nu20-1[153,0], cache16.cn160[187,186,200-0,M], cache16.cn160[190,0]', 'Ali-Swift-Global-Savetime': '1740910931', 'X-Cache': 'MISS TCP_MISS dirn:-2:-2', 'X-Swift-SaveTime': 'Sun, 02 Mar 2025 10:22:11 GMT', 'X-Swift-CacheTime': '0', 'cdn-user-ip': '220.152.187.149', 'cdn-source': 'ali', 'cdn-ip': '124.14.14.64', 'Timing-Allow-Origin': '*', 'EagleId': '7c0e0ea417409109317664885e'}
+2025-03-02 18:21:30,525 [DEBUG] 【响应体大小】6344 字符
+2025-03-02 18:21:30,526 [INFO] 已保存完整响应到 full_response.html
+2025-03-02 18:21:30,528 [DEBUG] 【页面结构分析】
+2025-03-02 18:21:30,529 [DEBUG] Title标签内容: 无标题
+2025-03-02 18:21:30,529 [DEBUG] 找到的div数量: 0
+2025-03-02 18:21:30,529 [WARNING] 未找到标题元素，尝试备用选择器...
+2025-03-02 18:21:30,530 [ERROR] 所有标题选择器均失败
+2025-03-02 18:21:30,530 [ERROR] 内容区域未找到，可能原因：
+2025-03-02 18:21:30,531 [ERROR] 1. 页面结构已变更 2. class名称不同 3. 内容需要登录
+2025-03-02 18:21:30,531 [DEBUG] 前500字符内容预览:
+q�(  W:�j=�V��� ��d�����T����'��.���$ʪ�HM�hJ��< y�<&��4j�g; l�`�S��v��fFJ��h�@�} ~��������8�IR�;��, �Z�GS�׃���� �>���@�,ȁM-[�;�n9t������؛Y�S�H5#J�p��e䨶�'!Z>d]D��n|/Ք ��HM�2?iv?Y4Q��?|�U���-F�J$�rf3b���i�� Qڰ9��Ԧ3��(�(B���}q�?�H��������Fg��BIC�Q�
+V	�b���K�	H
+�WjK�u�-9.%����$��R������Q㏴S-�Tk-��Lv&��13s�� ҪWl�e?Y��L�P59��/!7�3.�P�L���u��(���L<�Z�
+˙����ȲJ#VeNՀ��=���1����?'&���c�H�����F�b\�1��Y�eDr��7V؏�h;*WSf�}b��VXv��d1�Y��hQ�Df
+2025-03-02 18:21:30,533 [ERROR] !!! 主流程失败 !!!
+2025-03-02 18:21:30,533 [ERROR] 可能原因：
+2025-03-02 18:21:30,533 [ERROR] 1. 网络请求失败 2. 页面解析失败 3. 权限不足
+2025-03-02 18:21:30,534 [ERROR] 请检查 spider_debug.log 和 full_response.html
+2025-03-02 18:27:12,588 [INFO] ==================================================
+2025-03-02 18:27:12,589 [INFO] 开始执行爬虫程序
+2025-03-02 18:27:12,589 [DEBUG] ==================================================
+2025-03-02 18:27:12,589 [DEBUG] 【请求开始】URL: https://note.youdao.com/yws/api/personal/sync?method=download&_system=windows&_systemVersion=&_screenWidth=1920&_screenHeight=1080&_appName=ynote&_appuser=766688366d459bceea5f67aaaf2c6124&_vendor=official-website&_launch=113&_firstTime=2025/03/02%2013:28:43&_deviceId=11efb95b965437d2&_platform=web&_cityCode=430000&_cityName=&_product=YNote-Web&_version=&sev=j1&sec=v1&keyfrom=web&cstk=tnN-LCL1
+2025-03-02 18:27:12,590 [DEBUG] 【请求头】
+{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3', 'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8', 'Accept-Encoding': 'gzip,deflate,br', 'Cookie': 'hb_MA-B0D8-94CBE089C042_source=www.baidu.com; Hm_lvt_7fe66a8317b6d6f28c82b62b9f890118=1740893320; Hm_lpvt_7fe66a8317b6d6f28c82b62b9f890118=1740893320; HMACCOUNT=29005595904466B9; __yadk_uid=ZlRyzrbKx1IF9Hz5MMWVhDPQwjReRvFl; OUTFOX_SEARCH_USER_ID_NCOO=105754892.64450204; OUTFOX_SEARCH_USER_ID=-1177979017@163.177.223.166; YNOTE_SESS=v2|Zy5mmIFIhqBhLzf6LTuRJLhLTu0fgBReFkLYMP46uRYMO4TKOMeBRTBk4eyRfYf0Pu6LqFPMTS0q4RLeS6Mwy0QLnLgZ6MlY0; YNOTE_LOGIN=3||1740893431920; YNOTE_CSTK=tnN-LCL1'}
+2025-03-02 18:27:12,593 [DEBUG] Starting new HTTPS connection (1): note.youdao.com:443
+2025-03-02 18:27:12,861 [DEBUG] https://note.youdao.com:443 "POST /yws/api/personal/sync?method=download&_system=windows&_systemVersion=&_screenWidth=1920&_screenHeight=1080&_appName=ynote&_appuser=766688366d459bceea5f67aaaf2c6124&_vendor=official-website&_launch=113&_firstTime=2025/03/02%2013:28:43&_deviceId=11efb95b965437d2&_platform=web&_cityCode=430000&_cityName=&_product=YNote-Web&_version=&sev=j1&sec=v1&keyfrom=web&cstk=tnN-LCL1 HTTP/1.1" 200 None
+2025-03-02 18:27:12,862 [ERROR] !!! 未处理的异常 !!!
+2025-03-02 18:27:12,862 [ERROR] 异常类型: error
+2025-03-02 18:27:12,863 [ERROR] 异常信息: BrotliDecompress failed
+2025-03-02 18:27:12,863 [ERROR] 异常堆栈:
+Traceback (most recent call last):
+  File "D:\code\gitCode\FirstSpider\spideYouDaoYunNote.py", line 78, in get_note_content
+    decoded_content = brotli.decompress(response.content)
+brotli.error: BrotliDecompress failed
+2025-03-02 18:27:12,865 [ERROR] !!! 主流程失败 !!!
+2025-03-02 18:27:12,865 [ERROR] 可能原因：
+2025-03-02 18:27:12,865 [ERROR] 1. 网络请求失败 2. 页面解析失败 3. 权限不足
+2025-03-02 18:27:12,865 [ERROR] 请检查 spider_debug.log 和 full_response.html
+2025-03-02 18:32:23,974 [INFO] ==================================================
+2025-03-02 18:32:23,984 [INFO] 开始执行爬虫程序
+2025-03-02 18:32:23,988 [DEBUG] ==================================================
+2025-03-02 18:32:23,989 [DEBUG] 【请求开始】URL: https://note.youdao.com/yws/api/personal/sync?method=download&_system=windows&_systemVersion=&_screenWidth=1920&_screenHeight=1080&_appName=ynote&_appuser=766688366d459bceea5f67aaaf2c6124&_vendor=official-website&_launch=113&_firstTime=2025/03/02%2013:28:43&_deviceId=11efb95b965437d2&_platform=web&_cityCode=430000&_cityName=&_product=YNote-Web&_version=&sev=j1&sec=v1&keyfrom=web&cstk=tnN-LCL1
+2025-03-02 18:32:23,991 [DEBUG] 【请求头】
+{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3', 'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8', 'Accept-Encoding': 'gzip,deflate,br', 'Cookie': 'hb_MA-B0D8-94CBE089C042_source=www.baidu.com; Hm_lvt_7fe66a8317b6d6f28c82b62b9f890118=1740893320; Hm_lpvt_7fe66a8317b6d6f28c82b62b9f890118=1740893320; HMACCOUNT=29005595904466B9; __yadk_uid=ZlRyzrbKx1IF9Hz5MMWVhDPQwjReRvFl; OUTFOX_SEARCH_USER_ID_NCOO=105754892.64450204; OUTFOX_SEARCH_USER_ID=-1177979017@163.177.223.166; YNOTE_SESS=v2|Zy5mmIFIhqBhLzf6LTuRJLhLTu0fgBReFkLYMP46uRYMO4TKOMeBRTBk4eyRfYf0Pu6LqFPMTS0q4RLeS6Mwy0QLnLgZ6MlY0; YNOTE_LOGIN=3||1740893431920; YNOTE_CSTK=tnN-LCL1'}
+2025-03-02 18:32:24,013 [DEBUG] Starting new HTTPS connection (1): note.youdao.com:443
+2025-03-02 18:32:24,362 [DEBUG] https://note.youdao.com:443 "POST /yws/api/personal/sync?method=download&_system=windows&_systemVersion=&_screenWidth=1920&_screenHeight=1080&_appName=ynote&_appuser=766688366d459bceea5f67aaaf2c6124&_vendor=official-website&_launch=113&_firstTime=2025/03/02%2013:28:43&_deviceId=11efb95b965437d2&_platform=web&_cityCode=430000&_cityName=&_product=YNote-Web&_version=&sev=j1&sec=v1&keyfrom=web&cstk=tnN-LCL1 HTTP/1.1" 200 None
+2025-03-02 18:32:24,368 [ERROR] !!! 未处理的异常 !!!
+2025-03-02 18:32:24,369 [ERROR] 异常类型: error
+2025-03-02 18:32:24,369 [ERROR] 异常信息: BrotliDecompress failed
+2025-03-02 18:32:24,370 [ERROR] 异常堆栈:
+Traceback (most recent call last):
+  File "D:\code\gitCode\FirstSpider\spideYouDaoYunNote.py", line 78, in get_note_content
+    decoded_content = brotli.decompress(response.content)
+brotli.error: BrotliDecompress failed
+2025-03-02 18:32:24,373 [ERROR] !!! 主流程失败 !!!
+2025-03-02 18:32:24,374 [ERROR] 可能原因：
+2025-03-02 18:32:24,374 [ERROR] 1. 网络请求失败 2. 页面解析失败 3. 权限不足
+2025-03-02 18:32:24,375 [ERROR] 请检查 spider_debug.log 和 full_response.html
+2025-03-02 18:32:54,531 [INFO] ==================================================
+2025-03-02 18:32:54,533 [INFO] 开始执行爬虫程序
+2025-03-02 18:32:54,533 [DEBUG] ==================================================
+2025-03-02 18:32:54,534 [DEBUG] 【请求开始】URL: https://note.youdao.com/yws/api/personal/sync?method=download&_system=windows&_systemVersion=&_screenWidth=1920&_screenHeight=1080&_appName=ynote&_appuser=766688366d459bceea5f67aaaf2c6124&_vendor=official-website&_launch=113&_firstTime=2025/03/02%2013:28:43&_deviceId=11efb95b965437d2&_platform=web&_cityCode=430000&_cityName=&_product=YNote-Web&_version=&sev=j1&sec=v1&keyfrom=web&cstk=tnN-LCL1
+2025-03-02 18:32:54,534 [DEBUG] 【请求头】
+{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3', 'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8', 'Accept-Encoding': 'gzip,deflate,br', 'Cookie': 'hb_MA-B0D8-94CBE089C042_source=www.baidu.com; Hm_lvt_7fe66a8317b6d6f28c82b62b9f890118=1740893320; Hm_lpvt_7fe66a8317b6d6f28c82b62b9f890118=1740893320; HMACCOUNT=29005595904466B9; __yadk_uid=ZlRyzrbKx1IF9Hz5MMWVhDPQwjReRvFl; OUTFOX_SEARCH_USER_ID_NCOO=105754892.64450204; OUTFOX_SEARCH_USER_ID=-1177979017@163.177.223.166; YNOTE_SESS=v2|Zy5mmIFIhqBhLzf6LTuRJLhLTu0fgBReFkLYMP46uRYMO4TKOMeBRTBk4eyRfYf0Pu6LqFPMTS0q4RLeS6Mwy0QLnLgZ6MlY0; YNOTE_LOGIN=3||1740893431920; YNOTE_CSTK=tnN-LCL1'}
+2025-03-02 18:32:54,538 [DEBUG] Starting new HTTPS connection (1): note.youdao.com:443
+2025-03-02 18:32:54,782 [DEBUG] https://note.youdao.com:443 "POST /yws/api/personal/sync?method=download&_system=windows&_systemVersion=&_screenWidth=1920&_screenHeight=1080&_appName=ynote&_appuser=766688366d459bceea5f67aaaf2c6124&_vendor=official-website&_launch=113&_firstTime=2025/03/02%2013:28:43&_deviceId=11efb95b965437d2&_platform=web&_cityCode=430000&_cityName=&_product=YNote-Web&_version=&sev=j1&sec=v1&keyfrom=web&cstk=tnN-LCL1 HTTP/1.1" 200 None
+2025-03-02 18:32:54,790 [ERROR] !!! 未处理的异常 !!!
+2025-03-02 18:32:54,790 [ERROR] 异常类型: error
+2025-03-02 18:32:54,791 [ERROR] 异常信息: BrotliDecompress failed
+2025-03-02 18:32:54,791 [ERROR] 异常堆栈:
+Traceback (most recent call last):
+  File "D:\code\gitCode\FirstSpider\spideYouDaoYunNote.py", line 78, in get_note_content
+    decoded_content = brotli.decompress(response.content)
+brotli.error: BrotliDecompress failed
+2025-03-02 18:32:54,793 [ERROR] !!! 主流程失败 !!!
+2025-03-02 18:32:54,794 [ERROR] 可能原因：
+2025-03-02 18:32:54,794 [ERROR] 1. 网络请求失败 2. 页面解析失败 3. 权限不足
+2025-03-02 18:32:54,794 [ERROR] 请检查 spider_debug.log 和 full_response.html
+2025-03-02 18:33:52,021 [INFO] ==================================================
+2025-03-02 18:33:52,023 [INFO] 开始执行爬虫程序
+2025-03-02 18:33:52,025 [DEBUG] ==================================================
+2025-03-02 18:33:52,025 [DEBUG] 【请求开始】URL: https://note.youdao.com/yws/api/personal/sync?method=download&_system=windows&_systemVersion=&_screenWidth=1920&_screenHeight=1080&_appName=ynote&_appuser=766688366d459bceea5f67aaaf2c6124&_vendor=official-website&_launch=113&_firstTime=2025/03/02%2013:28:43&_deviceId=11efb95b965437d2&_platform=web&_cityCode=430000&_cityName=&_product=YNote-Web&_version=&sev=j1&sec=v1&keyfrom=web&cstk=tnN-LCL1
+2025-03-02 18:33:52,026 [DEBUG] 【请求头】
+{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3', 'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8', 'Accept-Encoding': 'gzip,deflate,br', 'Cookie': 'hb_MA-B0D8-94CBE089C042_source=www.baidu.com; Hm_lvt_7fe66a8317b6d6f28c82b62b9f890118=1740893320; Hm_lpvt_7fe66a8317b6d6f28c82b62b9f890118=1740893320; HMACCOUNT=29005595904466B9; __yadk_uid=ZlRyzrbKx1IF9Hz5MMWVhDPQwjReRvFl; OUTFOX_SEARCH_USER_ID_NCOO=105754892.64450204; OUTFOX_SEARCH_USER_ID=-1177979017@163.177.223.166; YNOTE_SESS=v2|Zy5mmIFIhqBhLzf6LTuRJLhLTu0fgBReFkLYMP46uRYMO4TKOMeBRTBk4eyRfYf0Pu6LqFPMTS0q4RLeS6Mwy0QLnLgZ6MlY0; YNOTE_LOGIN=3||1740893431920; YNOTE_CSTK=tnN-LCL1'}
+2025-03-02 18:33:52,030 [DEBUG] Starting new HTTPS connection (1): note.youdao.com:443
+2025-03-02 18:33:52,267 [DEBUG] https://note.youdao.com:443 "POST /yws/api/personal/sync?method=download&_system=windows&_systemVersion=&_screenWidth=1920&_screenHeight=1080&_appName=ynote&_appuser=766688366d459bceea5f67aaaf2c6124&_vendor=official-website&_launch=113&_firstTime=2025/03/02%2013:28:43&_deviceId=11efb95b965437d2&_platform=web&_cityCode=430000&_cityName=&_product=YNote-Web&_version=&sev=j1&sec=v1&keyfrom=web&cstk=tnN-LCL1 HTTP/1.1" 200 None
+2025-03-02 18:33:52,272 [WARNING] Brotli decompression failed, using raw content
+2025-03-02 18:33:52,272 [DEBUG] 【响应状态】200
+2025-03-02 18:33:52,273 [DEBUG] 【最终URL】https://note.youdao.com/yws/api/personal/sync?method=download&_system=windows&_systemVersion=&_screenWidth=1920&_screenHeight=1080&_appName=ynote&_appuser=766688366d459bceea5f67aaaf2c6124&_vendor=official-website&_launch=113&_firstTime=2025/03/02%2013:28:43&_deviceId=11efb95b965437d2&_platform=web&_cityCode=430000&_cityName=&_product=YNote-Web&_version=&sev=j1&sec=v1&keyfrom=web&cstk=tnN-LCL1
+2025-03-02 18:33:52,274 [DEBUG] 【最终请求体】fileId=WEB7e268ee3e16f4428b8eb8e734347eecf&version=-1&convert=true&editorVersion=1714445486000&editorType=1&cstk=tnN-LCL1
+2025-03-02 18:33:52,274 [DEBUG] 【响应编码】UTF-8
+2025-03-02 18:33:52,275 [DEBUG] 【响应头】
+{'Server': 'Tengine', 'Content-Type': 'text/html;charset=UTF-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Date': 'Sun, 02 Mar 2025 10:34:33 GMT', 'Vary': 'Accept-Encoding', 'pragma': 'no-cache', 'cache-control': 'no-cache, no-store, must-revalidate', 'expires': 'Thu, 01 Jan 1970 00:00:00 GMT', 'x-envoy-upstream-service-time': '44', 'lingxi-traceid': 'cb2eac86ffdca060f435de97c86b42fa^750873600000^0', 'Content-Encoding': 'br', 'Via': 'cache5.l2nu20-1[99,99,200-0,M], cache5.l2nu20-1[100,0], cache21.cn160[128,128,200-0,M], cache21.cn160[130,0]', 'Ali-Swift-Global-Savetime': '1740911673', 'X-Cache': 'MISS TCP_MISS dirn:-2:-2', 'X-Swift-SaveTime': 'Sun, 02 Mar 2025 10:34:33 GMT', 'X-Swift-CacheTime': '0', 'cdn-user-ip': '220.152.187.149', 'cdn-source': 'ali', 'cdn-ip': '124.14.14.65', 'Timing-Allow-Origin': '*', 'EagleId': '7c0e0ea917409116735705856e'}
+2025-03-02 18:33:52,276 [DEBUG] 【响应体大小】20249 字符
+2025-03-02 18:33:52,277 [ERROR] !!! 未处理的异常 !!!
+2025-03-02 18:33:52,277 [ERROR] 异常类型: TypeError
+2025-03-02 18:33:52,277 [ERROR] 异常信息: write() argument must be str, not bytes
+2025-03-02 18:33:52,277 [ERROR] 异常堆栈:
+Traceback (most recent call last):
+  File "d:\code\gitCode\FirstSpider\spideYouDaoYunNote.py", line 94, in get_note_content
+    f.write(decoded_content)
+    ~~~~~~~^^^^^^^^^^^^^^^^^
+TypeError: write() argument must be str, not bytes
+2025-03-02 18:33:52,279 [ERROR] !!! 主流程失败 !!!
+2025-03-02 18:33:52,279 [ERROR] 可能原因：
+2025-03-02 18:33:52,280 [ERROR] 1. 网络请求失败 2. 页面解析失败 3. 权限不足
+2025-03-02 18:33:52,280 [ERROR] 请检查 spider_debug.log 和 full_response.html
+2025-03-02 18:35:09,689 [INFO] ==================================================
+2025-03-02 18:35:09,690 [INFO] 开始执行爬虫程序
+2025-03-02 18:35:09,690 [DEBUG] ==================================================
+2025-03-02 18:35:09,690 [DEBUG] 【请求开始】URL: https://note.youdao.com/yws/api/personal/sync?method=download&_system=windows&_systemVersion=&_screenWidth=1920&_screenHeight=1080&_appName=ynote&_appuser=766688366d459bceea5f67aaaf2c6124&_vendor=official-website&_launch=113&_firstTime=2025/03/02%2013:28:43&_deviceId=11efb95b965437d2&_platform=web&_cityCode=430000&_cityName=&_product=YNote-Web&_version=&sev=j1&sec=v1&keyfrom=web&cstk=tnN-LCL1
+2025-03-02 18:35:09,691 [DEBUG] 【请求头】
+{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3', 'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8', 'Accept-Encoding': 'gzip,deflate,br', 'Cookie': 'hb_MA-B0D8-94CBE089C042_source=www.baidu.com; Hm_lvt_7fe66a8317b6d6f28c82b62b9f890118=1740893320; Hm_lpvt_7fe66a8317b6d6f28c82b62b9f890118=1740893320; HMACCOUNT=29005595904466B9; __yadk_uid=ZlRyzrbKx1IF9Hz5MMWVhDPQwjReRvFl; OUTFOX_SEARCH_USER_ID_NCOO=105754892.64450204; OUTFOX_SEARCH_USER_ID=-1177979017@163.177.223.166; YNOTE_SESS=v2|Zy5mmIFIhqBhLzf6LTuRJLhLTu0fgBReFkLYMP46uRYMO4TKOMeBRTBk4eyRfYf0Pu6LqFPMTS0q4RLeS6Mwy0QLnLgZ6MlY0; YNOTE_LOGIN=3||1740893431920; YNOTE_CSTK=tnN-LCL1'}
+2025-03-02 18:35:09,694 [DEBUG] Starting new HTTPS connection (1): note.youdao.com:443
+2025-03-02 18:35:10,216 [DEBUG] https://note.youdao.com:443 "POST /yws/api/personal/sync?method=download&_system=windows&_systemVersion=&_screenWidth=1920&_screenHeight=1080&_appName=ynote&_appuser=766688366d459bceea5f67aaaf2c6124&_vendor=official-website&_launch=113&_firstTime=2025/03/02%2013:28:43&_deviceId=11efb95b965437d2&_platform=web&_cityCode=430000&_cityName=&_product=YNote-Web&_version=&sev=j1&sec=v1&keyfrom=web&cstk=tnN-LCL1 HTTP/1.1" 200 None
+2025-03-02 18:35:10,221 [WARNING] Brotli decompression failed, using raw content
+2025-03-02 18:35:10,222 [DEBUG] 【响应状态】200
+2025-03-02 18:35:10,222 [DEBUG] 【最终URL】https://note.youdao.com/yws/api/personal/sync?method=download&_system=windows&_systemVersion=&_screenWidth=1920&_screenHeight=1080&_appName=ynote&_appuser=766688366d459bceea5f67aaaf2c6124&_vendor=official-website&_launch=113&_firstTime=2025/03/02%2013:28:43&_deviceId=11efb95b965437d2&_platform=web&_cityCode=430000&_cityName=&_product=YNote-Web&_version=&sev=j1&sec=v1&keyfrom=web&cstk=tnN-LCL1
+2025-03-02 18:35:10,223 [DEBUG] 【最终请求体】fileId=WEB7e268ee3e16f4428b8eb8e734347eecf&version=-1&convert=true&editorVersion=1714445486000&editorType=1&cstk=tnN-LCL1
+2025-03-02 18:35:10,223 [DEBUG] 【响应编码】UTF-8
+2025-03-02 18:35:10,223 [DEBUG] 【响应头】
+{'Server': 'Tengine', 'Content-Type': 'text/html;charset=UTF-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Date': 'Sun, 02 Mar 2025 10:35:51 GMT', 'Vary': 'Accept-Encoding', 'pragma': 'no-cache', 'cache-control': 'no-cache, no-store, must-revalidate', 'expires': 'Thu, 01 Jan 1970 00:00:00 GMT', 'x-envoy-upstream-service-time': '271', 'lingxi-traceid': '1b26cf7e64571c685bf1ae327beb9211^750873600000^0', 'Content-Encoding': 'br', 'Via': 'cache17.l2nu20-1[380,380,200-0,M], cache17.l2nu20-1[382,0], cache21.cn160[417,417,200-0,M], cache21.cn160[419,0]', 'Ali-Swift-Global-Savetime': '1740911751', 'X-Cache': 'MISS TCP_MISS dirn:-2:-2', 'X-Swift-SaveTime': 'Sun, 02 Mar 2025 10:35:51 GMT', 'X-Swift-CacheTime': '0', 'cdn-user-ip': '220.152.187.149', 'cdn-source': 'ali', 'cdn-ip': '124.14.14.65', 'Timing-Allow-Origin': '*', 'EagleId': '7c0e0ea917409117512312396e'}
+2025-03-02 18:35:10,224 [DEBUG] 【响应体大小】20249 字符
+2025-03-02 18:35:10,225 [INFO] 已保存完整响应到 full_response.html
+2025-03-02 18:35:10,226 [DEBUG] 【页面结构分析】
+2025-03-02 18:35:10,227 [DEBUG] Title标签内容: 无标题
+2025-03-02 18:35:10,228 [DEBUG] 找到的div数量: 0
+2025-03-02 18:35:10,228 [WARNING] 未找到标题元素，尝试备用选择器...
+2025-03-02 18:35:10,228 [ERROR] 所有标题选择器均失败
+2025-03-02 18:35:10,229 [ERROR] 内容区域未找到，可能原因：
+2025-03-02 18:35:10,229 [ERROR] 1. 页面结构已变更 2. class名称不同 3. 内容需要登录
+2025-03-02 18:35:10,229 [DEBUG] 前500字符内容预览:
+{"2":"1","3":"kjFq-1737295568397","4":{"headerStyle":{"t":"center"},"footerStyle":{"t":"center"},"version":1,"incompatibleVersion":0,"hd":[{"8":"","p":1}],"ft":[{"8":"","p":1}],"fv":"0"},"5":[{"3":"34xnag1588172067448","5":[{"2":"2","3":"86dz-1737295568398"}]},{"3":"67zegx1710815505710","4":{"li":"list7","ll":1,"lt":"ordered"},"5":[{"2":"2","3":"75Vc-1737295568399","7":[{"8":"github:335985579@qq.com "}]},{"2":"3","3":"yg6F-1737295595797","4":{"hf":"http://Srcb@202501"},"5":[{"2":"2","3":"0eLF-17
+2025-03-02 18:35:10,230 [ERROR] !!! 主流程失败 !!!
+2025-03-02 18:35:10,231 [ERROR] 可能原因：
+2025-03-02 18:35:10,231 [ERROR] 1. 网络请求失败 2. 页面解析失败 3. 权限不足
+2025-03-02 18:35:10,231 [ERROR] 请检查 spider_debug.log 和 full_response.html
+2025-03-02 18:38:19,827 [INFO] ==================================================
+2025-03-02 18:38:19,829 [INFO] 开始执行爬虫程序
+2025-03-02 18:38:19,829 [DEBUG] ==================================================
+2025-03-02 18:38:19,829 [DEBUG] 【请求开始】URL: https://note.youdao.com/yws/api/personal/sync?method=download&_system=windows&_systemVersion=&_screenWidth=1920&_screenHeight=1080&_appName=ynote&_appuser=766688366d459bceea5f67aaaf2c6124&_vendor=official-website&_launch=113&_firstTime=2025/03/02%2013:28:43&_deviceId=11efb95b965437d2&_platform=web&_cityCode=430000&_cityName=&_product=YNote-Web&_version=&sev=j1&sec=v1&keyfrom=web&cstk=tnN-LCL1
+2025-03-02 18:38:19,830 [DEBUG] 【请求头】
+{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3', 'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8', 'Accept-Encoding': 'gzip,deflate,br', 'Cookie': 'hb_MA-B0D8-94CBE089C042_source=www.baidu.com; Hm_lvt_7fe66a8317b6d6f28c82b62b9f890118=1740893320; Hm_lpvt_7fe66a8317b6d6f28c82b62b9f890118=1740893320; HMACCOUNT=29005595904466B9; __yadk_uid=ZlRyzrbKx1IF9Hz5MMWVhDPQwjReRvFl; OUTFOX_SEARCH_USER_ID_NCOO=105754892.64450204; OUTFOX_SEARCH_USER_ID=-1177979017@163.177.223.166; YNOTE_SESS=v2|Zy5mmIFIhqBhLzf6LTuRJLhLTu0fgBReFkLYMP46uRYMO4TKOMeBRTBk4eyRfYf0Pu6LqFPMTS0q4RLeS6Mwy0QLnLgZ6MlY0; YNOTE_LOGIN=3||1740893431920; YNOTE_CSTK=tnN-LCL1'}
+2025-03-02 18:38:19,833 [DEBUG] Starting new HTTPS connection (1): note.youdao.com:443
+2025-03-02 18:38:20,241 [DEBUG] https://note.youdao.com:443 "POST /yws/api/personal/sync?method=download&_system=windows&_systemVersion=&_screenWidth=1920&_screenHeight=1080&_appName=ynote&_appuser=766688366d459bceea5f67aaaf2c6124&_vendor=official-website&_launch=113&_firstTime=2025/03/02%2013:28:43&_deviceId=11efb95b965437d2&_platform=web&_cityCode=430000&_cityName=&_product=YNote-Web&_version=&sev=j1&sec=v1&keyfrom=web&cstk=tnN-LCL1 HTTP/1.1" 200 None
+2025-03-02 18:38:20,246 [WARNING] Brotli decompression failed, using raw content
+2025-03-02 18:38:20,246 [DEBUG] 【响应状态】200
+2025-03-02 18:38:20,246 [DEBUG] 【最终URL】https://note.youdao.com/yws/api/personal/sync?method=download&_system=windows&_systemVersion=&_screenWidth=1920&_screenHeight=1080&_appName=ynote&_appuser=766688366d459bceea5f67aaaf2c6124&_vendor=official-website&_launch=113&_firstTime=2025/03/02%2013:28:43&_deviceId=11efb95b965437d2&_platform=web&_cityCode=430000&_cityName=&_product=YNote-Web&_version=&sev=j1&sec=v1&keyfrom=web&cstk=tnN-LCL1
+2025-03-02 18:38:20,246 [DEBUG] 【最终请求体】fileId=WEB7e268ee3e16f4428b8eb8e734347eecf&version=-1&convert=true&editorVersion=1714445486000&editorType=1&cstk=tnN-LCL1
+2025-03-02 18:38:20,247 [DEBUG] 【响应编码】UTF-8
+2025-03-02 18:38:20,247 [DEBUG] 【响应头】
+{'Server': 'Tengine', 'Content-Type': 'text/html;charset=UTF-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Date': 'Sun, 02 Mar 2025 10:39:01 GMT', 'Vary': 'Accept-Encoding', 'pragma': 'no-cache', 'cache-control': 'no-cache, no-store, must-revalidate', 'expires': 'Thu, 01 Jan 1970 00:00:00 GMT', 'x-envoy-upstream-service-time': '131', 'lingxi-traceid': '0e094eedc0ed90859041795388cef30f^750873600000^0', 'Content-Encoding': 'br', 'Via': 'cache42.l2nu20-1[240,239,200-0,M], cache42.l2nu20-1[241,0], cache12.cn160[276,275,200-0,M], cache12.cn160[279,0]', 'Ali-Swift-Global-Savetime': '1740911941', 'X-Cache': 'MISS TCP_MISS dirn:-2:-2', 'X-Swift-SaveTime': 'Sun, 02 Mar 2025 10:39:01 GMT', 'X-Swift-CacheTime': '0', 'cdn-user-ip': '220.152.187.149', 'cdn-source': 'ali', 'cdn-ip': '124.14.14.67', 'Timing-Allow-Origin': '*', 'EagleId': '7c0e0ea017409119413883523e'}
+2025-03-02 18:38:20,248 [DEBUG] 【响应体大小】20249 字符
+2025-03-02 18:38:20,249 [INFO] 已保存完整响应到 full_response.html
+2025-03-02 18:38:20,249 [DEBUG] 【页面结构分析】
+2025-03-02 18:38:20,250 [DEBUG] Title标签内容: 无标题
+2025-03-02 18:38:20,250 [DEBUG] 找到的div数量: 0
+2025-03-02 18:38:20,250 [WARNING] 未找到标题元素，尝试备用选择器...
+2025-03-02 18:38:20,250 [ERROR] 所有标题选择器均失败
+2025-03-02 18:38:20,251 [ERROR] 内容区域未找到，可能原因：
+2025-03-02 18:38:20,251 [ERROR] 1. 页面结构已变更 2. class名称不同 3. 内容需要登录
+2025-03-02 18:38:20,252 [DEBUG] 前500字符内容预览:
+{"2":"1","3":"kjFq-1737295568397","4":{"headerStyle":{"t":"center"},"footerStyle":{"t":"center"},"version":1,"incompatibleVersion":0,"hd":[{"8":"","p":1}],"ft":[{"8":"","p":1}],"fv":"0"},"5":[{"3":"34xnag1588172067448","5":[{"2":"2","3":"86dz-1737295568398"}]},{"3":"67zegx1710815505710","4":{"li":"list7","ll":1,"lt":"ordered"},"5":[{"2":"2","3":"75Vc-1737295568399","7":[{"8":"github:335985579@qq.com "}]},{"2":"3","3":"yg6F-1737295595797","4":{"hf":"http://Srcb@202501"},"5":[{"2":"2","3":"0eLF-17
+2025-03-02 18:38:20,253 [ERROR] !!! 主流程失败 !!!
+2025-03-02 18:38:20,253 [ERROR] 可能原因：
+2025-03-02 18:38:20,254 [ERROR] 1. 网络请求失败 2. 页面解析失败 3. 权限不足
+2025-03-02 18:38:20,254 [ERROR] 请检查 spider_debug.log 和 full_response.html
+2025-03-02 18:50:30,160 [INFO] ==================================================
+2025-03-02 18:50:30,161 [INFO] 开始执行爬虫程序
+2025-03-02 18:50:30,161 [DEBUG] ==================================================
+2025-03-02 18:50:30,162 [DEBUG] 【请求开始】URL: https://note.youdao.com/yws/api/personal/sync?method=download&_system=windows&_systemVersion=&_screenWidth=1920&_screenHeight=1080&_appName=ynote&_appuser=766688366d459bceea5f67aaaf2c6124&_vendor=official-website&_launch=113&_firstTime=2025/03/02%2013:28:43&_deviceId=11efb95b965437d2&_platform=web&_cityCode=430000&_cityName=&_product=YNote-Web&_version=&sev=j1&sec=v1&keyfrom=web&cstk=tnN-LCL1
+2025-03-02 18:50:30,162 [DEBUG] 【请求头】
+{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3', 'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8', 'Accept-Encoding': 'gzip,deflate,br', 'Cookie': 'hb_MA-B0D8-94CBE089C042_source=www.baidu.com; Hm_lvt_7fe66a8317b6d6f28c82b62b9f890118=1740893320; Hm_lpvt_7fe66a8317b6d6f28c82b62b9f890118=1740893320; HMACCOUNT=29005595904466B9; __yadk_uid=ZlRyzrbKx1IF9Hz5MMWVhDPQwjReRvFl; OUTFOX_SEARCH_USER_ID_NCOO=105754892.64450204; OUTFOX_SEARCH_USER_ID=-1177979017@163.177.223.166; YNOTE_SESS=v2|Zy5mmIFIhqBhLzf6LTuRJLhLTu0fgBReFkLYMP46uRYMO4TKOMeBRTBk4eyRfYf0Pu6LqFPMTS0q4RLeS6Mwy0QLnLgZ6MlY0; YNOTE_LOGIN=3||1740893431920; YNOTE_CSTK=tnN-LCL1'}
+2025-03-02 18:50:30,166 [DEBUG] Starting new HTTPS connection (1): note.youdao.com:443
+2025-03-02 18:50:30,566 [DEBUG] https://note.youdao.com:443 "POST /yws/api/personal/sync?method=download&_system=windows&_systemVersion=&_screenWidth=1920&_screenHeight=1080&_appName=ynote&_appuser=766688366d459bceea5f67aaaf2c6124&_vendor=official-website&_launch=113&_firstTime=2025/03/02%2013:28:43&_deviceId=11efb95b965437d2&_platform=web&_cityCode=430000&_cityName=&_product=YNote-Web&_version=&sev=j1&sec=v1&keyfrom=web&cstk=tnN-LCL1 HTTP/1.1" 200 None
+2025-03-02 18:50:30,567 [WARNING] Brotli decompression failed, using raw content
+2025-03-02 18:50:30,568 [DEBUG] 【响应状态】200
+2025-03-02 18:50:30,568 [DEBUG] 【最终URL】https://note.youdao.com/yws/api/personal/sync?method=download&_system=windows&_systemVersion=&_screenWidth=1920&_screenHeight=1080&_appName=ynote&_appuser=766688366d459bceea5f67aaaf2c6124&_vendor=official-website&_launch=113&_firstTime=2025/03/02%2013:28:43&_deviceId=11efb95b965437d2&_platform=web&_cityCode=430000&_cityName=&_product=YNote-Web&_version=&sev=j1&sec=v1&keyfrom=web&cstk=tnN-LCL1
+2025-03-02 18:50:30,569 [DEBUG] 【最终请求体】fileId=WEB7e268ee3e16f4428b8eb8e734347eecf&version=-1&convert=true&editorVersion=1714445486000&editorType=1&cstk=tnN-LCL1
+2025-03-02 18:50:30,569 [DEBUG] 【响应编码】UTF-8
+2025-03-02 18:50:30,569 [DEBUG] 【响应头】
+{'Server': 'Tengine', 'Content-Type': 'text/html;charset=UTF-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Date': 'Sun, 02 Mar 2025 10:51:11 GMT', 'Vary': 'Accept-Encoding', 'pragma': 'no-cache', 'cache-control': 'no-cache, no-store, must-revalidate', 'expires': 'Thu, 01 Jan 1970 00:00:00 GMT', 'x-envoy-upstream-service-time': '78', 'lingxi-traceid': 'a40af83ce14417f6fd19060cf8047eeb^750873600000^0', 'Content-Encoding': 'br', 'Via': 'cache17.l2nu20-1[131,131,200-0,M], cache17.l2nu20-1[132,0], cache1.cn160[262,262,200-0,M], cache1.cn160[266,0]', 'Ali-Swift-Global-Savetime': '1740912671', 'X-Cache': 'MISS TCP_MISS dirn:-2:-2', 'X-Swift-SaveTime': 'Sun, 02 Mar 2025 10:51:11 GMT', 'X-Swift-CacheTime': '0', 'cdn-user-ip': '220.152.187.149', 'cdn-source': 'ali', 'cdn-ip': '124.14.14.67', 'Timing-Allow-Origin': '*', 'EagleId': '7c0e0e9517409126717227813e'}
+2025-03-02 18:50:30,570 [DEBUG] 【响应体大小】20249 字符
+2025-03-02 18:50:30,573 [INFO] 已保存完整响应到 full_response.html
+2025-03-02 18:50:30,574 [DEBUG] 【页面结构分析】
+2025-03-02 18:50:30,575 [DEBUG] Title标签内容: 无标题
+2025-03-02 18:50:30,575 [DEBUG] 找到的div数量: 0
+2025-03-02 18:50:30,576 [WARNING] 未找到标题元素，尝试备用选择器...
+2025-03-02 18:50:30,576 [ERROR] 所有标题选择器均失败
+2025-03-02 18:50:30,577 [ERROR] 内容区域未找到，可能原因：
+2025-03-02 18:50:30,577 [ERROR] 1. 页面结构已变更 2. class名称不同 3. 内容需要登录
+2025-03-02 18:50:30,577 [DEBUG] 前500字符内容预览:
+{"2":"1","3":"kjFq-1737295568397","4":{"headerStyle":{"t":"center"},"footerStyle":{"t":"center"},"version":1,"incompatibleVersion":0,"hd":[{"8":"","p":1}],"ft":[{"8":"","p":1}],"fv":"0"},"5":[{"3":"34xnag1588172067448","5":[{"2":"2","3":"86dz-1737295568398"}]},{"3":"67zegx1710815505710","4":{"li":"list7","ll":1,"lt":"ordered"},"5":[{"2":"2","3":"75Vc-1737295568399","7":[{"8":"github:335985579@qq.com "}]},{"2":"3","3":"yg6F-1737295595797","4":{"hf":"http://Srcb@202501"},"5":[{"2":"2","3":"0eLF-17
+2025-03-02 18:50:30,578 [ERROR] !!! 主流程失败 !!!
+2025-03-02 18:50:30,579 [ERROR] 可能原因：
+2025-03-02 18:50:30,579 [ERROR] 1. 网络请求失败 2. 页面解析失败 3. 权限不足
+2025-03-02 18:50:30,579 [ERROR] 请检查 spider_debug.log 和 full_response.html
+2025-03-02 18:52:13,484 [INFO] ==================================================
+2025-03-02 18:52:13,485 [INFO] 开始执行爬虫程序
+2025-03-02 18:52:13,486 [DEBUG] ==================================================
+2025-03-02 18:52:13,486 [DEBUG] 【请求开始】URL: https://note.youdao.com/yws/api/personal/sync?method=download&_system=windows&_systemVersion=&_screenWidth=1920&_screenHeight=1080&_appName=ynote&_appuser=766688366d459bceea5f67aaaf2c6124&_vendor=official-website&_launch=113&_firstTime=2025/03/02%2013:28:43&_deviceId=11efb95b965437d2&_platform=web&_cityCode=430000&_cityName=&_product=YNote-Web&_version=&sev=j1&sec=v1&keyfrom=web&cstk=tnN-LCL1
+2025-03-02 18:52:13,486 [DEBUG] 【请求头】
+{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3', 'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8', 'Accept-Encoding': 'gzip,deflate,br', 'Cookie': 'hb_MA-B0D8-94CBE089C042_source=www.baidu.com; Hm_lvt_7fe66a8317b6d6f28c82b62b9f890118=1740893320; Hm_lpvt_7fe66a8317b6d6f28c82b62b9f890118=1740893320; HMACCOUNT=29005595904466B9; __yadk_uid=ZlRyzrbKx1IF9Hz5MMWVhDPQwjReRvFl; OUTFOX_SEARCH_USER_ID_NCOO=105754892.64450204; OUTFOX_SEARCH_USER_ID=-1177979017@163.177.223.166; YNOTE_SESS=v2|Zy5mmIFIhqBhLzf6LTuRJLhLTu0fgBReFkLYMP46uRYMO4TKOMeBRTBk4eyRfYf0Pu6LqFPMTS0q4RLeS6Mwy0QLnLgZ6MlY0; YNOTE_LOGIN=3||1740893431920; YNOTE_CSTK=tnN-LCL1'}
+2025-03-02 18:52:13,490 [DEBUG] Starting new HTTPS connection (1): note.youdao.com:443
+2025-03-02 18:52:13,912 [DEBUG] https://note.youdao.com:443 "POST /yws/api/personal/sync?method=download&_system=windows&_systemVersion=&_screenWidth=1920&_screenHeight=1080&_appName=ynote&_appuser=766688366d459bceea5f67aaaf2c6124&_vendor=official-website&_launch=113&_firstTime=2025/03/02%2013:28:43&_deviceId=11efb95b965437d2&_platform=web&_cityCode=430000&_cityName=&_product=YNote-Web&_version=&sev=j1&sec=v1&keyfrom=web&cstk=tnN-LCL1 HTTP/1.1" 200 None
+2025-03-02 18:52:13,919 [WARNING] Brotli decompression failed, using raw content
+2025-03-02 18:52:13,919 [DEBUG] 【响应状态】200
+2025-03-02 18:52:13,920 [DEBUG] 【最终URL】https://note.youdao.com/yws/api/personal/sync?method=download&_system=windows&_systemVersion=&_screenWidth=1920&_screenHeight=1080&_appName=ynote&_appuser=766688366d459bceea5f67aaaf2c6124&_vendor=official-website&_launch=113&_firstTime=2025/03/02%2013:28:43&_deviceId=11efb95b965437d2&_platform=web&_cityCode=430000&_cityName=&_product=YNote-Web&_version=&sev=j1&sec=v1&keyfrom=web&cstk=tnN-LCL1
+2025-03-02 18:52:13,920 [DEBUG] 【最终请求体】fileId=WEB7e268ee3e16f4428b8eb8e734347eecf&version=-1&convert=true&editorVersion=1714445486000&editorType=1&cstk=tnN-LCL1
+2025-03-02 18:52:13,920 [DEBUG] 【响应编码】UTF-8
+2025-03-02 18:52:13,921 [DEBUG] 【响应头】
+{'Server': 'Tengine', 'Content-Type': 'text/html;charset=UTF-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Date': 'Sun, 02 Mar 2025 10:52:55 GMT', 'Vary': 'Accept-Encoding', 'pragma': 'no-cache', 'cache-control': 'no-cache, no-store, must-revalidate', 'expires': 'Thu, 01 Jan 1970 00:00:00 GMT', 'x-envoy-upstream-service-time': '76', 'lingxi-traceid': '63508a373a34827f4b758935fd612462^750873600000^0', 'Content-Encoding': 'br', 'Via': 'cache15.l2nu20-1[174,173,200-0,M], cache15.l2nu20-1[175,0], cache15.cn160[295,294,200-0,M], cache15.cn160[296,0]', 'Ali-Swift-Global-Savetime': '1740912775', 'X-Cache': 'MISS TCP_MISS dirn:-2:-2', 'X-Swift-SaveTime': 'Sun, 02 Mar 2025 10:52:55 GMT', 'X-Swift-CacheTime': '0', 'cdn-user-ip': '220.152.187.149', 'cdn-source': 'ali', 'cdn-ip': '124.14.14.68', 'Timing-Allow-Origin': '*', 'EagleId': '7c0e0ea317409127750433323e'}
+2025-03-02 18:52:13,921 [DEBUG] 【响应体大小】20249 字符
+2025-03-02 18:52:13,925 [INFO] 已保存完整响应到 full_response.html
+2025-03-02 18:52:13,926 [DEBUG] 【页面结构分析】
+2025-03-02 18:52:13,926 [DEBUG] Title标签内容: 无标题
+2025-03-02 18:52:13,927 [DEBUG] 找到的div数量: 0
+2025-03-02 18:52:13,927 [WARNING] 未找到标题元素，尝试备用选择器...
+2025-03-02 18:52:13,927 [ERROR] 所有标题选择器均失败
+2025-03-02 18:52:13,928 [ERROR] 内容区域未找到，可能原因：
+2025-03-02 18:52:13,928 [ERROR] 1. 页面结构已变更 2. class名称不同 3. 内容需要登录
+2025-03-02 18:52:13,929 [DEBUG] 前500字符内容预览:
+{"2":"1","3":"kjFq-1737295568397","4":{"headerStyle":{"t":"center"},"footerStyle":{"t":"center"},"version":1,"incompatibleVersion":0,"hd":[{"8":"","p":1}],"ft":[{"8":"","p":1}],"fv":"0"},"5":[{"3":"34xnag1588172067448","5":[{"2":"2","3":"86dz-1737295568398"}]},{"3":"67zegx1710815505710","4":{"li":"list7","ll":1,"lt":"ordered"},"5":[{"2":"2","3":"75Vc-1737295568399","7":[{"8":"github:335985579@qq.com "}]},{"2":"3","3":"yg6F-1737295595797","4":{"hf":"http://Srcb@202501"},"5":[{"2":"2","3":"0eLF-17
+2025-03-02 18:52:13,930 [ERROR] !!! 主流程失败 !!!
+2025-03-02 18:52:13,932 [ERROR] 可能原因：
+2025-03-02 18:52:13,933 [ERROR] 1. 网络请求失败 2. 页面解析失败 3. 权限不足
+2025-03-02 18:52:13,933 [ERROR] 请检查 spider_debug.log 和 full_response.html
+2025-03-02 18:53:38,238 [INFO] ==================================================
+2025-03-02 18:53:38,239 [INFO] 开始执行爬虫程序
+2025-03-02 18:53:38,239 [DEBUG] ==================================================
+2025-03-02 18:53:38,239 [DEBUG] 【请求开始】URL: https://note.youdao.com/yws/api/personal/sync?method=download&_system=windows&_systemVersion=&_screenWidth=1920&_screenHeight=1080&_appName=ynote&_appuser=766688366d459bceea5f67aaaf2c6124&_vendor=official-website&_launch=113&_firstTime=2025/03/02%2013:28:43&_deviceId=11efb95b965437d2&_platform=web&_cityCode=430000&_cityName=&_product=YNote-Web&_version=&sev=j1&sec=v1&keyfrom=web&cstk=tnN-LCL1
+2025-03-02 18:53:38,240 [DEBUG] 【请求头】
+{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3', 'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8', 'Accept-Encoding': 'gzip,deflate,br', 'Cookie': 'hb_MA-B0D8-94CBE089C042_source=www.baidu.com; Hm_lvt_7fe66a8317b6d6f28c82b62b9f890118=1740893320; Hm_lpvt_7fe66a8317b6d6f28c82b62b9f890118=1740893320; HMACCOUNT=29005595904466B9; __yadk_uid=ZlRyzrbKx1IF9Hz5MMWVhDPQwjReRvFl; OUTFOX_SEARCH_USER_ID_NCOO=105754892.64450204; OUTFOX_SEARCH_USER_ID=-1177979017@163.177.223.166; YNOTE_SESS=v2|Zy5mmIFIhqBhLzf6LTuRJLhLTu0fgBReFkLYMP46uRYMO4TKOMeBRTBk4eyRfYf0Pu6LqFPMTS0q4RLeS6Mwy0QLnLgZ6MlY0; YNOTE_LOGIN=3||1740893431920; YNOTE_CSTK=tnN-LCL1'}
+2025-03-02 18:53:38,244 [DEBUG] Starting new HTTPS connection (1): note.youdao.com:443
+2025-03-02 18:53:38,548 [DEBUG] https://note.youdao.com:443 "POST /yws/api/personal/sync?method=download&_system=windows&_systemVersion=&_screenWidth=1920&_screenHeight=1080&_appName=ynote&_appuser=766688366d459bceea5f67aaaf2c6124&_vendor=official-website&_launch=113&_firstTime=2025/03/02%2013:28:43&_deviceId=11efb95b965437d2&_platform=web&_cityCode=430000&_cityName=&_product=YNote-Web&_version=&sev=j1&sec=v1&keyfrom=web&cstk=tnN-LCL1 HTTP/1.1" 200 None
+2025-03-02 18:53:38,555 [WARNING] Brotli decompression failed, using raw content
+2025-03-02 18:53:38,555 [DEBUG] 【响应状态】200
+2025-03-02 18:53:38,555 [DEBUG] 【最终URL】https://note.youdao.com/yws/api/personal/sync?method=download&_system=windows&_systemVersion=&_screenWidth=1920&_screenHeight=1080&_appName=ynote&_appuser=766688366d459bceea5f67aaaf2c6124&_vendor=official-website&_launch=113&_firstTime=2025/03/02%2013:28:43&_deviceId=11efb95b965437d2&_platform=web&_cityCode=430000&_cityName=&_product=YNote-Web&_version=&sev=j1&sec=v1&keyfrom=web&cstk=tnN-LCL1
+2025-03-02 18:53:38,556 [DEBUG] 【最终请求体】fileId=WEB7e268ee3e16f4428b8eb8e734347eecf&version=-1&convert=true&editorVersion=1714445486000&editorType=1&cstk=tnN-LCL1
+2025-03-02 18:53:38,556 [DEBUG] 【响应编码】UTF-8
+2025-03-02 18:53:38,556 [DEBUG] 【响应头】
+{'Server': 'Tengine', 'Content-Type': 'text/html;charset=UTF-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Date': 'Sun, 02 Mar 2025 10:54:19 GMT', 'Vary': 'Accept-Encoding', 'pragma': 'no-cache', 'cache-control': 'no-cache, no-store, must-revalidate', 'expires': 'Thu, 01 Jan 1970 00:00:00 GMT', 'x-envoy-upstream-service-time': '87', 'lingxi-traceid': '25f9a784550644fcd2f791217e4362d4^750873600000^0', 'Content-Encoding': 'br', 'Via': 'cache19.l2nu20-1[143,143,200-0,M], cache19.l2nu20-1[144,0], cache4.cn160[179,178,200-0,M], cache4.cn160[181,0]', 'Ali-Swift-Global-Savetime': '1740912859', 'X-Cache': 'MISS TCP_MISS dirn:-2:-2', 'X-Swift-SaveTime': 'Sun, 02 Mar 2025 10:54:19 GMT', 'X-Swift-CacheTime': '0', 'cdn-user-ip': '220.152.187.149', 'cdn-source': 'ali', 'cdn-ip': '124.14.14.65', 'Timing-Allow-Origin': '*', 'EagleId': '7c0e0e9817409128597954238e'}
+2025-03-02 18:53:38,557 [DEBUG] 【响应体大小】19640 字符
+2025-03-02 18:53:38,560 [INFO] 已保存完整响应到 full_response.html
+2025-03-02 18:53:38,560 [DEBUG] 【页面结构分析】
+2025-03-02 18:53:38,561 [DEBUG] Title标签内容: 无标题
+2025-03-02 18:53:38,561 [DEBUG] 找到的div数量: 0
+2025-03-02 18:53:38,562 [WARNING] 未找到标题元素，尝试备用选择器...
+2025-03-02 18:53:38,562 [ERROR] 所有标题选择器均失败
+2025-03-02 18:53:38,563 [ERROR] 内容区域未找到，可能原因：
+2025-03-02 18:53:38,563 [ERROR] 1. 页面结构已变更 2. class名称不同 3. 内容需要登录
+2025-03-02 18:53:38,563 [DEBUG] 前500字符内容预览:
+{"2":"1","3":"kjFq-1737295568397","4":{"headerStyle":{"t":"center"},"footerStyle":{"t":"center"},"version":1,"incompatibleVersion":0,"hd":[{"8":"","p":1}],"ft":[{"8":"","p":1}],"fv":"0"},"5":[{"3":"34xnag1588172067448","5":[{"2":"2","3":"86dz-1737295568398"}]},{"3":"67zegx1710815505710","4":{"li":"list7","ll":1,"lt":"ordered"},"5":[{"2":"2","3":"75Vc-1737295568399","7":[{"8":"github:335985579@qq.com Srcb@202501"}]}],"6":"l"},{"3":"L9lK-1740271777444","4":{"li":"list7","ll":1,"lt":"ordered"},"5":
+2025-03-02 18:53:38,564 [ERROR] !!! 主流程失败 !!!
+2025-03-02 18:53:38,564 [ERROR] 可能原因：
+2025-03-02 18:53:38,565 [ERROR] 1. 网络请求失败 2. 页面解析失败 3. 权限不足
+2025-03-02 18:53:38,565 [ERROR] 请检查 spider_debug.log 和 full_response.html
+2025-03-02 18:58:26,919 [INFO] ==================================================
+2025-03-02 18:58:26,919 [INFO] 开始执行爬虫程序
+2025-03-02 18:58:26,920 [DEBUG] ==================================================
+2025-03-02 18:58:26,920 [DEBUG] 【请求开始】URL: https://note.youdao.com/yws/api/personal/sync?method=download&_system=windows&_systemVersion=&_screenWidth=1920&_screenHeight=1080&_appName=ynote&_appuser=766688366d459bceea5f67aaaf2c6124&_vendor=official-website&_launch=113&_firstTime=2025/03/02%2013:28:43&_deviceId=11efb95b965437d2&_platform=web&_cityCode=430000&_cityName=&_product=YNote-Web&_version=&sev=j1&sec=v1&keyfrom=web&cstk=tnN-LCL1
+2025-03-02 18:58:26,920 [DEBUG] 【请求头】
+{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3', 'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8', 'Accept-Encoding': 'gzip,deflate,br', 'Cookie': 'hb_MA-B0D8-94CBE089C042_source=www.baidu.com; Hm_lvt_7fe66a8317b6d6f28c82b62b9f890118=1740893320; Hm_lpvt_7fe66a8317b6d6f28c82b62b9f890118=1740893320; HMACCOUNT=29005595904466B9; __yadk_uid=ZlRyzrbKx1IF9Hz5MMWVhDPQwjReRvFl; OUTFOX_SEARCH_USER_ID_NCOO=105754892.64450204; OUTFOX_SEARCH_USER_ID=-1177979017@163.177.223.166; YNOTE_SESS=v2|Zy5mmIFIhqBhLzf6LTuRJLhLTu0fgBReFkLYMP46uRYMO4TKOMeBRTBk4eyRfYf0Pu6LqFPMTS0q4RLeS6Mwy0QLnLgZ6MlY0; YNOTE_LOGIN=3||1740893431920; YNOTE_CSTK=tnN-LCL1'}
+2025-03-02 18:58:26,924 [DEBUG] Starting new HTTPS connection (1): note.youdao.com:443
+2025-03-02 18:58:27,421 [DEBUG] https://note.youdao.com:443 "POST /yws/api/personal/sync?method=download&_system=windows&_systemVersion=&_screenWidth=1920&_screenHeight=1080&_appName=ynote&_appuser=766688366d459bceea5f67aaaf2c6124&_vendor=official-website&_launch=113&_firstTime=2025/03/02%2013:28:43&_deviceId=11efb95b965437d2&_platform=web&_cityCode=430000&_cityName=&_product=YNote-Web&_version=&sev=j1&sec=v1&keyfrom=web&cstk=tnN-LCL1 HTTP/1.1" 200 None
+2025-03-02 18:58:27,428 [WARNING] Brotli decompression failed, using raw content
+2025-03-02 18:58:27,428 [DEBUG] 【响应状态】200
+2025-03-02 18:58:27,428 [DEBUG] 【最终URL】https://note.youdao.com/yws/api/personal/sync?method=download&_system=windows&_systemVersion=&_screenWidth=1920&_screenHeight=1080&_appName=ynote&_appuser=766688366d459bceea5f67aaaf2c6124&_vendor=official-website&_launch=113&_firstTime=2025/03/02%2013:28:43&_deviceId=11efb95b965437d2&_platform=web&_cityCode=430000&_cityName=&_product=YNote-Web&_version=&sev=j1&sec=v1&keyfrom=web&cstk=tnN-LCL1
+2025-03-02 18:58:27,429 [DEBUG] 【最终请求体】fileId=WEB7e268ee3e16f4428b8eb8e734347eecf&version=-1&convert=true&editorVersion=1714445486000&editorType=1&cstk=tnN-LCL1
+2025-03-02 18:58:27,429 [DEBUG] 【响应编码】UTF-8
+2025-03-02 18:58:27,429 [DEBUG] 【响应头】
+{'Server': 'Tengine', 'Content-Type': 'text/html;charset=UTF-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Date': 'Sun, 02 Mar 2025 10:59:08 GMT', 'Vary': 'Accept-Encoding', 'pragma': 'no-cache', 'cache-control': 'no-cache, no-store, must-revalidate', 'expires': 'Thu, 01 Jan 1970 00:00:00 GMT', 'x-envoy-upstream-service-time': '212', 'lingxi-traceid': '856482c173b14d4ebd2d4c3292a945fe^750873600000^0', 'Content-Encoding': 'br', 'Via': 'cache48.l2nu20-1[323,323,200-0,M], cache48.l2nu20-1[324,0], cache22.cn160[359,359,200-0,M], cache22.cn160[362,0]', 'Ali-Swift-Global-Savetime': '1740913148', 'X-Cache': 'MISS TCP_MISS dirn:-2:-2', 'X-Swift-SaveTime': 'Sun, 02 Mar 2025 10:59:08 GMT', 'X-Swift-CacheTime': '0', 'cdn-user-ip': '220.152.187.149', 'cdn-source': 'ali', 'cdn-ip': '124.14.14.66', 'Timing-Allow-Origin': '*', 'EagleId': '7c0e0eaa17409131484853410e'}
+2025-03-02 18:58:27,430 [DEBUG] 【响应体大小】19640 字符
+2025-03-02 18:58:27,433 [INFO] 已保存完整响应到 full_response.html
+2025-03-02 18:58:27,434 [DEBUG] 【页面结构分析】
+2025-03-02 18:58:27,435 [DEBUG] Title标签内容: 无标题
+2025-03-02 18:58:27,435 [DEBUG] 找到的div数量: 0
+2025-03-02 18:58:27,436 [WARNING] 未找到标题元素，尝试备用选择器...
+2025-03-02 18:58:27,436 [ERROR] 所有标题选择器均失败
+2025-03-02 18:58:27,436 [ERROR] 内容区域未找到，可能原因：
+2025-03-02 18:58:27,437 [ERROR] 1. 页面结构已变更 2. class名称不同 3. 内容需要登录
+2025-03-02 18:58:27,437 [DEBUG] 前500字符内容预览:
+{"2":"1","3":"kjFq-1737295568397","4":{"headerStyle":{"t":"center"},"footerStyle":{"t":"center"},"version":1,"incompatibleVersion":0,"hd":[{"8":"","p":1}],"ft":[{"8":"","p":1}],"fv":"0"},"5":[{"3":"34xnag1588172067448","5":[{"2":"2","3":"86dz-1737295568398"}]},{"3":"67zegx1710815505710","4":{"li":"list7","ll":1,"lt":"ordered"},"5":[{"2":"2","3":"75Vc-1737295568399","7":[{"8":"github:335985579@qq.com Srcb@202501"}]}],"6":"l"},{"3":"L9lK-1740271777444","4":{"li":"list7","ll":1,"lt":"ordered"},"5":
+2025-03-02 18:58:27,438 [ERROR] !!! 主流程失败 !!!
+2025-03-02 18:58:27,438 [ERROR] 可能原因：
+2025-03-02 18:58:27,438 [ERROR] 1. 网络请求失败 2. 页面解析失败 3. 权限不足
+2025-03-02 18:58:27,438 [ERROR] 请检查 spider_debug.log 和 full_response.html

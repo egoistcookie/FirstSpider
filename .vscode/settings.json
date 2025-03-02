@@ -1,0 +1,14 @@
+{
+    "java.configuration.updateBuildConfiguration": "automatic",
+    "java.compile.nullAnalysis.mode": "automatic",
+    "java.maven.downloadSources": true,
+    "maven.terminal.customEnv": [
+        {
+            "environmentVariable": "JAVA_HOME",
+            "value": "${env:JAVA_HOME}"
+        }
+    ],
+    "maven.executable.path": "mvn",
+    "maven.terminal.useJavaHome": true,
+    "maven.view": "hierarchical"
+} 

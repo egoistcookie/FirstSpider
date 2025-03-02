@@ -1,0 +1,13 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch Sorting Algorithms",
+            "request": "launch",
+            "mainClass": "com.example.sorting.SortingAlgorithms",
+            "projectName": "sorting-algorithms",
+            "encoding": "UTF-8"
+        }
+    ]
+} 

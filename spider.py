@@ -26,7 +26,7 @@ def get_page_title(url):
 
 if __name__ == "__main__":
     # 要爬取的网页URL
-    url = "https://www.feishu.cn/"  # 请将此URL替换为你要爬取的实际URL
+    url = "https://note.youdao.com/web/#/file/D24D9664401F42C89C902D8FA8B822D0/note/WEB7e268ee3e16f4428b8eb8e734347eecf/"  # 请将此URL替换为你要爬取的实际URL
     # https://www.bilibili.com/video/BV1DkwYegEPS/?spm_id_from=333.1007.tianma.4-2-12.click&vd_source=80cd7231c45aa66cfa15eff2ab3cacd0
     title = get_page_title(url)
     if title:
