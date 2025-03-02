@@ -28,9 +28,11 @@ logging.basicConfig(
     ]
 )
 
+# 标题格式化
 def sanitize_filename(filename):
     return re.sub(r'[\\/*?:"<>|]', "", filename)
 
+# 有道云笔记：《备忘录》篇的download请求
 def get_note_content(url):
     try:
         headers = {
